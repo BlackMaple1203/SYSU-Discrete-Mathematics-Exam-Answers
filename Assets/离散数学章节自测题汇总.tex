@@ -789,6 +789,20 @@ D．当 $\sigma(B)=1$ 时，$\sigma(A \rightarrow B)=\sigma(A)$
 
 \textcolor{red}{答案：D}
 
+\subsubsection{测验题2.12}
+
+给定 $\sigma$ 是真值赋值函数，$A, B$ 是任意的命题逻辑公式，下列说法不正确的是？
+
+A．当 $\sigma(A)=0$ 时，$\sigma(A \wedge B)=0$ 。
+
+B．当 $\sigma(A)=0$ 时，$\sigma(A \vee B)=\sigma(B)$ 。
+
+C．当 $\sigma(A)=0$ 时，$\sigma(A \rightarrow B)=\sigma(B)$
+
+D．当 $\sigma(B)=0$ 时，$\sigma(A \rightarrow B)=\sigma(\neg A)$
+
+\textcolor{red}{答案：C}
+
 \subsubsection{测验题2.13}
 
 给定命题变量 $p$ 和 $q$ 的真值, 计算公式 $(p \rightarrow q) \vee(\neg p \wedge \neg q)$ 的真值, 若要一次只考虑一个逻辑运算符, 则它的一些子公式按需要计算的顺序排列最合理的是 $\qquad$
@@ -946,6 +960,75 @@ D. 0111
 
 \textcolor{red}{答案：B}
 
+\subsubsection{测验题2.21}
+
+下面是公式 $(p \leftrightarrow q) \rightarrow p \wedge q) \wedge(\neg p \vee \neg q)$ 的真值表，
+
+\clearpage
+
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c|c|c|c|c|c|c|c|c}
+\hline$p$ & $q$ & $p \leftrightarrow q$ & $p \wedge q$ & $(p \leftrightarrow q) \rightarrow p \wedge q$ & $\neg p$ & $\neg q$ & $\neg p \vee \neg q$ & $((p \leftrightarrow q) \rightarrow p \wedge q) \wedge(\neg p \vee \neg q)$ \\
+\hline $\mathbf{0}$ & $\mathbf{0}$ & & $\mathbf{0}$ & & $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{1}$ & ${(1)}$ \\
+\hline $\mathbf{0}$ & $\mathbf{1}$ & & $\mathbf{0}$ & & $\mathbf{1}$ & $\mathbf{0}$ & $\mathbf{1}$ & $(2)$ \\
+\hline $\mathbf{1}$ & $\mathbf{0}$ & & $\mathbf{0}$ & & $\mathbf{0}$ & $\mathbf{1}$ & $\mathbf{1}$ & ${(3)}$ \\
+\hline $\mathbf{1}$ & $\mathbf{1}$ & & $\mathbf{1}$ & & $\mathbf{0}$ & $\mathbf{0}$ & $\mathbf{0}$ & ${(4)}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+其中的空（1），（2），（3），（4）依次填入的真值应该是： $\qquad$
+
+
+A． 0000
+
+B． 0101
+
+C． 0110
+
+D． 1111
+
+\textcolor{red}{答案：C}
+
+\subsubsection{测验题2.22}
+
+下面是公式 $r \leftrightarrow q \wedge((p \rightarrow r) \vee \neg p)$ 的真值表，
+
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\hline$p$ & $q$ & $r$ & $p \rightarrow r$ & $\neg p$ & $(p \rightarrow r) \vee \neg p$ & $q \wedge((p \rightarrow r) \vee \neg p)$ & $r \leftrightarrow q \wedge((p \rightarrow r) \vee \neg p)$ \\
+\hline 0 & 0 & $\mathbf{0}$ & $\mathbf{1}$ & $\mathbf{1}$ & & & $\mathbf{1}$ \\
+\hline $\mathbf{0}$ & $\mathbf{0}$ & $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{1}$ & & & $\mathbf{0}$ \\
+\hline $\mathbf{0}$ & $\mathbf{1}$ & $\mathbf{0}$ & $\mathbf{1}$ & $\mathbf{1}$ & & & $\mathbf{0}$ \\
+\hline $\mathbf{0}$ & $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{1}$ & & & $(1)$ \\
+\hline $\mathbf{1}$ & $\mathbf{0}$ & $\mathbf{0}$ & $\mathbf{0}$ & $\mathbf{0}$ & & & $(2)$ \\
+\hline $\mathbf{1}$ & $\mathbf{0}$ & $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{0}$ & & & $\mathbf{0}$ \\
+\hline $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{0}$ & $\mathbf{0}$ & $\mathbf{0}$ & & & $(3)$ \\
+\hline $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{1}$ & $\mathbf{0}$ & & & $(4)$ \\
+\hline
+\end{tabular}
+\end{table}
+
+其中的空（1），（2），（3），（4）依次填入的真值应该是： $\qquad$
+
+A．
+0000
+
+B．
+0110
+
+C．
+1100
+
+D．
+1111
+
+\textcolor{red}{答案：D}
+
 
 \subsubsection{测验题2.23}
 
@@ -961,7 +1044,32 @@ D. 可满足式的任意替换实例仍然是可满足式。
 
 \textcolor{red}{答案：D}
 
+\subsubsection{测验题2.24}
 
+公式 $A$ 的一个替换实例是用公式 $B$ 去替换一个命题变量 $p$ 在 $A$ 中所有出现而得到的公式，
+即若 $A, B$ 是公式，$p$ 是命题变量，则 $A[B / p]$ 是 $A$ 的一个替换实例。
+一般地，设 $p_1, p_2, \cdots, p_n$ 是公式 $A$ 中的命题变量．
+分别使用 $B_1, B_2, \cdots, B_n$ 替换 $A$ 中的 $p_1, p_2, \cdots, p_n$ 的所
+有出现而得到的公式也称为 $A$ 的一个替换实例，记为 $A\left[B_1 / p_1, B_2 / p_2, \cdots, B_n / p_n\right]$ ．
+现在设公式 $A=\neg q \vee(\neg p \wedge(q \leftrightarrow \neg p))$.
+ 下面说法正确的是？
+
+A．
+公式 $\neg q \vee(\neg p \wedge((p \rightarrow q) \leftrightarrow \neg p))$ 是公式 $A$ 的一个替换实例。
+
+B．
+公式 $\neg q \vee((r \wedge s) \wedge(q \leftrightarrow(r \wedge s)))$ 是公式 $A$ 的一个替换实例。
+
+C．
+公式 $\neg(p \vee q) \vee(\neg p \wedge((p \vee q) \leftrightarrow \neg p))$ 是公式 $A$ 的一个替换实例。
+
+D．
+公式 $\neg p \vee(\neg q \wedge(p \leftrightarrow \neg q))$ 是公式 $A$ 的一个替换实例。
+
+
+\textcolor{red}{答案：CD}
+
+\textcolor{red}{解析：注意B选项替换的$\neg p$不是命题变量，可以只替换$p$。}
 
 \subsubsection{测验题2.25}
 
@@ -1062,6 +1170,20 @@ C. $(p \vee q) \wedge(p \vee r) \equiv(p \vee q \vee p) \wedge(p \vee q \vee r)$
 D. $(p \wedge q) \wedge(p \vee r) \equiv(p \wedge q \wedge p) \vee(p \wedge q \wedge r)$
 
 \textcolor{red}{答案：ABD}
+
+\subsubsection{测验题2.32}
+
+下面哪些是基本逻辑等值式模式吸收律的实例？
+
+A．$p \vee(q \wedge p) \equiv p$
+
+В．$(p \vee q) \wedge(p \vee q \vee r) \equiv p \vee q$
+
+C．$(p \wedge q) \vee(p \wedge q \wedge r) \equiv p \wedge q$
+
+D．$(p \wedge q \wedge r) \vee(p \wedge q) \equiv p \wedge q$
+
+\textcolor{red}{答案：ABCD}
 
 \subsubsection{测验题2.33}
 
@@ -1230,6 +1352,20 @@ D. 公式 $p \leftrightarrow(q \leftrightarrow r)$ 和 $(p \leftrightarrow q) \l
 
 \textcolor{red}{答案：C}
 
+\subsubsection{测验题2.43}
+
+下面哪一组的两个公式不是逻辑等值的？
+
+A．公式 $\neg(p \vee q)$ 和 $\neg p \wedge \neg q$
+
+B．公式 $\neg(p \wedge q)$ 和 $\neg p \vee \neg q$
+
+C．公式 $\neg(p \rightarrow q)$ 和 $p \rightarrow \neg q$
+
+D．公式 $\neg(p \leftrightarrow q)$ 和 $p \leftrightarrow \neg q$
+
+\textcolor{red}{答案：C}
+
 \subsubsection{测验题2.44}
 
 下面哪个说法不是正确的?
@@ -1247,6 +1383,24 @@ D. 每一个只含与、或、非逻辑运算符的公式不是析取范式就�
 \textcolor{red}{解析：析取范式中的合取式都是\textbf{一个}或多个文字的合取；合取范式中的析取式都是\textbf{一个}或多个文字的析取。
 因此$p \vee q$既是析取范式又是合取范式。}
 
+\subsubsection{测验题2.45}
+
+下面哪个说法不是正确的？
+
+A．
+每一个文字都既是合取范式又是析取范式。
+
+B．
+每一个文字都既是简单析取式又是简单合取式。
+
+C．
+每个命题逻辑公式都存在与之等值的只含合取和析取运算符的公式。
+
+D．
+无论是析取范式还是合取范式，逻辑否定运算符都只出现在命题变量之前。
+
+\textcolor{red}{答案：C}
+
 \subsubsection{测验题2.46}
 
 下面哪些公式是析取范式？
@@ -1261,17 +1415,31 @@ D. $ \neg p \vee \neg q$
 
 \textcolor{red}{答案：ACD}
 
+\subsubsection{测验题2.47}
+
+下面哪些公式是合取范式？
+
+A．$ \neg p$
+
+B．$\neg(p \vee q)$
+
+C．$\neg p \wedge \neg q$
+
+D．$ \neg p \vee \neg q$
+
+\textcolor{red}{答案：ACD}
+
 \subsubsection{测验题2.48}
 
 下面哪些公式是析取范式?
 
 A. $\neg(p \wedge q) \vee r$
 
-B. $\quad(\neg p \wedge q) \vee r$
+B. $(\neg p \wedge q) \vee r$
 
-C. $\quad(\neg p \vee q) \wedge r$
+C. $(\neg p \vee q) \wedge r$
 
-D. $\quad(\neg p \wedge q) \vee(p \vee r)$
+D. $(\neg p \wedge q) \vee(p \vee r)$
 
 \textcolor{red}{答案：BD}
 
@@ -1318,6 +1486,20 @@ D. $(\neg p \wedge \neg q) \vee(p \wedge q)$
 
 \textcolor{red}{答案：C}
 
+\subsubsection{测验题2.52}
+
+下面哪些公式是与公式 $(p \rightarrow q) \rightarrow r$ 逻辑等值的析取范式？
+
+A．$\neg p \vee \neg q \vee r$
+
+B．$(p \wedge \neg q) \vee r$
+
+C．$(p \vee r) \wedge(\neg q \vee r)$
+
+D．$(\neg p \wedge q) \vee r$
+
+\textcolor{red}{答案：B}
+
 \subsubsection{测验题2.53}
 
 下面哪些公式是与公式 $(p \rightarrow q) \rightarrow r$ 逻辑等值的合取范式?
@@ -1332,6 +1514,18 @@ D. $(\neg p \wedge q) \vee r$
 
 \textcolor{red}{答案：C}
 
+\subsubsection{测验题2.54}
+
+A．含有 $n$ 个不同命题变量的极小项和极大项都㭘好有 $2^{\wedge} n$ 个
+
+B. 极小项是简单析取式，极大项是简单合取式
+
+C．主析取范式是一个或多个极小顶的析取，主合取范式是一个或多个极大项的合取
+
+D．主析取范式是析取范式，主合取范式是合取范式
+
+\textcolor{red}{答案：BC}
+
 \subsubsection{测验题2.55}
 
 下面哪些说法不是正确的?
@@ -1345,6 +1539,20 @@ C.设有 3 个命题变量,极小项 $m_2$ 的否定与 $M_2$ 逻辑等值。
 D.与主析取范式 $m_1 \vee m_3 \vee m_5$ 逻辑等值的主合取范式是 $M_1 \wedge M_3 \wedge M_5$ 。
 
 \textcolor{red}{答案：D}
+
+\subsubsection{测验题2.56}
+
+设公式含 $p, q, r$ 三个命题变量，下面哪些公式是极小项？
+
+A．$p \vee \neg q \vee r$
+
+B．$p \wedge \neg q \wedge r$
+
+C．$p \wedge r$
+
+D．$p \vee r$
+
+\textcolor{red}{答案：B}
 
 \subsubsection{测验题2.57}
 
@@ -1396,6 +1604,19 @@ D. $ m_7$
 
 \textcolor{red}{答案：BD}
 
+\subsubsection{测验题2.60}
+
+设公式含 $p, q, r, s$ 四个命题变量，且极大项编码道循 $p, q, r, s$ 的顺序。下面哪些极大项会包含在简单析取式 $\neg q \vee \neg s$ 扩展得到的主合取范式中？
+
+A．$M_1$
+
+B．$M_3$
+
+C．$M_5$
+
+D．$M_7$
+
+\textcolor{red}{答案：CD}
 
 \subsubsection{测验题2.61}
 
@@ -1412,17 +1633,43 @@ D. $ M_{16}$
 
 \textcolor{red}{答案：AC}
 
+\subsubsection{测验题2.62}
+
+与公式 $p \rightarrow(\neg q \wedge \neg r)$ 逻辑等值的主范式有？
+
+A．$
+m_0 \vee m_1 \vee m_2 \vee m_3 \vee m_4
+$
+
+
+B．$
+m_5 \vee m_6 \vee m_7
+$
+
+
+C．$
+M_0 \wedge M_1 \wedge M_2 \wedge M_3 \wedge M_4
+$
+
+
+D．$
+M_5 \wedge M_6 \wedge M_7
+$
+
+\textcolor{red}{答案：AD}
+
+
 \subsubsection{测验题2.63}
 
 与公式 $((p \vee q) \rightarrow r) \rightarrow q$ 逻辑等值的主范式有 $\qquad$
 
-A. $\quad m_0 \vee m_1 \vee m_5$
+A. $ m_0 \vee m_1 \vee m_5$
 
-B. $\quad m_2 \vee m_3 \vee m_4 \vee m_6 \vee m_7$
+B. $ m_2 \vee m_3 \vee m_4 \vee m_6 \vee m_7$
 
-C. $\quad M_0 \wedge M_1 \wedge M_5$
+C. $ M_0 \wedge M_1 \wedge M_5$
 
-D. $\quad M_2 \vee M_3 \vee M_4 \vee M_6 \vee M_7$
+D. $ M_2 \vee M_3 \vee M_4 \vee M_6 \vee M_7$
 
 \textcolor{red}{答案：BC}
 
@@ -1599,13 +1846,104 @@ D. 析取三段论
 
 \textcolor{red}{答案：D}
 
+\subsubsection{测验题2.73}
+
+从前提＂2020年是闰年＂，推出结论＂或者2020年是闰年，或者2021年是闰年＂使用的推理规则是 $\qquad$
+
+A．
+假言推理
+
+B．
+假言易位
+
+C．
+附加规则
+
+D．
+析取三段论
+
+\textcolor{red}{答案：C}
+
+\subsubsection{测验题2.74}
+
+下面是验证推理 $q \rightarrow p, s \rightarrow p, t \rightarrow s, t \wedge r \Longrightarrow p \wedge q$ 有效性的论证：
+
+\clearpage
+
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{ll}
+    (1)  $t \wedge r$ & $/ / $ \textcolor{blue}{{前提}} \\
+    (2)  $t$ & $/ / $ \textcolor{blue}{{(1)化简规则}} \\
+    (3)  $t \rightarrow s$ & $/ / $ \textcolor{blue}{{前提}} \\
+    (4)  $s$ & $/ / $ \textcolor{blue}{{(2)，(3)假言推理}} \\
+    (5)  $s \rightarrow q$ & $/ / $ \textcolor{blue}{{前提}} \\
+    (6)  $q$ & $/ / $ \textcolor{blue}{{(4)，(5)假言推理}} \\
+    (7)  $q \rightarrow p$ & $/ / $ \textcolor{blue}{{前提}} \\
+    (8)  $p$ & $/ / $ \textcolor{blue}{{(6)，(7)假言推理}} \\
+    (9)  $p \wedge q$ & $/ / $ \textcolor{blue}{{(8)，(6)合取规则}} \\
+  \end{tabular}
+\end{table}
+
+
+记公式 $H$ 是前提的合取，即 $H$ 是 $(q \rightarrow p) \wedge(s \rightarrow p) \wedge(t \rightarrow s) \wedge(t \wedge r)$ ，下面哪些说法是正确的？
+
+A．由上面（4）可得到公式 $H \rightarrow s$ 是永真式。
+
+B．上面（4）给出的公式 $s$ 是由 $t$ 和 $t \rightarrow s$ 通过假言推理规则得到的。
+
+C．由公式 $t$ 和 $t \rightarrow s$ 推出 $s$ 是假言推理规则 $A, A \rightarrow B \Longrightarrow B$ 的实例。
+
+D. 因为 $H \rightarrow t$ 和 $H \rightarrow(t \rightarrow s)$ 都是永真式，而且 $(t \wedge(t \rightarrow s)) \rightarrow s$ 也是永真式，从而得到 $H \rightarrow s$ 也
+是永真式。
+
+\textcolor{red}{答案：ABCD}
+
+\subsubsection{测验题2.75}
+
+下面是验证推理 $p \rightarrow(q \vee s) \wedge \neg(q \wedge s), q \rightarrow \neg r \Longrightarrow(r \wedge \neg s) \rightarrow \neg p$ 有效性的论证：
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{ll}
+    （1）  $r \wedge \neg s$ & / / \textcolor{blue}{附加前提} \\
+    （2）  $r$ & / / \textcolor{blue}{（1）化简规则} \\
+    （3）  $q \rightarrow \neg r$ & / / \textcolor{blue}{前提} \\
+    （4）  $\neg q$ & / / \textcolor{blue}{（2），（3）假言易位} \\
+    （5）  $p$ & / / \textcolor{blue}{附加前提} \\
+    （6）  $p \rightarrow(q \vee s) \wedge \neg(q \wedge s)$ & / / \textcolor{blue}{前提} \\
+    （7）  $(q \vee s) \wedge \neg(q \wedge s)$ & / / \textcolor{blue}{（5），（6）假言推理} \\
+    （8）  $q \vee s$ & / / \textcolor{blue}{（7）化简规则} \\
+    （9）  $s$ & / / \textcolor{blue}{（4），（8）析取三段论} \\
+    （10）  $\neg s$ & / / \textcolor{blue}{（1）化简规则} \\
+    （11）  $\neg p$ & / / \textcolor{blue}{（5），（9），（10）反证法} \\
+    （12）  $(r \wedge \neg s) \rightarrow \neg p$ & / / \textcolor{blue}{（1），（11）附加前提法} \\
+  \end{tabular}
+\end{table}
+
+记公式 $H$ 是前提的合取，即 $H$ 是 $(p \rightarrow(q \vee s) \wedge \neg(q \wedge s)) \wedge(q \rightarrow \neg r)$ ，下面哪些说法是正确的？
+
+A. 由上面(9)可得到公式 $H \rightarrow s$ 是永真式。
+
+B. 由上面 (9)可得到公式 $(H \wedge(r \wedge \neg s)) \rightarrow s$ 是永真式。
+
+C. 由上面 (9) 可得到公式 $(H \wedge(r \wedge \neg s) \wedge p) \rightarrow s$ 是永真式。
+
+D．由上面 (11) 可得到公式 $(H \wedge(r \wedge \neg s)) \rightarrow \neg p$ 是永真式。
+
+
+\textcolor{red}{答案：CD}
+
+
+
 \subsubsection{测验题2.76}
 
 下面是验证推理 $p \rightarrow(q \rightarrow s), \neg r \vee p, q \Longrightarrow r \rightarrow s$ 有效性的论证:
 
 \begin{table}[htbp]
   \centering
-  \renewcommand{\arraystretch}{1.5}
+  \renewcommand{\arraystretch}{1.8}
 \begin{tabular}{ll} 
 (1) $r$ & $/ /$ \textcolor{blue}{附加前提} \\
 (2) $\neg r \vee p$ & $/ /$ \textcolor{blue}{前提} \\
@@ -1633,6 +1971,10 @@ D. 由上面 (8) 可得到公式 $H \rightarrow(r \rightarrow s)$ 是永真式�
 \subsubsection{测验题2.77}
 
 下面是验证推理 $s \rightarrow \neg q, r \vee s, \neg q \vee \neg r \Longrightarrow \neg q$ 有效性的论证:
+
+
+\clearpage
+
 \begin{table}[htbp]
   \centering
   \renewcommand{\arraystretch}{1.5}
@@ -1650,11 +1992,12 @@ D. 由上面 (8) 可得到公式 $H \rightarrow(r \rightarrow s)$ 是永真式�
 
 记公式 $H$ 是前提的合取, 即 $H$ 是 $(s \rightarrow \neg q) \wedge(r \vee s) \wedge(\neg q \vee \neg r)$, 下面哪些说法是正确的?
 
+
 A. 上面 (5)给出的公式 $r$ 是由 $\neg s$ 和 $r \vee s$ 通过析取三段论规则得到的。
 
-B. 由上面 $(3)$ 可得到公式 $H \rightarrow \neg s$ 是永真式。
+B. 由上面 (3)可得到公式 $H \rightarrow \neg s$ 是永真式。
 
-C. 由上面 $(5)$ 可得到公式 $(H \wedge q) \rightarrow r$ 是永真式。
+C. 由上面 (5) 可得到公式 $(H \wedge q) \rightarrow r$ 是永真式。
 
 D. 由上面 (8)可得到公式 $H \rightarrow \neg q$ 是永真式。
 
@@ -1685,6 +2028,8 @@ D. 由上面 (8)可得到公式 $H \rightarrow \neg q$ 是永真式。
 \subsubsection{测验题2.79}
 
 下面是验证推理 $\neg(p \land q), \, q \lor r, \, \neg r \implies \neg p$ 有效性的论证：
+
+\clearpage
 
 \[
 \begin{array}{rl}
@@ -1740,9 +2085,53 @@ D. 只要你认真学习,C++语言就不是难学的程序设计语言。
 
 \textcolor{red}{答案：AD}
 
+\subsubsection{测验题2.82}
+
+设 $p$ 表示＂学生学过C++语言＂，$q$ 表示＂学生学过Java语言＂，
+命题＂学生不仅学过C++语言，而且学过Java语言＂符号化为 $\qquad$
+
+A．$p \rightarrow q$
+
+B．$q \rightarrow p$
+
+C．$p \wedge q$
+
+D．$p \vee q$
+
+\textcolor{red}{答案：C}
+
+\subsubsection{测验题2.83}
+
+设 $p$ 表示＂学生学过C++语言＂，$q$ 表示＂学生学过Java语言＂。
+命题＂学生要么学过C++语言，要么学过Java语言＂符号化为 $\qquad$
+
+A．$
+p \rightarrow q
+$
+
+
+B．$
+q \rightarrow p
+$
+
+
+C．$
+p \wedge q
+$
+
+
+D．$
+p \vee q
+$
+
+\textcolor{red}{答案：D}
+
+
+
 \subsubsection{测验题2.84}
 
-设 $p$ 表示 "学生学过C++语言", $q$ 表示 "学生学过Java语言"。命题 "学生只要学过C++语言,就会学过Java语言" 符号化为？
+设 $p$ 表示 "学生学过C++语言", $q$ 表示 "学生学过Java语言"。
+命题 "学生只要学过C++语言,就会学过Java语言" 符号化为？
 
 A. $ p \rightarrow q$
 
@@ -1877,17 +2266,47 @@ D. $ r \rightarrow(p \wedge q)$
 
 \subsubsection{测验题2.91}
 
-设 $p$ 表示 "学生学过C++语言", $q$ 表示 "学生学过Java语言", $r$ 表示 "学生理解面向对象编程思想"。命题 "学生学过C++语言, 而且如果他还学过Java语言, 那么他理解面向对象编程思想" 符号化为 $\qquad$。
+设 $p$ 表示 "学生学过C++语言", $q$ 表示 "学生学过Java语言", $r$ 表示 
+"学生理解面向对象编程思想"。命题 "学生学过C++语言, 而且如果他还学过Java语言, 
+那么他理解面向对象编程思想" 符号化为 $\qquad$
 
-A. $\quad p \wedge(q \rightarrow r)$
+A. $p \wedge(q \rightarrow r)$
 
-B. $\quad(p \wedge q) \rightarrow r$
+B. $(p \wedge q) \rightarrow r$
 
-C. $\quad p \wedge q \wedge r$
+C. $p \wedge q \wedge r$
 
-D. $\quad p \rightarrow(q \rightarrow r)$
+D. $p \rightarrow(q \rightarrow r)$
 
 \textcolor{red}{答案：A}  
+
+\subsubsection{测验题2.92}
+
+设 $p$ 表示＂学生学过C++语言＂，$q$ 表示＂学生学过Java语言＂，$r$ 
+表示＂学生理解面向对象编程思想＂。命题＂学生如果学过C++语言，那么若还学过Java语言，
+则他理解面向对象编程思想＂符号化为 $\qquad$
+
+A．$
+p \wedge(q \rightarrow r)
+$
+
+
+B．$
+(p \wedge q) \rightarrow r
+$
+
+
+C．$
+p \wedge q \wedge r
+$
+
+
+D．$
+p \rightarrow(q \rightarrow r)
+$
+
+\textcolor{red}{答案：D}
+
 
 \subsubsection{测验题2.93}
 
@@ -1930,19 +2349,65 @@ D. “只要学生学过C++语言, 他就理解面向对象编程思想”
 
 \textcolor{red}{答案：B}
 
+\subsubsection{测验题2.95}
+
+命题“如果学生学过C++语言，则他理解面向对象编程思想”的否命题是
+
+A．
+“如果学生没学过C++语言，则他不理解面向对象编程思想”
+
+B．
+“如果学生理解面向对象编程思想，则他学过C++语言”
+
+C．
+“如果学生不理解面向对象编程思想，则他没学过C++语言”
+
+D．
+“只要学生学过C++语言，他就理解面向对象编程思想”
+
+\textcolor{red}{答案：A}
+
 \subsubsection{测验题2.96}
 
 命题“如果学生学过C++语言,则他理解面向对象编程思想”的逆否命题是？
 
-A. "如果学生没学过C++语言, 则他不理解面向对象编程思想"
+A. “如果学生没学过C++语言, 则他不理解面向对象编程思想”
 
-B. "如果学生理解面向对象编程思想,则他学过C++语言"
+B. “如果学生理解面向对象编程思想,则他学过C++语言”
 
-C. "如果学生不理解面向对象编程思想, 则他没学过C++语言"
+C. “如果学生不理解面向对象编程思想, 则他没学过C++语言”
 
-D. "只要学生学过C++语言, 他就理解面向对象编程思想"
+D. “只要学生学过C++语言, 他就理解面向对象编程思想”
 
 \textcolor{red}{答案：C}
+
+\subsubsection{测验题2.97}
+
+说一组命题是一致的，如果存在对其中原子命题的真值赋值使得所有命题的真值都为真。设有一组命题：（1）如果学生没有学过C++语言，则他不理解面向对象编程思想。（2）如果学生不理解面向对象编程思想，则他不能编程求解复杂问题。（3）如果学生学过Java语言，则他能编程求解复杂问题。这一组命题加入下面哪个命题将会是不一致的？
+
+A．学生学过C++语言，但没学过Java语言。
+
+B．学生学过C++语言，且能编程求解复杂问题。
+
+C．学生没学过Java语言，但能理解面向对象编程思想。
+
+D．学生学过Java语言，但不能理解面向对象编程思想。
+
+\textcolor{red}{答案：D}
+
+\subsubsection{测验题2.98}
+
+说一组命题是一致的，如果存在对其中原子命题的真值赋值使得所有命题的真值都为真。设有一组命题：（1）如果学生没有学过C++语言，则他不理解面向对象编程思想。（2）如果学生不理解面向对象编程思想，则他不能编程求解复杂问题。（3）如果学生学过Java语言，则他能编程求解复杂问题。这一组命题加入下面哪个命题将会是不一致的？
+
+A．学生没学过C++语言，但学过Java语言。
+
+B. 学生没学过 C++ 语言，且不能编程求解复杂问题。
+
+C. 学生学过Java语言，但能理解面向对象编程思想。
+
+D．学生没学过Java语言，且不能理解面向对象编程思想。
+
+\textcolor{red}{答案：A}
 
 \subsubsection{测验题2.100}
 
@@ -2101,9 +2566,9 @@ D. $(x * y=x)$ 和 $(x+z=z)$
 
 一阶逻辑公式 $\forall x \exists y(F(x) \wedge H(x, y)) \rightarrow \exists x(G(x, y) \rightarrow(\neg \exists y H(x, y)))$ 中量词 $\forall x$ 的辖域是 $\qquad$
 
-A. $\quad \forall x \exists y(F(x) \wedge H(x, y))$
+A. $\forall x \exists y(F(x) \wedge H(x, y))$
 
-B. $\quad F(x) \wedge H(x, y)$
+B. $F(x) \wedge H(x, y)$
 
 C. $\exists y(F(x) \wedge H(x, y))$
 
@@ -2116,7 +2581,7 @@ D. $F(x)$ 和 $H(x, y)$
 一阶逻辑公式 $\forall x \exists y(F(x) \wedge H(x, y)) \rightarrow \exists x(G(x, y) \rightarrow(\neg \exists y H(x, y)))$ 
 中量词 $\exists x$ 的辖域是 $\qquad$
 
-A. $\quad G(x, y)$
+A. $G(x, y)$
 
 B. $\exists x(G(x, y) \rightarrow(\neg \exists y H(x, y)))$
 
