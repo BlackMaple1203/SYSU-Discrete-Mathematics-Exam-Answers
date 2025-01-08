@@ -2471,7 +2471,9 @@ D. 量词符号 $\forall, \exists$
 
 \subsubsection{测验题3.3}
 
-假设为研究自然数性质提取了常量符号 0,1 , 运算符号,$+ *$, 关系符号 $=, \geq$, 并使用变量符号 $x, y, z$, 逻辑运算符 $\neg, \wedge, \vee, \rightarrow$, 量词符号 $\forall, \exists$ 。下面呀些是一阶逻辑公式中的项?
+假设为研究自然数性质提取了常量符号 0,1 , 运算符号,$+ *$,
+ 关系符号 $=, \geq$, 并使用变量符号 $x, y, z$, 
+ 逻辑运算符 $\neg, \wedge, \vee, \rightarrow$, 量词符号 $\forall, \exists$ 。下面哪些是一阶逻辑公式中的项?
 
 A. $ x+1$
 
@@ -2482,6 +2484,22 @@ C. $\forall x(x \geq 0)$
 D. $ x *(y+z)$
 
 \textcolor{red}{答案：AD}
+
+\subsubsection{测验题3.4}
+
+假设为研究自然数性质提取了常量符号 0,1 ，运算符号,$+ *$ ，关系符号 $=, \geq$ ，
+并使用变量符号 $x, y, z$ ，逻軓运算符 $\neg, \wedge, \vee, \rightarrow$ ，
+量词符号 $\forall, \exists$ ．下面哪些是一阶逻辑的原子公式？
+
+A．$ x+y$
+
+B．$ x \geq z$
+
+C．$\forall x(x \geq z)$
+
+D．$(x+y) \wedge(x * z)$
+
+\textcolor{red}{答案：B}
 
 \subsubsection{测验题3.5}
 
@@ -2591,6 +2609,48 @@ D. $G(x, y) \rightarrow(\neg \exists y H(x, y))$
 
 \textcolor{red}{答案：D}
 
+\subsubsection{测验题3.11}
+
+对于一阶逻辑公式 $\forall x(\exists y(x * y=z) \wedge \exists z(x+y=z))$ ，下面哪些说法是正确的？
+
+A．子公式 $x * y=z$ 中的 $x$ 是自由出现的。
+
+B. 子公式 $x * y=z$ 中的 $y$ 是自由出现的。
+
+C．子公式 $x+y=z$ 中的 $y$ 是自由出现的。
+
+D．子公式 $x+y=z$ 中的 $z$ 是自由出现的。
+
+\textcolor{red}{答案：C}
+
+\subsubsection{测验题3.12}
+
+对于一阶逻辑公式 $\forall x \exists y(x * y=z) \rightarrow \exists z(x+y=z)$ ，下面哪些说法是正确的？
+
+A．子公式 $x * y=z$ 中的 $x$ 是约束出现的。
+
+B．子公式 $x * y=z$ 中的 $z$ 是约束出现的。
+
+C．子公式 $x+y=z$ 中的 $y$ 是自由出现的。
+
+D．子公式 $x+y=z$ 中的 $z$ 是自由出现的。
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题3.13}
+
+对于一阶逻辑公式 $\forall x(\exists y(x * y=z) \wedge \exists z(x+y=z))$ ，下面哪些说法是正确的？
+
+A．个体变量 $x$ 是这个公式的约束变量。
+
+B．个体变量 $y$ 是这个公式的约束变量。
+
+C．个体变量 $z$ 是这个公式的自由变量。
+
+D．个体变量$z$是这个这个公式的约束变量，又是这个公式的自由变量。
+
+\textcolor{red}{答案：AC}
+
 \subsubsection{测验题3.14}
 
 对于一阶逻辑公式 $\exists x \forall y F(x, y) \rightarrow \exists y(G(y, z) \wedge \forall z H(y, z))$, 下面哪些说法是正确的?
@@ -2636,6 +2696,38 @@ D.
 子公式 $H(x, y, z)$ 中的 $x$ 是约束出现的。
 
 \textcolor{red}{答案：ABD}
+
+\subsubsection{测验题3.17}
+
+对于一阶逻辑公式 $\exists x F(x, y) \wedge \forall x(\exists y G(y, z) \rightarrow \exists z H(x, y, z))$ ，下面哪些说法是正确的？
+
+A．个体变量 $x$ 是这个公式的约束变量。
+
+B．个体变量 $y$ 是这个公式的约束变量。
+
+C．个体变量 $y$ 既是这个公式的约束变量，又是这个公式的自由变量。
+
+D．个体变量 $z$ 是这个公式的自由变量。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题3.18}
+
+对于公式 $\forall x \exists y(x * y=z) \rightarrow \exists z(x+z=x)$ ，下面哪些是约束变量改名规则的正确使用？
+
+A．
+子公式 $\exists y(x * y=z)$ 约束变量改名为 $\exists x(x * x=z)$ 。
+
+B．
+子公式 $\exists y(x * y=z)$ 约束变量改名为 $\exists z(x * z=z)$
+
+C．
+子公式 $\exists z(x+z=x)$ 约束变量改名为 $\exists y(x+y=x)$ 。
+
+D．
+子公式 $\exists z(x+z=x)$ 约束变量改名为 $\exists x(y+x=y)$ 。
+
+\textcolor{red}{答案：C}
 
 \subsubsection{测验题3.19}
 
@@ -2698,9 +2790,37 @@ D. $\sigma[y \mapsto c](x)=c, \quad \sigma[y \mapsto c](y)=b, \quad \sigma[y \ma
 
 \textcolor{red}{答案：C}
 
+\subsubsection{测验题3.23}
+
+给定一阶逻辑公式的解释 $\mathcal{M}$ ，论域是自然数集。个体常量 0 和 1 分别解释为自然数 0 和 1 ，函数符号 $+$ 和 $*$ 分别解释为自然数集上的加法和乘法，谓词符号 $=$ 和 $\geq$ 分别解释为自然数相等和自然数大于等于关系。设个体变量集 $V=\{x, y, z\}$ ，解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义为 $\sigma(x)=2, \sigma(y)=4, \sigma(z)=6$ 。下面哪些说法是正确的？
+
+A．一阶公式的项 $x+y$ 在 $\sigma$ 下的解释 $\llbracket x+y \rrbracket_\sigma$ 等于自然数 6
+
+B．一阶公式的项 $x+1$ 在 $\sigma$ 下的解释 $\llbracket x+1 \rrbracket_\sigma$ 等于自然数 3
+
+C. 一阶公式的项 $x * z$ 在 $\sigma[x \mapsto 1]$ 下的解释 $\llbracket x * z \rrbracket_{\sigma[x \mapsto 1]}$ 等于自然数 12
+
+D．一阶公式的项 $x+(y+z)$ 在 $\sigma[x \mapsto 1]$ 下的解释 $\llbracket x+(y+z) \rrbracket_{\sigma[x \mapsto 1]}$ 等于自然数 12
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题3.24}
+
+符号 $+$ 和 $*$ 分别。设个体变量集 $V=\{x, y, z\}$ ，解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义居 $\sigma(y)=4, \sigma(z)=6$ 。下面哪些说法是正确的？
+
+A．一阶公式 $x \geq 0$ 在 $\sigma$ 下的真值 $\sigma(x \geq 0)$ 等于 $\mathbf{0}$ 。
+
+B．一阶公式 $(x+y)=z$ 在 $\sigma$ 下的真值 $\sigma((x+y)=z)$ 等于 $\mathbf{1}$
+
+C. 一阶公式 $x * z \geq z$ 在 $\sigma[x \mapsto 1]$ 下的真值 $\sigma[x \mapsto 1](x * z \geq z)$ 等于 $\mathbf{0}$
+
+D．一阶公式 $x+(y+z)=z$ 在 $\sigma[x \mapsto 0][y \mapsto 0]$ 下的真值 $\sigma[x \mapsto 0][y \mapsto 0](x+(y+z)=z)$ 等于 $\mathbf{1}$
+
+\textcolor{red}{答案：BD}
+
 \subsubsection{测验题3.25}
 
-给定一阶逻辑公式的解释 $\mathcal{M}$, 论域是自然数集。个体常量 0 和 1 分别解释为自然数 0 和 1 , 函数符号 + 和 $*$ 分别解释为自然数集上的加法和乘法, 谓词符号 $=$ 和 $\geq$ 分别解释为自然数相等和自然数大于等于关系。设个体变量集 $V=\{x, y, z\}$, 解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义为 $\sigma(x)=2, \sigma(y)=4, \sigma(z)=6$ 。下面哪些说法是正确的?
+给定一阶逻辑公式的解释 $\mathcal{M}$, 论域是自然数集。个体常量 0 和 1 分别解释为自然数 0 和 1 , 函数符号 $+$ 和 $*$ 分别解释为自然数集上的加法和乘法, 谓词符号 $=$ 和 $\geq$ 分别解释为自然数相等和自然数大于等于关系。设个体变量集 $V=\{x, y, z\}$, 解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义为 $\sigma(x)=2, \sigma(y)=4, \sigma(z)=6$ 。下面哪些说法是正确的?
 
 A. 一阶公式 $\forall x(x \geq 0)$ 在 $\sigma$ 下的真值 $\sigma(\forall x(x \geq 0))$ 等于 $\mathbf{1}$ 。
 
@@ -2714,7 +2834,7 @@ D. 一阶公式 $\forall x \exists y \exists z(x+(y+z)=z)$ 在 $\sigma$ 下的�
 
 \subsubsection{测验题3.26}
 
-给定一阶逻辑公式的解释 $\mathcal{M}$, 论域是自然数集。个体常量 0 和 1 分别解释为自然数 0 和 1 , 函数符号 + 和 $*$ 分别解释为自然数集上的加法和乘法, 谓词符号 $=$ 和 $\geq$ 分别解释为自然数相等和自然数大于等于关系。设个体变量集 $V=\{x, y, z\}$, 解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义为 $\sigma(x)=2, \sigma(y)=4, \sigma(z)=6$ 。下面哪些说法是正确的?
+给定一阶逻辑公式的解释 $\mathcal{M}$, 论域是自然数集。个体常量 0 和 1 分别解释为自然数 0 和 1 , 函数符号 $+$ 和 $*$ 分别解释为自然数集上的加法和乘法, 谓词符号 $=$ 和 $\geq$ 分别解释为自然数相等和自然数大于等于关系。设个体变量集 $V=\{x, y, z\}$, 解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义为 $\sigma(x)=2, \sigma(y)=4, \sigma(z)=6$ 。下面哪些说法是正确的?
 
 A. 一阶公式 $\forall x(x \geq 0)$ 在 $\sigma$ 下的真值与 $\sigma(x)$ 的值无关。
 
@@ -2725,6 +2845,23 @@ C. 一阶公式 $\forall x \exists z(x * z \geq z)$ 在 $\sigma$ 下的真值与
 D. 一阶公式 $\forall x \exists y \exists z(x+(y+z)=z)$ 在 $\sigma$ 下的真值与 $\sigma$ 对个体变量的赋值无关。
 
 \textcolor{red}{答案：ACD}
+
+\subsubsection{测验题3.27}
+
+给定一阶逻辑公式的解释 $\mathcal{M}$ ，论域是 $D=\{a, b\}$ ，一元谓词符号 $F$ 的解释 $\llbracket F\rrbracket$ 是 $D$ 的子集 $\{a\}$ ，二元谓词符号 $G$ 的解释 $\llbracket G \rrbracket$ 是 $D \times D$ 的子集 $\{\langle a, a\rangle,\langle a, b\rangle\}$ 。设个体变量集 $V=\{x, y, z\}$ ，解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义为 $\sigma(x)=a, \sigma(y)=b, \sigma(z)=a$ 。下面哪些说法是正确的？
+
+A．一阶公式 $F(x)$ 在 $\sigma$ 下的真值 $\sigma(F(x))$ 等于 $\mathbf{1}$ 当且仅当 $\sigma(x) \in \llbracket F \rrbracket$ 。
+
+B．一阶公式 $G(y, z)$ 在 $\sigma$ 下的真值 $\sigma(G(y, z))$ 等于 $\mathbf{1}$ 当且仅当 $\langle\sigma(y), \sigma(z)\rangle \in \llbracket G \rrbracket$ 。
+
+C．一阶公式 $F(x) \rightarrow G(y, z)$ 在 $\sigma$ 下的真值 $\sigma(F(x) \rightarrow G(y, z))$ 等于 $\mathbf{1}$ 。
+
+D．一阶公式 $F(z) \rightarrow G(x, y)$ 在 $\sigma$ 下的真值 $F(z) \rightarrow G(x, y)$ 等于 $\mathbf{1}$ 。
+
+
+\textcolor{red}{答案：ABD}
+
+\textcolor{red}{解析：D选项疑似少写了一个$\sigma$，应该是$\sigma(F(z) \rightarrow G(x, y))$。}
 
 \subsubsection{测验题3.28}
 
@@ -2760,6 +2897,19 @@ D.
 
 \textcolor{red}{答案：ACD}
 
+\subsubsection{测验题3.30}
+
+给定一阶逻辑公式解释的论域是 $D=\{a, b\}$ ，在按照类似等值演算形式展开量词时，下面哪些说法是正确的？
+
+A．一阶公式 $\forall x(F(x) \vee G(x))$ 展开为 $(F(a) \vee G(a)) \wedge(F(b) \vee G(b))$ 。
+
+B．一阶公式 $\forall x(F(x) \vee G(x))$ 展开为 $(F(a) \wedge G(a)) \vee(F(b) \wedge G(b))$ 。
+
+C．一阶公式 $\forall x F(x) \vee \forall x G(x)$ 展开为 $(F(a) \vee G(a)) \wedge(F(b) \vee G(b))$ 。
+
+D．一阶公式 $\forall x F(x) \vee \forall x G(x)$ 展开为 $(F(a) \wedge G(a)) \vee(F(b) \wedge G(b))$ 。
+
+\textcolor{red}{答案：A}
 
 \subsubsection{测验题3.31}
 
@@ -2819,6 +2969,32 @@ D. $((F(a) \rightarrow G(a)) \wedge(F(a) \rightarrow G(b))) \vee((F(b) \rightarr
 
 \textcolor{red}{答案：C}
 
+\subsubsection{测验题3.35}
+
+给定一阶逻辑公式解释的论域是 $D=\{a, b\}$ ，按照类似等值演算形式展开量词，一阶公式 $\exists x \forall y(F(x) \rightarrow G(y))$ 展开为 $\qquad$
+
+A．$
+((F(a) \rightarrow G(a)) \vee(F(b) \rightarrow G(a))) \wedge((F(a) \rightarrow G(b)) \vee(F(b) \rightarrow G(b)))
+$
+
+
+B．$
+((F(a) \rightarrow G(a)) \wedge(F(b) \rightarrow G(a))) \vee((F(a) \rightarrow G(b)) \wedge(F(b) \rightarrow G(b)))
+$
+
+
+C．$
+((F(a) \rightarrow G(a)) \vee(F(a) \rightarrow G(b))) \wedge((F(b) \rightarrow G(a)) \vee(F(b) \rightarrow G(b)))
+$
+
+
+D．$
+((F(a) \rightarrow G(a)) \wedge(F(a) \rightarrow G(b))) \vee((F(b) \rightarrow G(a)) \wedge(F(b) \rightarrow G(b)))
+$
+
+
+\textcolor{red}{答案：D}
+
 
 \subsubsection{测验题3.36}
 
@@ -2826,11 +3002,11 @@ D. $((F(a) \rightarrow G(a)) \wedge(F(a) \rightarrow G(b))) \vee((F(b) \rightarr
 
 A. $(H(a, a) \vee H(b, a)) \wedge(H(a, b) \vee H(b, b))$
 
-B. $\quad(H(a, a) \wedge H(b, a)) \vee(H(a, b) \wedge H(b, b))$
+B. $(H(a, a) \wedge H(b, a)) \vee(H(a, b) \wedge H(b, b))$
 
 C. $(H(a, a) \vee H(a, b)) \wedge(H(b, a) \vee H(b, b))$
 
-D. $\quad(H(a, a) \wedge H(a, b)) \vee(H(b, a) \wedge H(b, b))$
+D. $(H(a, a) \wedge H(a, b)) \vee(H(b, a) \wedge H(b, b))$
 
 \textcolor{red}{答案：A}
 
@@ -2924,6 +3100,65 @@ D.
 
 \textcolor{red}{答案：CD}
 
+\subsubsection{测验题3.42}
+
+下面哪一组是命题逻辑基本逻辑等值式分配律的替换实例？
+
+A. $\forall x A(x) \wedge \forall x B(x) \equiv \forall x(A(x) \wedge B(x))$
+
+B. $\forall x(A(x) \wedge(B(x) \vee C(x))) \equiv \forall x((A(x) \vee B(x)) \wedge(A(x) \vee C(x)))$
+
+C. $\forall x A(x) \wedge \exists x(B(x) \vee C(x)) \equiv \forall x(A(x) \wedge B(x)) \vee \forall x(A(x) \wedge C(x))$
+
+D. $\forall x A(x) \wedge(\exists x B(x) \vee \exists x C(x)) \equiv(\forall x A(x) \wedge \exists x B(x)) \vee(\forall x A(x) \wedge \exists x C(x))$
+
+\textcolor{red}{答案：D}
+
+\subsubsection{测验题3.43}
+
+下面哪一组是命题逻辑基本逻辑等值式德摩尔根律的替换实例？
+
+A. $ \neg \forall x(A(x) \wedge B(x)) \equiv \forall x(\neg A(x) \vee \neg B(x))$
+
+B. $\neg \forall x(A(x) \wedge B(x)) \equiv \exists x(\neg A(x) \vee \neg B(x))$
+
+C. $\neg \forall x A(x) \wedge \neg \forall x B(x) \equiv \neg(\forall x A(x) \vee \forall x B(x))$
+
+D. $\forall x(\neg A(x) \wedge \neg B(x)) \equiv \neg \exists x \neg(A(x) \vee B(x))$
+
+\textcolor{red}{答案：C}
+
+\subsubsection{测验题3.44}
+
+下面哪一组是量词否定等值式的替换实例？
+
+A. $\neg \forall x(A(x) \wedge B(x)) \equiv \forall x(\neg A(x) \vee \neg B(x))$
+
+B. $\neg \forall x(A(x) \wedge B(x)) \equiv \exists x \neg(A(x) \wedge B(x))$
+
+C. $\neg \forall x A(x) \wedge \neg \forall x B(x) \equiv \neg(\forall x A(x) \vee \forall x B(x))$
+
+D. $\forall x(\neg A(x) \wedge \neg B(x)) \equiv \neg \exists x \neg(A(x) \vee B(x))$
+
+
+\textcolor{red}{答案：B}
+
+\subsubsection{测验题3.45}
+
+下面哪一组是量词辖域扩充/收缩等值式的替换实例？
+
+A．$\forall x(A(x) \vee B(x)) \equiv \forall x A(x) \vee \forall x B(x)$
+
+B．$\forall x(A(x) \wedge B(x)) \equiv \forall x A(x) \wedge \forall x B(x)$
+
+C．$\forall x(A(x) \rightarrow B) \equiv \forall x A(x) \rightarrow B, B$ 不出现 $x$
+
+D．$\exists x(A(x) \rightarrow B) \equiv \forall x A(x) \rightarrow B, B$ 不出现 $x$
+
+\textcolor{red}{答案：D}
+
+\textcolor{red}{解析：注意B选项是量词分配等值式。}
+
 \subsubsection{测验题3.46}
 
 下面哪一组是量词辖域扩充/收缩等值式的替换实例?
@@ -2940,18 +3175,23 @@ D. $\exists x(A(x) \rightarrow B) \equiv \exists x A(x) \rightarrow B, B$ 不出
 
 \subsubsection{测验题3.47}
 
-\[
-\begin{aligned}
-& \neg \exists x(N(x) \wedge \forall y(N(y) \rightarrow G(x, y))) \\
-& \equiv \forall x(\neg(N(x) \wedge \forall y(N(y) \rightarrow G(x, y)))) \quad / / \textcolor{blue}{\text{量词否定等值式}} \\
-& \equiv \forall x(\neg N(x) \vee \neg \forall y(N(y) \rightarrow G(x, y))) \quad / / \textcolor{blue}{\text{德摩根律}} \\
-& \equiv \forall x(\neg N(x) \vee \exists y(\neg(N(y) \rightarrow G(x, y)))) \quad / / \textcolor{blue}{\text{(1)}} \\
-& \equiv \forall x(\neg N(x) \vee \exists y(\neg(\neg N(y) \vee G(x, y)))) \quad / / \textcolor{blue}{\text{蕴涵等值式}} \\
-& \equiv \forall x(\neg N(x) \vee \exists y(N(y) \wedge \neg G(x, y))) \quad / / \textcolor{blue}{\text{(2)}} \\
-& \equiv \forall x(N(x) \rightarrow \exists y(N(y) \wedge \neg G(x, y))) \quad / / \textcolor{blue}{\text{蕴涵等值式}}
-\end{aligned}
-\]
+下面的等值演算中（1）和（2）处使用的基本等值式依次是：
 
+\clearpage
+
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{rll}
+       & $\neg \exists x(N(x) \wedge \forall y(N(y) \rightarrow G(x, y)))$ & \\
+      $\equiv$ & $\forall x(\neg(N(x) \wedge \forall y(N(y) \rightarrow G(x, y))))$ & / / \text{\textcolor{blue}{量词否定等值式}} \\
+      $\equiv$ & $\forall x(\neg N(x) \vee \neg \forall y(N(y) \rightarrow G(x, y)))$ & / / \text{\textcolor{blue}{德摩根律}} \\
+      $\equiv$ & $\forall x(\neg N(x) \vee \exists y(\neg(N(y) \rightarrow G(x, y))))$ & / / \text{\textcolor{blue}{(1)}} \\
+      $\equiv$ & $\forall x(\neg N(x) \vee \exists y(\neg(\neg N(y) \vee G(x, y))))$ & / / \text{\textcolor{blue}{蕴涵等值式}} \\
+      $\equiv$ & $\forall x(\neg N(x) \vee \exists y(N(y) \wedge \neg G(x, y)))$ & / / \text{\textcolor{blue}{(2)}} \\
+      $\equiv$ & $\forall x(N(x) \rightarrow \exists y(N(y) \wedge \neg G(x, y)))$ & / / \text{\textcolor{blue}{蕴涵等值式}} \\
+  \end{tabular}
+\end{table}
 
 \textcolor{red}{答案：（1）量词否定等值式；量词否定 （2）德摩尔根律；德摩根律}
 
@@ -2959,37 +3199,62 @@ D. $\exists x(A(x) \rightarrow B) \equiv \exists x A(x) \rightarrow B, B$ 不出
 
 下面的等值演算中 $(1)$ 和$(2)$处使用的基本等值式依次是：
 
-\[
-\begin{aligned}
-    &\neg \forall x \big(N(x) \to \exists y \big(N(y) \land G(x, y)\big)\big) \\
-    \equiv &\ \exists x \neg \big(N(x) \to \exists y \big(N(y) \land G(x, y)\big)\big) \quad //\ \textcolor{blue}{\text{(1)}} \\
-    \equiv &\ \exists x \big(\neg \neg N(x) \lor \neg \exists y \big(N(y) \land G(x, y)\big)\big) \quad //\ \textcolor{blue}{\text{蕴涵等值式}} \\
-    \equiv &\ \exists x \big(N(x) \land \neg \exists y \big(N(y) \land G(x, y)\big)\big) \quad //\ \textcolor{blue}{\text{德摩根律}} \\
-    \equiv &\ \exists x \big(N(x) \land \forall y \neg \big(N(y) \land G(x, y)\big)\big) \quad //\ \textcolor{blue}{\text{(2)}} \\
-    \equiv &\ \exists x \big(N(x) \land \forall y \big(\neg N(y) \lor \neg G(x, y)\big)\big) \quad //\ \textcolor{blue}{\text{德摩根律}} \\
-    \equiv &\ \exists x \big(N(x) \land \forall y \big(N(y) \to \neg G(x, y)\big)\big) \quad //\ \textcolor{blue}{\text{蕴涵等值式}} \\
-\end{aligned}
-\]
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{rll}
+       & $\neg \forall x \big(N(x) \to \exists y \big(N(y) \land G(x, y)\big)\big)$ & \\
+      $\equiv$ & $\exists x \neg \big(N(x) \to \exists y \big(N(y) \land G(x, y)\big)\big)$ & / / \text{\textcolor{blue}{(1)}} \\
+      $\equiv$ & $\exists x \big(\neg \neg N(x) \lor \neg \exists y \big(N(y) \land G(x, y)\big)\big)$ & / / \text{\textcolor{blue}{蕴涵等值式}} \\
+      $\equiv$ & $\exists x \big(N(x) \land \neg \exists y \big(N(y) \land G(x, y)\big)\big)$ & / / \text{\textcolor{blue}{德摩根律}} \\
+      $\equiv$ & $\exists x \big(N(x) \land \forall y \neg \big(N(y) \land G(x, y)\big)\big)$ & / / \text{\textcolor{blue}{(2)}} \\
+      $\equiv$ & $\exists x \big(N(x) \land \forall y \big(\neg N(y) \lor \neg G(x, y)\big)\big)$ & / / \text{\textcolor{blue}{德摩根律}} \\
+      $\equiv$ & $\exists x \big(N(x) \land \forall y \big(N(y) \to \neg G(x, y)\big)\big)$ & / / \text{\textcolor{blue}{蕴涵等值式}} \\
+  \end{tabular}
+\end{table}
 
 \textcolor{red}{答案：（1）量词否定等值式；量词否定 （2）量词否定等值式；量词否定}
 
 \subsubsection{测验题3.49}
 
 下面的等值演算中 $(1)$ 和$(2)$处使用的基本等值式依次是：
-\[
-\begin{aligned}
-  & \forall x N(x) \rightarrow \exists x M(x) \\
-  & \equiv \forall x N(x) \rightarrow \exists y M(y) \quad \text {\textcolor{blue}{ / / (1)}} \\
-  & \equiv \neg \forall x N(x) \vee \exists y M(y) \quad\text {\textcolor{blue}{ / / 蕴涵等值式 }}\\
-  & \equiv \exists x \neg N(x) \vee \exists y M(y) \quad  \text{\textcolor{blue}{/ / 量词否定等值式} } \\
-  & \equiv \exists x(\neg N(x) \vee \exists y M(y)) \quad \text{\textcolor{blue}{/ / 量词辖域扩张}}\\
-  & \equiv \exists x \exists y(\neg N(x) \vee M(y)) \quad \text { \textcolor{blue}{/ / (2) }} \\
-  & \equiv \exists x \exists y(N(x) \rightarrow M(y)) \quad \text {\textcolor{blue}{/ / 蕴涵等值式} }
-\end{aligned}
-\]
+
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{rll}
+       & $\forall x N(x) \rightarrow \exists x M(x)$ & \\
+      $\equiv$ & $\forall x N(x) \rightarrow \exists y M(y)$ & / / \text{\textcolor{blue}{(1)}} \\
+      $\equiv$ & $\neg \forall x N(x) \vee \exists y M(y)$ & / / \text{\textcolor{blue}{蕴涵等值式}} \\
+      $\equiv$ & $\exists x \neg N(x) \vee \exists y M(y)$ & / / \text{\textcolor{blue}{量词否定等值式}} \\
+      $\equiv$ & $\exists x(\neg N(x) \vee \exists y M(y))$ & / / \text{\textcolor{blue}{量词辖域扩张}} \\
+      $\equiv$ & $\exists x \exists y(\neg N(x) \vee M(y))$ & / / \text{\textcolor{blue}{(2)}} \\
+      $\equiv$ & $\exists x \exists y(N(x) \rightarrow M(y))$ & / / \text{\textcolor{blue}{蕴涵等值式}} \\
+  \end{tabular}
+\end{table}
 
 \textcolor{red}{答案：（1）约束变量改名；约束变量改名规则
 （2）量词辖域扩张；量词辖域扩张等值式；量词辖域扩张收缩；量词辖域扩张收缩等值式}
+
+\subsubsection{测验题3.50}
+
+下面的等值演算中（1）和（2）处使用的基本等值式依次是？
+
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{rll}
+       & $\forall x N(x) \rightarrow \exists x \neg M(x)$ & \\
+      $\equiv$ & $\neg \forall x N(x) \vee \exists x \neg M(x)$ &  / / \text{\textcolor{blue}{蕴涵等值式}}\\
+      $\equiv$ & $\exists x(\neg N(x)) \vee \exists x \neg M(x)$ & / / \text{\textcolor{blue}{量词否定等值式}} \\
+      $\equiv$ & $\exists x(\neg N(x) \vee \neg M(x))$ & / / \text{\textcolor{blue}{(1)}}\\
+      $\equiv$ & $\exists x(\neg(N(x) \wedge M(x)))$ & / / \text{\textcolor{blue}{德摩尔根律}} \\
+      $\equiv$ & $\neg \forall x(N(x) \wedge M(x))$ & / / \text{\textcolor{blue}{(2)}}\\
+  \end{tabular}
+\end{table}
+
+\textcolor{red}{答案：（1）量词分配；量词分配等值式；存在量词对析取分配（2）量词否定等值式；量词否定}
+
 
 
 \subsubsection{测验题3.51}
@@ -3005,6 +3270,20 @@ C. $\forall x \exists y \neg(F(x) \rightarrow G(y))$
 D. $\forall x \exists y(F(x) \wedge \neg G(y))$
 
 \textcolor{red}{答案：CD}
+
+\subsubsection{测验题3.52}
+
+下面哪些是一阶逻辑的前束范式？
+
+A. $\forall x(F(x) \rightarrow \neg \exists y(G(y) \wedge K(x, y)))$
+
+B. $\forall x \neg \exists y(F(x) \rightarrow(G(y) \rightarrow K(x, y)))$
+
+C. $\forall x F(x) \rightarrow \exists y(G(y) \wedge K(x, y))$
+
+D. $\forall x \exists y(F(x) \rightarrow(G(y) \wedge K(y, z)))$
+
+\textcolor{red}{答案：D}
 
 \subsubsection{测验题3.53}
 
@@ -3082,6 +3361,35 @@ $\forall x(F \rightarrow G(x))$ 和 $F \rightarrow \forall x G(x)$ ,公式 $F$ �
 
 \textcolor{red}{答案：AD}
 
+\subsubsection{测验题3.58}
+
+下面哪几组的两个一阶逻辑公式是逻辑等值的？
+
+A． $\forall x \forall y H(x, y)$ 和 $\forall y \forall x H(x, y)$
+
+B． $\forall x \exists y H(x, y)$ 和 $\exists y \forall x H(x, y)$
+
+C． $\exists x \forall y H(x, y)$ 和 $\forall y \exists x H(x, y)$
+
+D． $\exists x \exists y H(x, y)$ 和 $\exists y \exists x H(x, y)$
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题3.59}
+
+下面哪几组的两个一阶逻辑公式是逻辑等值的？
+
+A． $\forall x \exists y H(x, y)$ 和 $\forall y \exists x H(x, y)$
+
+B． $\exists x \forall y H(x, y)$ 和 $\exists y \forall x H(x, y)$
+
+C． $\forall x \exists y(F(x) \rightarrow G(y))$ 和 $\exists y \forall x(F(x) \rightarrow G(y))$
+
+D． $\exists x \forall y(F(x) \rightarrow G(y))$ 和 $\forall y \exists x(F(x) \rightarrow G(y))$
+
+\textcolor{red}{答案：CD}
+
+\textcolor{red}{解析：直接使用量词辖域的收缩/扩张等值式。}
 
 \subsubsection{测验题3.60}
 
@@ -3128,6 +3436,21 @@ D. $\neg \exists x A(x) \rightarrow \neg \exists x B(x),  \exists x B(x) \Longri
 
 \textcolor{red}{答案：CD}
 
+\subsubsection{测验题3.63}
+
+下面哪些推理是析取三段论规则的实例？
+
+A. $\forall x(\neg A(x) \vee B(x)),  \forall x(\neg A(x)) \Longrightarrow \forall x B(x)$
+
+B. $\neg \forall x A(x) \vee \forall x B(x),  \forall x A(x) \Longrightarrow \forall x B(x)$
+
+C. $\neg \exists x A(x) \vee \exists x B(x), \exists x A(x) \Longrightarrow \exists x B(x)$
+
+D. ${\exists x}(\neg A(x) \vee B(x)),  \exists x(\neg A(x)) \Longrightarrow \exists x B(x)$
+
+
+\textcolor{red}{答案：BC}
+
 \subsubsection{测验题3.64}
 
 下面哪些推理是有效的推理？
@@ -3141,6 +3464,29 @@ C. $\exists x(A(x) \wedge B(x)) \Longrightarrow \exists x A(x)$
 D. $\exists x(A(x) \vee B(x)) \Longrightarrow \exists x A(x)$
 
 \textcolor{red}{答案：AC}
+
+\subsubsection{测验题3.65}
+
+下面哪些推理是有效的推理？
+
+A. $
+\forall x A(x) \Longrightarrow \forall x(A(x) \vee B(x))
+$
+
+B. $
+\forall x A(x) \Longrightarrow \forall x A(x) \vee \forall x B(x)
+$
+
+C. $
+\exists x A(x) \Longrightarrow \exists x(A(x) \vee B(x))
+$
+
+D. $
+\exists x A(x) \Longrightarrow \exists x A(x) \vee \exists x B(x)
+$
+
+\textcolor{red}{答案：ABCD}
+
 
 \subsubsection{测验题3.66}
 
@@ -3160,54 +3506,138 @@ D.  由 $\forall x \forall y H(x, y)$ 消除 $\forall x$ 得到 $\forall y H(z, 
 \textcolor{red}{解析：B选项 对于全称例化$\forall x A(x) \Longrightarrow A(y)$,$x$不应在$A(x)$中任意量词$\forall y$或$\exists y$的辖域中自由出现。}
 
 
+\subsubsection{测验题3.67}
+假定$F(x)$和$H(x,y)$都是原子公式，下面哪些是全称泛化规则(全称量词引入规则)的正确使
+用？
+
+
+A. 
+
+\begin{tabular}{ll}
+  （1）$\forall x \forall y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\forall y H(x, y)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$H(x, y)$ & \textcolor{blue}{/ / （2）全称例化} \\
+  （4）$\forall x H(x, y)$ & \textcolor{blue}{/ / （3）全称泛化} \\
+  （5）$\forall y \forall x H(x, y)$ & \textcolor{blue}{/ / （4）全称泛化}
+\end{tabular}
+
+
+B.
+
+\begin{tabular}{ll}
+  （1）$\forall x \forall y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\forall y H(x, y)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$H(x, x)$ & \textcolor{blue}{/ / （2）全称例化} \\
+  （4）$\forall x H(x, x)$ & \textcolor{blue}{/ / （3）全称泛化}
+\end{tabular}
+
+
+C.
+
+\begin{tabular}{ll}
+  （1）$\forall x H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$H(y, y)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$\forall y H(y, y)$ & \textcolor{blue}{/ / （2）全称泛化}
+\end{tabular}
+
+
+D.
+
+\begin{tabular}{ll}
+  （1）$F(x)$ & \textcolor{blue}{/ / 附加前提} \\
+  （2）$\forall x F(x)$ & \textcolor{blue}{/ / （1）全称泛化} \\
+  （3）$F(x) \rightarrow \forall x F(x)$ & \textcolor{blue}{/ / （1），（2）附加前提法}
+\end{tabular}
+
+
+
+\textcolor{red}{答案：AB}
 
 \subsubsection{测验题3.68}
 
 假定 $F(x), G(x)$ 和 $H(x, y)$ 都是原子公式，下面哪些是存在例化规则（存在量词消除规则）的正确使用？
 
+
 A.
 
-（1）$\forall x \exists y H(x, y) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\exists y H(x, y) \quad / /$ \textcolor{blue}{(1)全称例化}
-
-（3）$H(x, a) \quad / /$ \textcolor{blue}{(2)存在例化}
-
-（4）$\forall x H(x, a) \quad / /$ \textcolor{blue}{(3)全称泛化}
-
-（5）$\exists y \forall x H(x, y) \quad / /$ \textcolor{blue}{(4)存在泛化}
+\begin{tabular}{ll}
+  （1）$\forall x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists y H(x, y)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$H(x, a)$ & \textcolor{blue}{/ / （2）存在例化} \\
+  （4）$\forall x H(x, a)$ & \textcolor{blue}{/ / （3）全称泛化} \\
+  （5）$\exists y \forall x H(x, y)$ & \textcolor{blue}{/ / （4）存在泛化}
+\end{tabular}
 
 B.
 
-（1）$\exists x \forall y H(x, y) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\forall y H(a, y) \quad / /$ \textcolor{blue}{(1)存在例化}
-
-（3）$H(a, y) \quad / /$ \textcolor{blue}{(2)全称例化}
-
-（4）$\exists x H(x, y) \quad / /$ \textcolor{blue}{(3)存在泛化}
-
-（5）$\forall y \exists x H(x, y) \quad / /$ \textcolor{blue}{(4)全称泛化}
+\begin{tabular}{ll}
+  （1）$\exists x \forall y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\forall y H(a, y)$ & \textcolor{blue}{/ / （1）存在例化} \\
+  （3）$H(a, y)$ & \textcolor{blue}{/ / （2）全称例化} \\
+  （4）$\exists x H(x, y)$ & \textcolor{blue}{/ / （3）存在泛化} \\
+  （5）$\forall y \exists x H(x, y)$ & \textcolor{blue}{/ / （4）全称泛化}
+\end{tabular}
 
 C.
 
-（1）$\exists x F(x) \quad / /$ \textcolor{blue}{前提}
-
-（2）$F(a) \quad / /$ \textcolor{blue}{(1)存在例化}
-
-（3）$\exists x G(x) \quad / /$ \textcolor{blue}{前提}
-
-（4）$G(a) \quad / /$ \textcolor{blue}{(3)存在例化}
+\begin{tabular}{ll}
+  （1）$\exists x F(x)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$F(a)$ & \textcolor{blue}{/ / （1）存在例化} \\
+  （3）$\exists x G(x)$ & \textcolor{blue}{/ / 前提} \\
+  （4）$G(a)$ & \textcolor{blue}{/ / （3）存在例化}
+\end{tabular}
 
 D.
 
-（1）$\exists x H(x, a) \quad / /$ \textcolor{blue}{前提}
-
-（2）$H(a, a) \quad / /$ \textcolor{blue}{(1)存在例化}
-
-（3）$\exists y H(y, y) \quad / /$ \textcolor{blue}{(2)存在泛化}
+\begin{tabular}{ll}
+  （1）$\exists x H(x, a)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$H(a, a)$ & \textcolor{blue}{/ / （1）存在例化} \\
+  （3）$\exists y H(y, y)$ & \textcolor{blue}{/ / （2）存在泛化}
+\end{tabular}
 
 \textcolor{red}{答案：B}
+
+\subsubsection{测验题3.69}
+
+假定 $a$ 和 $b$ 是个体常量符号，$F(x)$ 和 $G(x)$ 是原子公式，下面哪些是存在泛化规则（存在量词引入规则）的正确使用？
+
+
+A.
+
+\begin{tabular}{ll}
+  （1）$F(a) \rightarrow G(b)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists x F(x) \rightarrow G(b)$ & \textcolor{blue}{/ / （1）存在泛化} \\
+  （3）$\exists x F(x) \rightarrow \exists y G(y)$ & \textcolor{blue}{/ / （2）存在泛化}
+\end{tabular}
+
+B.
+
+\begin{tabular}{ll}
+  （1）$F(a) \rightarrow G(b)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists x(F(x) \rightarrow G(b))$ & \textcolor{blue}{/ / （1）存在泛化} \\
+  （3）$\exists x \exists y(F(x) \rightarrow G(y))$ & \textcolor{blue}{/ / （2）存在泛化}
+\end{tabular}
+
+C.
+
+\begin{tabular}{ll}
+  （1）$F(a) \rightarrow G(b)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists y(F(a) \rightarrow G(y))$ & \textcolor{blue}{/ / （1）存在泛化} \\
+  （3）$\exists x \exists y(F(x) \rightarrow G(y))$ & \textcolor{blue}{/ / （2）存在泛化}
+\end{tabular}
+
+
+D.
+
+\begin{tabular}{ll}
+  （1）$F(a)$ & \textcolor{blue}{/ / 附加前提} \\
+  （2）$\exists x F(x)$ & \textcolor{blue}{/ / （1）存在泛化} \\
+  （3）$F(a) \rightarrow \exists x F(x)$ & \textcolor{blue}{/ / （1），（2）附加前提法}
+\end{tabular}
+
+
+\textcolor{red}{答案：CD}
+
 
 \subsubsection{测验题3.70}
 
@@ -3215,31 +3645,34 @@ D.
 
 A.
 
-（1）$\exists x(F(x) \wedge G(x)) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\exists x F(x) / /$ \textcolor{blue}{(1)化简规则}
-
-（3）$F(a) \quad / /$ \textcolor{blue}{(2)存在例化}
+\begin{tabular}{ll}
+  （1）$\exists x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists x F(x)$ & \textcolor{blue}{/ / （1）化简规则} \\
+  （3）$F(a)$ & \textcolor{blue}{/ / （2）存在例化}
+\end{tabular}
 
 B.
 
-（1）$\forall x(F(x) \wedge G(x)) \quad / /$ \textcolor{blue}{前提}
+\begin{tabular}{ll}
+  （1）$\forall x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
+  （2）$F(a) \wedge G(a)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$F(a)$ & \textcolor{blue}{/ / （2）化简规则}
+\end{tabular}
 
-（2）$F(a) \wedge G(a) \quad / /$ \textcolor{blue}{(1)全称例化}
-
-（3）$F(a) \quad / /$ \textcolor{blue}{(2)化简规则}
 
 C.
 
-（1）$\neg \forall x F(x) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\neg F(a) / / $ \textcolor{blue}{(1)全称例化}
+\begin{tabular}{ll}
+  （1）$\neg \forall x F(x)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\neg F(a)$ & \textcolor{blue}{/ / （1）全称例化}
+\end{tabular}
 
 D.
 
-（1）$\neg F(a) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\neg \exists x F(x) / /$ \textcolor{blue}{（1）存在泛化}
+\begin{tabular}{ll}
+  （1）$\neg F(a)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\neg \exists x F(x)$ & \textcolor{blue}{/ / （1）存在泛化}
+\end{tabular}
 
 
 \textcolor{red}{答案：B}
@@ -3252,51 +3685,44 @@ D.
 
 A.
 
-（1）$\forall x \forall y H(x, y) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\forall y H(x, y) \quad / /$ \textcolor{blue}{(1)全称例化}
-
-（3）$H(x, y) \quad / /$ \textcolor{blue}{(2)全称例化}
-
-（4）$\forall x H(x, y) \quad / /$ \textcolor{blue}{(3)全称泛化}
-
-（5）$\forall y \forall x H(x, y) \quad / /$ \textcolor{blue}{(4)全称泛化}
+\begin{tabular}{ll}
+  （1）$\forall x \forall y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\forall y H(x, y)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$H(x, y)$ & \textcolor{blue}{/ / （2）全称例化} \\
+  （4）$\forall x H(x, y)$ & \textcolor{blue}{/ / （3）全称泛化} \\
+  （5）$\forall y \forall x H(x, y)$ & \textcolor{blue}{/ / （4）全称泛化}
+\end{tabular}
 
 B.
 
-（1）$\forall x \exists y H(x, y) \quad / /$ \textcolor{blue}{前提}
+\begin{tabular}{ll}
+  （1）$\forall x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists y H(a, y)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$H(a, b)$ & \textcolor{blue}{/ / （2）存在例化} \\
+  （4）$\exists x H(x, b)$ & \textcolor{blue}{/ / （3）存在泛化} \\
+  （5）$\exists y \exists x H(x, y)$ & \textcolor{blue}{/ / （4）存在泛化}
+\end{tabular}
 
-（2）$\exists y H(a, y) \quad / /$ \textcolor{blue}{(1)全称例化}
-
-（3）$H(a, b) \quad / /$ \textcolor{blue}{(2)存在例化}
-
-（4）$\exists x H(x, b) \quad / /$ \textcolor{blue}{(3)存在泛化}
-
-（5）$\exists y \exists x H(x, y) \quad / /$ \textcolor{blue}{(4)存在泛化}
 
 C.
 
-（1）$\forall x \exists y H(x, y) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\exists y H(x, y) \quad / /$ \textcolor{blue}{(1)全称例化}
-
-（3）$H(x, a) \quad / /$ \textcolor{blue}{(2)存在例化}
-
-（4）$\forall x H(x, a) \quad / /$ \textcolor{blue}{(3)全称泛化}
-
-（5）$\exists y \forall x H(x, y) \quad / /$ \textcolor{blue}{(4)存在泛化}
+\begin{tabular}{ll}
+  （1）$\forall x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists y H(x, y)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$H(x, a)$ & \textcolor{blue}{/ / （2）存在例化} \\
+  （4）$\forall x H(x, a)$ & \textcolor{blue}{/ / （3）全称泛化} \\
+  （5）$\exists y \forall x H(x, y)$ & \textcolor{blue}{/ / （4）存在泛化}
+\end{tabular}
 
 D.
 
-（1）$\exists x \exists y H(x, y) \quad / /$ \textcolor{blue}{前提}
-
-（2）$\exists y H(a, y) \quad / /$ \textcolor{blue}{(1)存在例化}
-
-（3）$H(a, b) \quad / /$ \textcolor{blue}{(2)存在例化}
-
-（4）$\exists x H(x, b) \quad / /$ \textcolor{blue}{(3)存在泛化}
-
-（5）$\exists y \exists x H(x, y) \quad / /$ \textcolor{blue}{(4)存在泛化}
+\begin{tabular}{ll}
+  （1）$\exists x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists y H(a, y)$ & \textcolor{blue}{/ / （1）存在例化} \\
+  （3）$H(a, b)$ & \textcolor{blue}{/ / （2）存在例化} \\
+  （4）$\exists x H(x, b)$ & \textcolor{blue}{/ / （3）存在泛化} \\
+  （5）$\exists y \exists x H(x, y)$ & \textcolor{blue}{/ / （4）存在泛化}
+\end{tabular}
 
 \textcolor{red}{答案：ABD}
 
@@ -3308,31 +3734,89 @@ D.
 
 A.
 
-（1）$\exists x F(x) \quad / /$ \textcolor{blue}{前提}
+\begin{tabular}{ll}
+  （1）$\exists x F(x)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\exists x(F(x) \vee G(x))$ & \textcolor{blue}{/ / （1）附加规则}
+\end{tabular}
 
-（2）$\exists x(F(x) \vee G(x)) \quad / /$ \textcolor{blue}{(1)附加规则}
 
 B.
 
-（1）$\forall x F(x) / /$ \textcolor{blue}{附加前提}
+\begin{tabular}{ll}
+  （1）$\forall x F(x)$ & \textcolor{blue}{/ / 附加前提} \\
+  （2）$\forall x G(x)$ & \textcolor{blue}{/ / 前提} \\
+  （3）$\forall x(F(x) \rightarrow G(x))$ & \textcolor{blue}{/ / （1），（2）附加前提法}
+\end{tabular}
 
-（2）$\forall x G(x) \quad / /$ \textcolor{blue}{前提}
-
-（3）$\forall x(F(x) \rightarrow G(x)) \quad / /$\textcolor{blue}{ (1),(2)附加前提法}
 
 C.
 
-（1）$\forall x(F(x) \rightarrow G(x)) \quad / /$ \textcolor{blue}{前提}
-
-（2）$F(a) \rightarrow G(a) \quad / /$ \textcolor{blue}{(1)全称例化}
+\begin{tabular}{ll}
+  （1）$\forall x(F(x) \rightarrow G(x))$ & \textcolor{blue}{/ / 前提} \\
+  （2）$F(a) \rightarrow G(a)$ & \textcolor{blue}{/ / （1）全称例化}
+\end{tabular}
 
 D.
 
-（1）$\forall x F(x) \rightarrow \forall x G(x) \quad / /$ \textcolor{blue}{前提}
-
-（2）$F(a) \rightarrow G(a) / /$\textcolor{blue}{(1)全称泛化}
+\begin{tabular}{ll}
+  （1）$\forall x F(x) \rightarrow \forall x G(x)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$F(a) \rightarrow G(a)$ & \textcolor{blue}{/ / （1）全称泛化}
+\end{tabular}
 
 \textcolor{red}{答案：C}
+
+\subsubsection{测验题3.73}
+
+假定 $F(x), G(x)$ 都是原子公式．下面哪些公式序列是（正确的）论证？
+
+A.
+
+\begin{tabular}{ll}
+  （1）$\exists x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
+  （2）$F(a) \wedge G(a)$ & \textcolor{blue}{/ / （1）存在例化} \\
+  （3）$F(a)$ & \textcolor{blue}{/ / （2）化简规则} \\
+  （4）$\exists x F(x)$ & \textcolor{blue}{/ / （3）存在泛化} \\
+  （5）$G(a)$ & \textcolor{blue}{/ / （2）化简规则} \\
+  （6）$\exists x G(x)$ & \textcolor{blue}{/ / （5）存在泛化} \\
+  （7）$\exists x F(x) \wedge \exists x G(x)$ & \textcolor{blue}{/ / （4）,（6）合取规则}
+\end{tabular}
+
+B.
+
+\begin{tabular}{ll}
+  （1）$\forall x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
+  （2）$F(x) \wedge G(x)$ & \textcolor{blue}{/ / （1）全称例化} \\
+  （3）$F(x)$ & \textcolor{blue}{/ / （2）化简规则} \\
+  （4）$\forall x F(x)$ & \textcolor{blue}{/ / （3）全称泛化} \\
+  （5）$G(x)$ & \textcolor{blue}{/ / （2）化简规则} \\
+  （6）$\forall x G(x)$ & \textcolor{blue}{/ / （5）全称泛化} \\
+  （7）$\forall x F(x) \wedge \forall x G(x)$ & \textcolor{blue}{/ / （4),(6) 合取规则}
+  \end{tabular}
+
+C.
+
+\begin{tabular}{ll}
+  （1）$\forall x F(x) \wedge \forall x G(x)$ & \textcolor{blue}{/ / 前提} \\
+  （2）$\forall x F(x)$ & \textcolor{blue}{/ / （1）化简规则} \\
+  （3）$F(x)$ & \textcolor{blue}{/ / （2）全称例化} \\
+  （4）$\forall x G(x)$ & \textcolor{blue}{/ / （2）化简规则} \\
+  （5）$G(x)$ & \textcolor{blue}{/ / （4）全称例化} \\
+  （6）$F(x) \wedge G(x)$ & \textcolor{blue}{/ / （3），（5）合取规则} \\
+  （7）$\forall x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / （6）全称泛化}
+\end{tabular}
+
+D.
+
+\begin{tabular}{ll}
+  （1）$\exists x F(x)$ & \textcolor{blue}{/ / 附加前提} \\
+  （2）$F(a)$ & \textcolor{blue}{/ / （1）存在例化} \\
+  （3）$\exists x(F(x) \rightarrow G(x))$ & \textcolor{blue}{/ / 前提} \\
+  （4）$F(a) \rightarrow G(a)$ & \textcolor{blue}{/ / （3）存在例化} \\
+  （5）$G(a)$ & \textcolor{blue}{/ / （2），（4）假言推理} \\
+  （6）$\exists x G(x)$ & \textcolor{blue}{/ / （5）存在泛化} \\
+  （7）$\exists x F(x) \rightarrow \exists x G(x)$ & \textcolor{blue}{/ / （1），（6）附加前提法}
+\end{tabular}
+
 
 
 \subsubsection{测验题3.74}
@@ -3421,6 +3905,29 @@ D.
 
 \textcolor{red}{答案：(a)(5),(7)析取三段论;(5),(7)析取三段论规则(b)(1),(8),(10)反证法}
 
+\subsubsection{测验题3.78}
+
+下面的论证验证推理 $\forall x(F(x) \vee G(x)), \forall x(F(x) \rightarrow H(x)), \exists x(\neg H(x)) \Longrightarrow \exists x G(x)$ 的有效性：
+
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ll}
+（1）$\exists x(\neg H(x))$ & \textcolor{blue}{/ / 前提} \\
+（2）$\neg H(a)$ & \textcolor{blue}{/ / （a）} \\
+（3）$\forall x(F(x) \rightarrow H(x))$ & \textcolor{blue}{/ / 前提} \\
+（4）$F(a) \rightarrow H(a)$ & \textcolor{blue}{/ / （3）全称例化} \\
+（5）$\neg F(a)$ & \textcolor{blue}{/ / （2），（4）假言易位} \\
+（6）$\forall x(F(x) \vee G(x))$ & \textcolor{blue}{/ / 前提} \\
+（7）$F(a) \vee G(a)$ & \textcolor{blue}{/ / （6）全称例化} \\
+（8）$G(a)$ & \textcolor{blue}{/ / （5），（7）析取三段论} \\
+（9）$\exists x G(x)$ & \textcolor{blue}{/ / （b）}
+\end{tabular}
+\end{table}
+
+其中（a），（b）两个空依次填写？
+
+\textcolor{red}{答案：(a)）（1）存在例化；（1）存在量词消除 (b) （8）存在泛化；（8）存在量词引入}
 \subsubsection{测验题3.79}
 
 
@@ -3448,13 +3955,80 @@ D.
 
 \textcolor{red}{答案：(a) (9),(10)析取三段论 (b) (1),(11),(12)反证法}
 
+\subsubsection{测验题3.80}
+
+下面的论证验证推理 $\forall x(F(x) \rightarrow G(x)) \Longrightarrow \exists x F(x) \rightarrow \exists x G(x)$ 的有效性：
+\begin{table}[htbp]
+  \centering
+  \renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ll}
+（1）$\exists x F(x)$ & \textcolor{blue}{/ / (a)} \\
+（2）$F(a)$ & \textcolor{blue}{/ /（1）存在例化} \\
+（3）$\forall x(F(x) \rightarrow G(x))$ & \textcolor{blue}{/ / 前提} \\
+（4）$F(a) \rightarrow G(a)$ & \textcolor{blue}{/ / （3）全称例化} \\
+（5）$G(a)$ & \textcolor{blue}{/ / （2），（4）假言推理} \\
+（6）$\exists x G(x)$ & \textcolor{blue}{/ / （5）存在泛化} \\
+（7）$\exists x F(x) \rightarrow \exists x G(x)$ & \textcolor{blue}{/ / (b)}
+\end{tabular}
+\end{table}
+
+其中（a），（b）两个空依次填写？
+
+\textcolor{red}{答案：(a)附加前提 (b)（1），（6）附加前提法}
+
+\subsubsection{测验题3.81}
+
+对于命题＂张三学过 C++ 语言＂，下面哪些说法是正确的？
+
+A．这个命题是一个量化命题。
+
+B，＂C++语言＂是一个具体的个体，可符号化为个体常量。
+
+C．＂．．．．．．学过C++语言＂可符号化为一个一元谓词。
+
+D．＂．．．．．．学过．．．．．．＂可符号化为一个二元谓词。
+
+\textcolor{red}{答案：BCD}
+
+\subsubsection{测验题3.82}
+
+对于命题＂所有程序员都学过C++语言＂，下面哪些说法是正确的？
+
+A．
+这个命题是一个量化命题，且是一个全称命题。
+
+B．
+只能使用全总域作为符号化这个命题的论域。
+
+C．
+使用全总域符号化这个命题时，＂．．．．．．是程序员＂是特征谓词。
+
+D．
+＂．．．．．．学过C++语言＂可符号化为一个一元谓词。
+
+\textcolor{red}{答案：ACD}
+
+\subsubsection{测验题3.83}
+
+对于命题“并非所有程序员都学过所有面向对象编程语言”，下面哪些说法是正确的？
+
+A.可使用所有程序员构成的集合作为符号化这个命题的论域。
+
+B.符号化这个命题时，可提取“...学过面向对象编程语言”作为一元谓词。
+
+C.这是对个体类之间关系进行判断的命题，“程序员”和“面向对象编程语言”都是个体类。
+
+D.符号化这个命题时，“所有程序员”和“所有面向对象编程语言”都要用到全称量词。
+
+\textcolor{red}{答案：CD}
+
 \subsubsection{测验题3.84}
 
-对于命题 "有的程序员学过所有面向对象编程语言",下面哪些说法是正确的?
+对于命题 “有的程序员学过所有面向对象编程语言”,下面哪些说法是正确的?
 
 A. 可使用所有程序员构成的集合作为符号化这个命题的论域。
 
-B.  符号化这个命题时,可提取 "......学过面向对象编程语言" 作为一元谓词。
+B.  符号化这个命题时,可提取 “......学过面向对象编程语言” 作为一元谓词。
 
 C.   可符号化为 $\forall x S(x)$, 论域是程序员的集合, $S(x)$ 是谓词 " $x$ 学过面向对象编程语言"。
 
@@ -3496,6 +4070,54 @@ D.
 过 $y$＂，$U(x)$ 是谓词＂$x$ 理解面向对象编程思想＂
 
 \textcolor{red}{答案：BD}
+
+\subsubsection{测验题3.87}
+
+给定谓词 $P(x)$ 表示＂$x$ 是程序员＂，$S(x)$ 表示＂$x$ 学过面向对象编程语言＂，$T(x)$ 表示＂$x$ 是学过面向对象编程语言的程序员＂，$U(x)$ 表示＂$x$ 理解面向对象编程思想＂。对于命题＂有的学过面向对象编程语言的程序员不理解面向对象编程思想＂，下面哪些说法是正确的？
+
+A．可将论域定为全总域，符号化为 $\exists x((P(x) \wedge S(x)) \rightarrow \neg U(x))$ 。
+
+B．可将论域定为所有程序员，符号化为 $\exists x(S(x) \wedge \neg U(x))$ 。
+
+C．可将论域定为全总域，符号化为 $\exists x(T(x) \wedge \neg U(x))$ 。
+
+D．可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\exists x(\neg U(x))$ 。
+
+
+\textcolor{red}{答案：BCD}
+
+\subsubsection{测验题3.88}
+
+给定谓词 $P(x)$ 表示＂$x$ 是程序员＂，$S(x)$ 表示＂$x$ 学过面向对象编程语言＂，$T(x)$ 表示＂$x$ 是学过面向对象编程语言的程序员＂，$U(x)$ 表示＂$x$ 理解面向对象编程思想＂。对于命题＂没有学过面向对象编程语言的程序员都不理解面向对象编程思想＂，下面哪些说法是正确的？
+
+A．
+可将论域定为全总域，符号化为 $\forall x((P(x) \wedge \neg S(x)) \rightarrow \neg U(x))$ 。
+
+B．
+可将论域定为所有程序员，符号化为 $\forall x(\neg S(x) \rightarrow \neg U(x))$ 。
+
+C．
+可将论域定为全总域，符号化为 $\forall x(\neg T(x) \rightarrow \neg U(x))$ 。
+
+D．
+可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\forall x(\neg U(x))$ 。
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题3.89}
+
+给定谓泀 $P(x)$ 表示＂$x$ 是程序员＂，$S(x)$ 表示＂$x$ 学过面向对象编程语言＂，$T(x)$ 表示＂$x$ 是学过面向对象编程语言的程序员＂，$U(x)$ 表示＂$x$ 理解面向对象编程思想＂。对于命题＂有的程序员虽然没学过面向对象编程语言，但他也理解面向对象编程思想＂，下面哪个说法是正确的？
+
+A．可将论域定为全总域，符号化为 $\exists x(P(x) \wedge \neg S(x) \wedge U(x))$ 。
+
+B．可将论域定为所有程序员，符号化为 $\exists x(\neg S(x)) \wedge \exists x U(x)$ 。
+
+C．可将论域定为全总域，符号化为 $\exists x(\neg T(x) \wedge U(x))$ 。
+
+D．可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\exists x U(x)$ 。
+
+
+\textcolor{red}{答案：A}
 
 \subsubsection{测验题3.90}
 
@@ -3549,6 +4171,22 @@ D. 可符号化为公式 $\neg \exists x \exists y(P(x) \wedge P(y) \wedge(x \ne
 
 \textcolor{red}{答案：D}
 
+\subsubsection{测验题3.93}
+
+以全总域为论域．并给定谓词 $P(x)$ 表示＂$x$ 是程序员＂，$O(x)$ 表
+示＂$x$ 是面向对象编程语言＂，$S(x, y)$ 表示＂$x$ 学过 $y$＂。符号化命题＂所有面向对象编程语言都
+有程序员学过＂最合适的一阶逻辑公式是 $\qquad$
+
+A. $\forall x(O(x) \wedge \exists y(P(y) \wedge S(x, y)))$
+
+B. $\forall x \exists y(O(x) \wedge(P(y) \rightarrow S(x, y)))$
+
+C. $\forall x(O(x) \rightarrow \exists y(P(y) \wedge S(x, y)))$
+
+D. $\forall x \exists y(O(x) \wedge P(y) \rightarrow S(x, y))$
+
+\textcolor{red}{答案：C}
+
 \subsubsection{测验题3.94}
 
 以全总域为论域, 并给定谓词 $P(x)$ 表示 " $x$ 是程序员", $O(x)$ 表示 " $x$ 是面向对象编程语言", $S(x, y)$ 表示 " $x$ 学过 $y$ "。符号化命题 "存在所有程序员都学过的面向对象编程语言" 最合适的一阶逻辑公式是 $\qquad$
@@ -3589,6 +4227,40 @@ $
 
 \textcolor{red}{答案：C}
 
+\subsubsection{测验题3.96}
+
+以所有程序员为论域，并给定谓词 $S(x)$ 表示＂$x$ 学过面向对象编程语言＂，$U(x)$ 表示＂$x$ 
+能理解面向对象编程思想＂。对于推理＂所有程序员都学过面向对象编程语言，
+但并非所有程序员只要学过面向对象编程语言就都能理解面向对象编程思想，
+因此并非所有程序员都能理解面向对象编程思想＂，下面哪些说法是正确的？
+
+A．前提＂所有程序员都学过面向对象编程语言＂符号化为 $\forall x S(x)$
+
+B. 前提＂并非所有程序员只要学过面向对象编程语言就能理解面向对象编程思想＂符 B．号化为 $\neg \forall x(S(x) \rightarrow U(x))$
+
+C．结论＂并非所有程序员都能理解面向对象编程思想＂符号化为 $\neg \forall x U(x)$
+
+D．这个推理不是有效的推理。
+
+\textcolor{red}{答案：ABC}
+
+\subsubsection{测验题3.97}
+
+以所有程序员为论域，并给定谓词 $S(x)$ 表示＂$x$ 学过面向对象编程语言＂，$U(x)$ 
+表示＂$x$ 能理解面向对象编程思想＂。对于推理＂所有程序员都学过面向对
+象编程语言，有的程序员只要学过面向对象编程语言就能理解面向对象编程思想，
+因此有的程序员能理解面向对象编程思想＂，下面哪些说法是正确的？
+
+A．前提＂所有程序员都学过面向对象编程语言＂符号化为 $\forall x S(x)$
+
+B. 前提＂有的程序员只要学过面向对象编程语言就能理解面向对象编程思想＂符号化
+为 $\exists x(S(x) \wedge U(x))$
+
+C．结论＂有的程序员能理解面向对象编程思想＂符号化为 $\exists x U(x)$
+
+D. 这个推理不是有效的推理。
+
+\textcolor{red}{答案：AC}
 
 \subsubsection{测验题3.98}
 
@@ -3607,7 +4279,7 @@ D. 这个推理是有效的推理。
 
 \subsubsection{测验题3.99}
 
-以所有程序员为论域, 并给定谓词 $S(x)$ 表示 " $x$ 学过面向对象编程语言", $U(x)$ 表示 " $x$ 能理解面向对象编程思想"。对于推理 "有的程序员学过面向对象编程语言, 有的程序员没有学过面向对象编程语言就不能理解面向对象编程思想,因此有的程序员不能理解面向对象编程思想",下面哪些说法是正确的？
+以所有程序员为论域, 并给定谓词 $S(x)$ 表示 “ $x$ 学过面向对象编程语言”, $U(x)$ 表示 “ $x$ 能理解面向对象编程思想”。对于推理 “有的程序员学过面向对象编程语言, 有的程序员没有学过面向对象编程语言就不能理解面向对象编程思想,因此有的程序员不能理解面向对象编程思想”,下面哪些说法是正确的？
 
 A. 前提 "有的程序员学过面向对象编程语言" 符号化为 $\exists x S(x)$
 
@@ -3619,6 +4291,23 @@ C. 结论 "有的程序员不能理解面向对象编程思想" 符号化为 $\e
 D. 这个推理不是有效的推理。
 
 \textcolor{red}{答案：ACD}
+
+\subsubsection{测验题3.100}
+
+论域与谓词设置同上题。对于推理＂有的程序员学过面向
+对象编程语言，有的程序员只要学过面向对象编程语言就能理解面向对象编程思想，因
+此有的程序员能理解面向对象编程思想＂，下面哪些说法是正确的？
+
+A．前提＂有的程序员学过面向对象编程语言＂符号化为 $\exists x S(x)$
+
+B. 前提＂有的程序员只要学过面向对象编程语言就能理解面向对象编程思想＂符号化为 $\exists x(S(x) \wedge U(x))$
+
+C. 结论＂有的程序员能理解面向对象编程思想＂符号化为 $\exists x U(x)$
+
+D. 这个推理是有效的推理。
+
+\textcolor{red}{答案：AC}
+
 
 \clearpage
 
