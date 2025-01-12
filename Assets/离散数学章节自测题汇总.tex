@@ -3898,7 +3898,7 @@ D.
 
 \[
 \begin{aligned}
-(1) & \quad \neg (\exists x(F(x) \lor G(x))) & \quad \textcolor{blue}{\text{// 附加前提}} \\
+(1) & \quad \neg (\exists x(F(x) \lor \exists x G(x))) & \quad \textcolor{blue}{\text{// 附加前提}} \\
 (2) & \quad \neg \exists x F(x) \land \neg \exists x G(x) & \quad \textcolor{blue}{\text{// (1) 德摩根律}} \\
 (3) & \quad \forall x (\neg F(x)) \land \forall x (\neg G(x)) & \quad \textcolor{blue}{\text{// (2) 量词否定等值式}} \\
 (4) & \quad \exists x (F(x) \lor G(x)) & \quad \textcolor{blue}{\text{// 前提}} \\
@@ -3942,11 +3942,11 @@ D.
 \subsubsection{测验题3.79}
 
 
-验证推理 $\forall x(F(x) \lor G(x)) \implies \forall x(F(x) \lor G(x))$ 的有效性：
+验证推理 $\forall x F(x) \vee \forall x G(x) \Longrightarrow \forall x(F(x) \vee G(x))$ 的有效性：
 
 \[
 \begin{aligned}
-(1) & \quad \neg (\forall x(F(x) \lor G(x))) & \quad \text{\textcolor{blue}{// 假设前提}} \\
+(1) & \quad \neg (\forall x(F(x) \lor G(x))) & \quad \text{\textcolor{blue}{// 附加前提}} \\
 (2) & \quad \exists x(\neg (F(x) \lor G(x))) & \quad \text{\textcolor{blue}{// (1) 量词否定等值式}} \\
 (3) & \quad \exists x(\neg F(x) \land \neg G(x)) & \quad \text{\textcolor{blue}{// (2) 德摩根律}} \\
 (4) & \quad \neg F(a) \land \neg G(a) & \quad \text{\textcolor{blue}{// (3) 存在实例化}} \\
@@ -6097,7 +6097,7 @@ E.
 
 \subsubsection{测验题6.35}
 
-定义非空集 $U$ 的幂集 $\varphi(U)$ 上的关系 $R=\{\langle x, y\rangle \mid x \cap y \neq \varnothing\}$ ，关系 $R$ 具有哪些性质？
+定义非空集 $U$ 的幂集 $\wp(U)$ 上的关系 $R=\{\langle x, y\rangle \mid x \cap y \neq \varnothing\}$ ，关系 $R$ 具有哪些性质？
 
 A．自反性
 
@@ -6171,7 +6171,7 @@ E. 传递性
 \subsubsection{测验题6.39}
 
 
-设 $V$ 是非空的命题变量集，$F$ 是以 $V$ 的命题变量和逻辑运算符 $\neg, \vee, \wedge, \rightarrow, \leftrightarrow$ 归纳构造的所有命题
+设 $V$ 是非空的命题变量集，$F$ 是以 $V$ 的命题变量和逻辑运算符 $\neg, \vee, \wedge, \rightarrow, \leftrightarrow$ 归纳构造的所有命题逻辑公式的集合，在 $F$ 上定义关系 $R=\{\langle x, y\rangle \mid x \leftrightarrow y$ 是永真式 $\}$ ，则 $R$ 具有哪些性质？
 
 A．自反性
 
@@ -7120,6 +7120,96 @@ D. $1,2,3,4,5$ 都是偏序集 $A$ 的极小元
 
 \section{函数}
 
+\subsubsection{测验题7.1}
+
+设 $A=\{1,2,3,4,5\}, B=\{a, b, c, d\}$ ，下面笛卡尔积集 $A \times B$ 的哪些子集是函数？
+
+A. $F_1=\{\langle 5, b\rangle,\langle 3, d\rangle,\langle 4, b\rangle,\langle 2, b\rangle,\langle 5, d\rangle\}$
+
+B. $F_2=\{\langle 4, c\rangle,\langle 1, b\rangle,\langle 5, c\rangle,\langle 1, c\rangle,\langle 3, b\rangle\}$
+
+C. $F_3=\{\langle 2, c\rangle,\langle 4, b\rangle,\langle 3, b\rangle,\langle 1, b\rangle\}$
+
+D. $F_4=\{\langle 1, d\rangle,\langle 2, c\rangle,\langle 3, d\rangle,\langle 4, a\rangle,\langle 5, d\rangle\}$
+
+
+
+\textcolor{red}{答案：D}
+
+\subsubsection{测验题7.2}
+
+
+\text { 设 } $A=\{1,2,3,4,5\}$, $B=\{a, b, c, d\}$ \text {, 函数 } $f: A \rightarrow B$ \text { 定义为 } $f=\{\langle 1, a\rangle,\langle 2, a\rangle,\langle 3, d\rangle,\langle 4, c\rangle,\langle 5, d\rangle\}$.
+下面对于函数像集和逆像集的计算哪些是正确的？
+
+A．
+$f(A)=\{a, b, c, d\}$
+
+B．
+$f(\{1\})=a$
+
+C. $f^{-1}(\{a, b\})=\{1,2\}$
+
+D. $f^{-1}(B)=\{1,3,4,5\}$
+
+\textcolor{red}{答案：AC}
+
+\textcolor{red}{解析：私以为A选项错误。$f(A)$求的就是值域，应为$\{ a,c,d \}$。}
+
+\subsubsection{测验题7.3}
+
+对于函数 $f: \mathbb{R} \rightarrow \mathbb{R}, f(x)=\lfloor(x+1) / 2\rfloor$ ，下面对于函数像集和逆像集的计算哪些是正确的？
+
+A. $f(\mathbb{R})=\mathbb{R}$
+
+B. $f^{-1}(\mathbb{R})=\mathbb{R}$
+
+C. $f(\{x \in \mathbb{R} \mid 0 \leq x<1\})=\{0\}$
+
+D. $f^{-1}(\{x \in \mathbb{R} \mid 0 \leq x<1\})=\{0\}$
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题7.4}
+
+对于函数 $f: \mathbb{Z} \rightarrow \mathbb{Z}, f(x)=\lceil(x+1) / 2\rceil$ ，下面对于函数像集和逆像集的计算哪些是正确的？
+
+A．$
+f(\mathbb{Z})=\mathbb{Z}
+$
+
+
+B．$
+f^{-1}(\mathbb{Z})=\mathbb{Z}
+$
+
+
+C．$
+f(\{-1,0,1\})=\{0,1\}
+$
+
+
+D．$
+f^{-1}(\{-1,0,1\})=\{-2,-1,0\}
+$
+
+\textcolor{red}{答案：ABC}
+
+\subsubsection{测验题7.5}
+
+设A，B是任意集合，S和T是A的子集，W，U是B的子集，对于函数$f:A\rightarrow B$，下面哪些等式是
+不正确的？
+
+A. $f(S \cap T)=f(S) \cap f(T)$
+
+B. $f(S \cup T)=f(S) \cup f(T)$
+
+C. $f^{-1}(W \cap V)=f^{-1}(W) \cap f^{-1}(V)$
+
+D. $f^{-1}(W \cup V)=f^{-1}(W) \cup f^{-1}(V)$
+
+\textcolor{red}{答案：A}
+
 
 \subsubsection{测验题7.6}
 
@@ -7134,6 +7224,65 @@ C. 集合 $A=\{1,2,3,4\}, B=\{a, b, c, d\}$ ，函数 $f_3=\{\langle 1, a\rangle
 D. 集合 $A=\{1,2,3\}, B=\{a, b, c, d, e\}$ ，函数 $f_4=\{\langle 1, e\rangle,\langle 2, d\rangle,\langle 3, b\rangle\}$
 
 \textcolor{red}{答案：CD}
+
+\subsubsection{测验题7.7}
+
+下面定义的集合A到B的函数哪些是满函数？
+
+A．集合 $A=\{1,2,3,4,5\}, B=\{a, b, c, d\}$ ，函数 $f_1=\{\langle 1, b\rangle,\langle 2, c\rangle,\langle 3, a\rangle,\langle 4, c\rangle,\langle 5, c\rangle\}$
+
+B．集合 $A=\{1,2,3,4,5\}, B=\{a, b, c, d\}$ ，函数 $f_2=\{\langle 1, d\rangle,\langle 2, b\rangle,\langle 3, b\rangle,\langle 4, c\rangle,\langle 5, a\rangle\}$
+
+C．集合 $A=\{1,2,3,4\}, B=\{a, b, c, d\}$ ，函数 $f_3=\{\langle 1, a\rangle,\langle 2, d\rangle,\langle 3, c\rangle,\langle 4, b\rangle\}$
+
+D．集合 $A=\{1,2,3\}, B=\{a, b, c, d, e\}$ ，函数 $f_4=\{\langle 1, e\rangle,\langle 2, d\rangle,\langle 3, b\rangle\}$
+
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题7.8}
+
+下面定义的集合A到B的函数哪些是双函数？
+
+A．集合 $A=\{1,2,3,4,5\}, B=\{a, b, c, d\}$ ，函数 $f_1=\{\langle 1, b\rangle,\langle 2, c\rangle,\langle 3, a\rangle,\langle 4, c\rangle,\langle 5, c\rangle\}$ 
+
+B．集合 $A=\{1,2,3,4,5\}, B=\{a, b, c, d\}$ ，
+函数 $f_2=\{\langle 1, d\rangle,\langle 2, b\rangle,\langle 3, b\rangle,\langle 4, c\rangle,\langle 5, a\rangle\}$ 
+
+C．集合 $A=\{1,2,3,4\}, B=\{a, b, c, d\}$ ，函数 $f_3=\{\langle 1, a\rangle,\langle 2, d\rangle,\langle 3, c\rangle,\langle 4, b\rangle\}$ 
+
+D．集合 $A=\{1,2,3\}, B=\{a, b, c, d, e\}$ ，函数 $f_4=\{\langle 1, e\rangle,\langle 2, d\rangle,\langle 3, b\rangle\}$
+
+
+\textcolor{red}{答案：C}
+
+\subsubsection{测验题7.9}
+
+下面定义的自然数集$\mathbb{N}$上的函数哪些是单函数？
+
+A．函数 $f_1(n)=2 n^2+1$
+
+B．函数 $f_2(n)=\lfloor(n+1) / 2\rfloor$
+
+C．函数 $f_3(n)=\lceil(2 n+1) / 2\rceil$
+
+D．函数 $f_4(n)=|n-5|$
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题7.10}
+
+下面定义的自然数集$\mathbb{N}$上的函数哪些是满函数？
+
+A．函数 $f_1(n)=2 n^2+1$
+
+B．函数 $f_2(n)=\lfloor(n+1) / 2\rfloor$
+
+C．函数 $f_3(n)=\lceil(2 n+1) / 2\rceil$
+
+D．函数 $f_4(n)=|n-5|$
+
+\textcolor{red}{答案：BD}
 
 \subsubsection{测验题7.11}
 
@@ -7177,6 +7326,20 @@ D. 函数 $f_4(m, n)=m$ 是满函数
 
 \textcolor{red}{答案：CD}
 
+\subsubsection{测验题7.14}
+
+设下面对函数$f$和$g$所做的函数复合都是可行的，下面哪些说法是正确的？
+
+A．函数 $f$ 和 $g$ 都是单函数，则函数 $g \circ f$ 也是单函数
+
+B．函数 $g \circ f$ 是满函数，则函数 $f$ 和 $g$ 也都是满函数
+
+C．函数 $g \circ f$ 是双函数当且仅当 $f$ 和 $g$ 都是双函数
+
+D．函数 $g \circ f$ 是单函数，则函数 $f$ 也是单函数
+
+\textcolor{red}{答案：AD}
+
 \subsubsection{测验题7.15}
 
 设下面对函数$f$和$g$所做的函数复合都是可行的，下面哪些说法是正确的？
@@ -7190,6 +7353,97 @@ C. 函数 $g \circ f$ 是双函数，则函数 $f$ 是双函数
 D. 函数 $g \circ f$ 是满函数，则函数 $g$ 也是满函数
 
 \textcolor{red}{答案：BD}
+
+\subsubsection{测验题7.16}
+
+设集合 $A=\{1,2,3,4\}, B=\{a, b, c, d, e\}$ ，函数 $f=\{\langle 1, a\rangle,\langle 2, d\rangle,\langle 3, e\rangle,\langle 4, b\rangle\}$ ，下面哪些函数 $g_i$ 可使得 $g_i \circ f=\mathbf{i d}_A$ ？
+
+A．函数 $g_1=\{\langle a, 1\rangle,\langle b, 2\rangle,\langle c, 3\rangle,\langle d, 4\rangle,\langle e, 4\rangle\}$
+
+B．函数 $g_2=\{\langle a, 1\rangle,\langle b, 4\rangle,\langle c, 3\rangle,\langle d, 2\rangle,\langle e, 3\rangle\}$
+
+C．
+函数 $g_3=\{\langle 1, a\rangle,\langle 2, b\rangle,\langle 3, c\rangle,\langle 2, d\rangle,\langle 3, e\rangle\}$
+
+D．
+函数 $g_4=\{\langle a, 1\rangle,\langle b, 4\rangle,\langle c, 1\rangle,\langle d, 2\rangle,\langle e, 3\rangle\}$
+
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题7.17}
+
+设集合 $A=\{1,2,3,4,5,6\}, B=\{a, b, c, d\}$ ，函数 $f=\{\langle 1, d\rangle,\langle 2, d\rangle,\langle 3, a\rangle,\langle 4, b\rangle,\langle 5, c\rangle,\langle 6, b\rangle\}$. 下面哪些函数 $g_i$ 可使得 $f \circ g_i=\mathbf{i d}_B$ ？
+
+A．函数 $g_1=\{\langle a, 1\rangle,\langle b, 2\rangle,\langle c, 3\rangle,\langle d, 4\rangle\}$
+
+B．函数 $g_2=\{\langle 3, a\rangle,\langle 4, b\rangle,\langle 5, c\rangle,\langle b, 6\rangle\}$
+
+C．函数 $g_3=\{\langle a, 3\rangle,\langle b, 4\rangle,\langle c, 5\rangle,\langle d, 2\rangle\}$
+
+D．函数 $g_3=\{\langle a, 3\rangle,\langle b, 6\rangle,\langle c, 5\rangle,\langle d, 1\rangle\}$
+
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题7.18}
+
+对于自然数集 $\mathbb{N}$ 上的函数 $f(n)=2 n$ ，下面哪些函数 $g_i$ 可使得 $g_i \circ f=\mathbf{i d}_{\mathbb{N}}$ ？
+
+A．函数 $g_1: \mathbb{N} \rightarrow \mathbb{N}$ ，定义为 $\forall n, g_1(n)=n$
+
+B，函数 $g_2: \mathbb{N} \rightarrow \mathbb{Z}$ ，定义为 $\forall n, g_2(n)=n / 2$
+
+C．函数 $g_3: \mathbb{N} \rightarrow \mathbb{N}$ ，定义为 $\forall n, g_3(n)=\lfloor n / 2\rfloor$
+
+D．函数 $g_4: \mathbb{N} \rightarrow \mathbb{N}$ ，定义为 $\forall n, g_4(n)=\lfloor(n+1) / 2\rfloor$
+
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题7.19}
+
+对于自然数对集 $\mathbb{N} \times \mathbb{N}$ 到 $\mathbb{N}$ 的函数 $f(m, n)=|m-n|$ ，下面哪些函数 $g_i$ 可使得 $f \circ g_i=\mathbf{i d}_{\mathbb{N}}$ ？
+
+A．函数 $g_1(n)=(m, n)$
+
+B．函数 $g_2(n)=(n, n+1)$
+
+C．函数 $g_3(m, n)=|m+n|$
+
+D．函数 $g_4(n)=(1, n+1)$
+
+
+\textcolor{red}{答案：D}
+
+\subsubsection{测验题7.20}
+
+下面哪些说法是正确的？
+
+A．函数 $f: A \rightarrow B$ 是双函数当且仅当存在函数 $g: B \rightarrow A$ 使得 $g \circ f=\mathbf{i d}_A$
+
+B．函数 $f: A \rightarrow B$ 是双函数当且仅当存在函数 $g: B \rightarrow A$ 使得 $f \circ g=\mathbf{i d}_B$
+
+C．对任意的函数 $f, g: A \rightarrow A$ ，有 $(g \circ f)^{-1}=f^{-1} \circ g^{-1}$
+
+D．对函数 $f: A \rightarrow B$ ，若存在函数 $g: B \rightarrow A$ 使得 $g \circ f=\mathbf{i d}_A$ 且 $f \circ g=\mathbf{i d}_B$ ，则 $f$ 是双函数
+
+
+\textcolor{red}{答案：D}
+
+\subsubsection{测验题7.21*}
+
+下面哪些说法是正确的？
+
+A.集合A与B等势当且仅当A和B之间存在双函数
+
+B.集合A与B等势当且仅当存在A到B的单函数且存在B到A的单函数
+
+C.集合A与B等势且集合B与C等势，则集合A与C等势
+
+D.集合A与B等势当且仅当集合B与A等势
+
+\textcolor{red}{答案：ABCD}
 
 \subsubsection{测验题7.22*}
 
@@ -7205,6 +7459,24 @@ D. 自然数集与正整数集等势
 
 \textcolor{red}{答案：CD}
 
+\subsubsection{测验题7.23*}
+
+根据自然数集的集合论定义，下面哪些说法是正确的？
+
+A．
+每个自然数都是一个集合， 0 是空集， 1 是有一个元素的集合等等
+
+B．
+如果集合A是归纳集，则 $A$ 的每个元素都是自然数
+
+C．
+对任意自然数 $m, n$ ，若 $m \in n$ ，则 $m \subset n$
+
+D．
+对任意自然数 $m$ ，必有 $m \in m^{+}$且 $m \subseteq m^{+}$
+
+\textcolor{red}{答案：ACD}
+
 \subsubsection{测验题7.24*}
 
 下面关于有穷集的哪些说法是正确的？
@@ -7218,6 +7490,20 @@ C. 如果一个集合的某个真子集是有穷集，则这个集合就是有�
 D. 有穷集不与它的任何真子集等势
 
 \textcolor{red}{答案：ABD}
+
+\subsubsection{测验题7.25*}
+
+下面关于无穷集的哪些说法是正确的？
+
+A. 无穷集不可能与自然数集等势
+
+B. 如果A是无穷集，则存在A的一个真子集B使得A与B等势
+
+C. 如果A是无穷集B的真子集，则A与B等势
+
+D. 如果A是无穷集，则存在A的一个子集B使得B与自然数集等势
+
+\textcolor{red}{答案：BD}
 
 
 \subsubsection{测验题7.26*}
@@ -7233,6 +7519,20 @@ C. 有穷集一定是可数集
 D. 无穷集一定是不可数集
 
 \textcolor{red}{答案：BC}
+
+\subsubsection{测验题7.27*}
+
+下面关于可数集和不可数集的哪些说法是正确的？
+
+A.不可数集的子集一定还是不可数集
+
+B. 可数集的子集一定还是可数集
+
+C.两个可数集的并集还是可数集
+
+D.两个可数集的笛卡尔积还是可数集
+
+\textcolor{red}{答案：BCD}
 
 \subsubsection{测验题7.28*}
 
@@ -7262,6 +7562,71 @@ D. 正整数集上的所有函数构成的集合 $\mathbb{Z}^Z$
 
 \textcolor{red}{答案：CD}
 
+\subsubsection{测验题7.30*}
+
+下面哪些集合不是可数集？
+
+A. 所有自然数有穷序列构成的集合 $N^*$
+
+B. 人类目前编写的所有计算机程序构成的集合
+
+C. 人类目前出版的所有书籍构成的集合
+
+D. 所有复数构成的集合
+
+\textcolor{red}{答案：D}
+
+\subsubsection{测验题7.31}
+
+设 $f$ 和 $g$ 都是数集上的函数，对于大 $O$ 记号，下面哪些说法是正确的？
+
+A．
+函数 $f \in O(g)$ 当且仅当对任意 $x$ ，存在 $C>0$ 和 $k$ 使得当 $x>k$ 时 $|f(x)| \leq C|g(x)|$
+
+B．
+函数 $f \notin O(g)$ 当且仅当对任意 $C>0$ 和 $k$ ，存在 $x$ 使得 $x>k$ 且 $|f(x)|>C|g(x)|$
+
+C．
+如果存在 $C>0$ 和 $k$ 使得，对任意 $x$ ，当 $x>k$ 时 $|f(x)| \leq C|g(x)|$ ，那么 $f \in O(g)$
+
+D．
+如果 $f \notin O(g)$ ，则存在 $x$ 使得，对任意 $C>0$ 和 $k$ 当 $x>k$ 时 $|f(x)|>C|g(x)|$
+
+\textcolor{red}{答案：BC}
+
+\textcolor{red}{解析：注意A和D选项有关$x$范围的表述应该在$C$和$k$之后。}
+
+\subsubsection{测验题7.32}
+
+设 $f, g, h$ 都是数集上的函数，对于大 $O$ 记号，下面哪些说法是正确的？
+
+A．如果 $f \in O(g)$ 且 $g \in O(h)$ ，则 $f \in O(h)$
+
+B．如果 $f \in O(h)$ 且 $g \in O(h)$ ，则 $f+g \in O(h)$
+
+C．如果 $f \in O(h)$ 且 $g \in O(h)$ ，则 $f \cdot g \in O(h)$
+
+D．如果 $f \notin O(g)$ 且 $g \notin O(h)$ ，则 $f \notin O(h)$
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题7.33}
+
+设 $f$ 和 $g$ 都是数集上的函数，下面哪些说法是正确的？
+
+A．如果 $f \in O(g)$ ，则 $f \in \Theta(g)$
+
+B．如果 $f \in \Theta(g)$ ，则 $f \in O(g)$
+
+C．如果 $f \in O(g)$ ，则 $g \in \Omega(f)$
+
+D．如果 $f \in O(g)$ 且 $g \in O(f)$ ，则 $f \in \Theta(g)$
+
+\textcolor{red}{答案：BCD}
+
+\textcolor{red}{解析：\\ \indent 定义 7.12 设 $f, g$ 是两个数集上的函数，称 $f$ 是 $O(g)$ ，记为 $f \in O(g)$ ，如果存在常数 $C>0$ 和 $k$ ，使得当 $x>k$ 时总有 $|f(x)| \leq C|g(x)|$ ，这时常数 $C$ 和 $k$ 称为函数 $f$ 是 $O(g)$ 的见证（witness）。
+\\ \indent 定义 7.13 设 $f, g$ 是两个数集上的函数，称 $f$ 是 $\Omega(g)$ ，记为 $f \in \Omega(g)$ ，如果存在常数 $C>0$ 和 $k$ ，使得当 $x>k$ 时总有 $|f(x)| \geq C|g(x)|$ ；称 $f$ 是 $\Theta(g)$ ，记为 $f \in \Theta(g)$ ，如果 $f \in O(g)$ 而且 $f \in \Omega(g)$ 。如果 $f$ 是 $\Theta(g)$ ，通常称 $f$ 和 $g$（在函数增长方面）有相同的阶（order）。}
+
 \subsubsection{测验题7.34}
 
 假设下面函数都是数集上的函数，哪些函数是 $O(x)$ ？
@@ -7276,6 +7641,51 @@ D. $f_4(x)=2 \log x+1$
 
 \textcolor{red}{答案：ABD}
 
+\subsubsection{测验题7.35}
+
+假设下面函数都是数集上的函数，哪些函数是 $O\left(x^3\right)$ ？
+
+A．$f_1(x)=\left(x^4+2 x^2+1\right) / 100$
+
+B．$f_2(x)=100 x^2+123$
+
+
+C．$f_3(x)=x \log \left(x^2+2 x\right)$
+
+D．$f_4(x)=2^x+x^3+1$
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题7.36}
+
+假设下面函数都是正整数集上的函数，哪些函数是 $O\left(2^n\right)$ ？
+
+A. $f_1(n)=n^{100}+2 n^{50}+1$
+
+B. $f_2(n)=3^n+2^n+1$
+
+C. $f_3(n)=4 n^2 \log \left(3^n+2^n+1\right)$
+
+D. $f_4(n)=n(n!+1)$
+
+\textcolor{red}{答案：AC}
+
+
+\subsubsection{测验题7.37}
+
+下面哪些说法是正确的？
+
+A. $ n^2 \in O\left(n \log n^4\right)$
+
+B. $ n^{100} \in O\left(2^n\right)$
+
+C. $(\log n)^4 \in O\left(n^2\right)$
+
+D. $ 3^n \in O\left(n^{100}\right)$
+
+
+\textcolor{red}{答案：BC}
+
 \subsubsection{测验题7.38}
 
 下面哪些说法是正确的？
@@ -7289,6 +7699,22 @@ C. $n^2 \in O\left(n^4\right)$
 D. $ n \in O\left(\log n^2\right)$
 
 \textcolor{red}{答案：ABC}
+
+
+\subsubsection{测验题7.39}
+
+对于函数 $f(n)=\left(n^3+n^2 \log n\right)(\log n+1)+(12 \log n)\left(n^3+1\right)$ ，下面哪些说法是正确的？
+
+A．$f \in O\left(n^3\right)$
+
+B．$f \in O\left(n^2 \log n\right)$
+
+C．$f \in O\left(n^3 \log n\right)$
+
+D．$f \in O\left(n^2\right)$
+
+
+\textcolor{red}{答案：C}
 
 \subsubsection{测验题7.40}
 
@@ -7319,6 +7745,36 @@ D. $ f \in O\left(x^3\right)$
 
 \textcolor{red}{答案：CD}
 
+\subsubsection{测验题7.42}
+
+对于函数 $f(x)=\left(x^3+5 \log x\right) /\left(x^4+1\right)$ ，下面哪些说法是正确的？
+
+A．函数 $f \in O\left(x^{-4}\right)$
+
+B．函数 $f \in O\left(x^{-1}\right)$
+
+C．函数 $f \in O\left(x^{-2}\right)$
+
+D．函数 $f \in O(x)$
+
+
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题7.43}
+
+对于函数 $f(x)=10 x^3+2 x^2 \log x^2$ ，下面哪些说法是正确的？
+
+A．$f \in O\left(x^2\right)$ 且 $f \notin O(x)$
+
+B．$f \in O\left(x^3\right)$ 且 $f \notin O\left(x^2\right)$
+
+C．$f \in O\left(x^4\right)$ 且 $f \notin O\left(x^3\right)$
+
+D．$f \in O\left(x^5\right)$ 且 $f \notin O\left(x^4\right)$
+
+\textcolor{red}{答案：B}
+
 \subsubsection{测验题7.44}
 
 对于函数 $f(x)=\left(2 x^4+4 x^2+2 x\right) /\left(x^3+3 x^2+1\right)$ ，下面哪些说法是正确的？
@@ -7329,12 +7785,103 @@ B. $f \in O\left(x^2\right)$ 且 $f \notin O(x)$
 
 C. $f \in O\left(x^3\right)$ 且 $f \notin O\left(x^2\right)$
 
-D. $\quad f \in O\left(x^4\right)$ 且 $f \notin O\left(x^3\right)$
+D. $ f \in O\left(x^4\right)$ 且 $f \notin O\left(x^3\right)$
 
 \textcolor{red}{答案：A}
 
 
+\subsubsection{测验题7.45}
 
+对于下面算法，下面哪些说法是正确的？
+
+\begin{algorithm}
+  \caption{\textbf{判断两个数是否是倍数关系}}
+  \begin{algorithmic}[1]
+      \Require \textit{整数$a$和整数$b$}
+      \Ensure \textit{如果整数$b$是整数$a$的倍数，则返回“真”，否则返回“假”}
+      \If{$a=0$} \Return “假” 
+      \EndIf
+      \State 令 $x$ 和 $y$ 分别等于 $a$ 和 $b$ 的绝对值，且令 $c$ 等于 0\;
+      \While {($c$小于$y$)} 令$c$等于$c+x$
+      \EndWhile
+      \If{$c=y$} \Return “真”
+      \Else 
+      \State \Return “假”\;
+      \EndIf
+  \end{algorithmic}
+\end{algorithm}
+
+A．算法输入规模应该用 $a$ 或 $b$ 的整数值大小进行度量
+
+B．整数之间的等于，小于判断，计算整数的绝对值，以及整数加法是算法的基本操作
+
+C．算法第（3）行的循环是算法的基本操作
+
+D．算法的时间复杂度是 $O(\log |b|)$
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题7.46}
+
+\begin{algorithm}
+  \caption{\textbf{计算两个数的最大公约数}}
+  \begin{algorithmic}[1]
+      \Require \textit{两个非负整数$a$和$b$}
+      \Ensure \textit{返回$\operatorname{gcd}(a, b)$}
+      \State 令 $d$ 是 $a$ 和 $b$ 的小者
+      \If{$d=0$} 
+          \State \Return $a$ 和 $b$ 的大者
+      \EndIf
+      \While{$d \geq 1$}
+          \If{$a$ 是 $d$ 的倍数而且 $b$ 是 $d$ 的倍数}
+              \State \Return $d$
+          \EndIf
+          \State 令 $d$ 等于 $d - 1$
+      \EndWhile
+  \end{algorithmic}
+\end{algorithm}
+
+A．算法输入规模应该用 a 或 b 的整数值大小进行度量
+
+B．
+判断一个整数是否是另一个整数的倍数不是算法的基本操作
+
+C．
+算法第（3）行的循环是算法的基本操作
+
+D．
+算法的时间复杂度是 $O(\min \{a, b\})$
+
+\textcolor{red}{答案：ABD}
+
+\subsubsection{测验题7.47}
+
+下面哪些说法是正确的？
+
+A.无需过于关注算法时间复杂度，随着硬件发展
+指数级算法也会在短时间内执行完毕
+
+B.易解问题就是目前存在多项式时间复杂度算法的问题，也称为P类问题
+
+C.非易解问题就是目前尚不存在多项式时间复杂度算法的问题，也称为NP类问题
+
+D.不可解问题就是目前计算机不能求解的问题
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题7.48}
+
+下面哪些说法是正确的？
+
+A. P类问题都肯定存在多项式时间复杂度算法
+
+B. NP类问题都不可能存在多项式时间复杂度算法
+
+C. 存在多项式时间度的算法验证一个候选解是否是P类问题的真正解
+
+D. 存在多项式时间度的算法验证一个候选解是否是NP类问题的真正解
+
+\textcolor{red}{答案：ACD}
 
 \clearpage
 \section{计数与组合}
@@ -7394,6 +7941,9 @@ D. 按照确定千位、百位、十位、个位的顺序考虑,这些子任务�
 
 \textcolor{red}{答案：CD}
 
+\textcolor{red}{解析：注意没有说数字不同，那么一定没有相关性。每一位都可以独立考虑，那么先看哪一位完全没有关系，具有独立性。}
+
+
 \subsubsection{测验题8.5}
 
 计算只含偶数数字的四位数个数,将确定四位数的个位、十位、百位和千位看做子任务,下面哪些说法是正确的？
@@ -7408,6 +7958,8 @@ D. 按照确定千位、百位、十位、个位的顺序考虑,这些子任务�
 
 \textcolor{red}{答案：CD}
 
+\textcolor{red}{解析：同\textit{测验题8.4}。}
+
 \subsubsection{测验题8.6}
 
 计算只含奇数数字且数字不同的四位数个数,将确定四位数的个位、十位、百位和千位看做子任务,下面哪些说法是正确的？
@@ -7418,9 +7970,11 @@ B. 按照确定千位、百位、十位、个位的顺序考虑,这些子任务�
 
 C. 按照确定个位、十位、百位、千位的顺序考虑,这些子任务之间具有独立性。
 
-D. 按照确定千位、百位、十位、个位的順序考虑,这些子任务之间具有独立性。
+D. 按照确定千位、百位、十位、个位的顺序考虑,这些子任务之间具有独立性。
 
 \textcolor{red}{答案：ABCD}
+
+\textcolor{red}{解析：数字不同，不管按照什么顺序考虑，选择了一位的数字都会对之后的位有影响。其次不用考虑0的位置，一定都有独立性。}
 
 \subsubsection{测验题8.7}
 计算只含偶数数字且数字不同的四位数个数,将确定四位数的个位、十位、百位和千位看做子任务,下面哪些说法是正确的？
@@ -7434,6 +7988,9 @@ C. 按照确定个位、十位、百位、千位的顺序考虑,这些子任务�
 D. 按照确定千位、百位、十位、个位的顺序考虑,这些子任务之间具有独立性。
 
 \textcolor{red}{答案：ABD}
+
+\textcolor{red}{解析：数字不同，不管按照什么顺序考虑，选择了一位的数字都会对之后的位有影响。其次需要考虑0的位置，只有先考虑了千位才可以直接用乘法原理。}
+
 
 \subsubsection{测验题8.8}
 计算数字不同的四位数, 下面哪些说法是正确的?
@@ -7548,15 +8105,15 @@ D. 总的推选方案数减去含有计算机系统专业男生的推选方案�
 
 \textcolor{red}{答案：（1） 210 （2） 12 （3） 121}
 
-\textcolor{red}{解析：\newline（1）结论：指数加一再连乘。 例如对于$3^4 \times 5^2 \times 7^6 \times 11$,
+\textcolor{red}{解析：\\ \indent(1) 结论：指数加一再连乘。 例如对于$3^4 \times 5^2 \times 7^6 \times 11$,
 共有$(4+1) \times (2+1) \times (6+1) \times (1+1)=210$个正因子。
 结论的理解也比较直观,对于$3^4$这一项,它能分解出的因子有$3^0,3^1,3^2,3^3,3^4$共5个,对于$5^2$这一项,它能分解出的因子有$5^0,5^1,5^2$共3个,以此类推。
-从每一项中选出一种因子分解再乘起来即为答案。\newline （2）$620=2^2 \times 5 \times 31$,共有$(2+1) \times (1+1) \times (1+1)=12$}
+从每一项中选出一种因子分解再乘起来即为答案。\\ \indent(2) $620=2^2 \times 5 \times 31$,共有$(2+1) \times (1+1) \times (1+1)=12$}
 
 
 \subsubsection{测验题8.19}
 
-假定全集是U,A, B, C都是U的任意子集,下面关于集合元素个数的等式哪些是正确的？
+假定全集是U, A, B, C都是U的任意子集,下面关于集合元素个数的等式哪些是正确的？
 
 A. $|A \cap \bar{B}|=|A|-|B|$
 
@@ -7570,7 +8127,7 @@ D. $|A \cap \bar{B} \cap \bar{C}|=|A|-|B|-|C|+|B \cap C|$
 
 \subsubsection{测验题8.20}
 
-假定全集是U,A, B, C都是U的任意子集,下面关于集合元素个数的等式哪些是正确的
+假定全集是U, A, B, C都是U的任意子集,下面关于集合元素个数的等式哪些是正确的
 
 A. $|A \cup \bar{B}|=|U|-|B|+|A \cap B|$
 
@@ -7780,7 +8337,7 @@ A. 由数字1,2,3,4,5,6构成的六位数个数。
 
 B. 由数字1,2,3,4,5,6构成的数字不同的六位数个数。
 
-C. 长度为 6 的小写英文字符事个数。
+C. 长度为 6 的小写英文字符串个数。
 
 D. 长度为 6 的不出现重复字符的小写英文字符串个数。
 
@@ -7796,7 +8353,7 @@ B. 从班级 60 位学生中推选 3 位学生担任学生会干部的方法数�
 
 C. 从班级60位学生中推选3位学生各获得伍仟元奖学金的方法数。
 
-D. 从班级60位学生中推选3位学生分别获得一等奖学金壹万元,二等奖学金伍仟元和三等奖学金顶任元的方法数。
+D. 从班级60位学生中推选3位学生分别获得一等奖学金壹万元,二等奖学金伍仟元和三等奖学金贰仟元的方法数。
 
 \textcolor{red}{答案：BC}
 
@@ -7818,11 +8375,11 @@ D. 长度为 6 的包含 3 个 1 的二进串个数。
 
 计算长度为4,含有字符a且不重复字符的小写英文字符串,下面哪些解题思路是正确的？
 
-A. 字符a在4个位置中确定一个位置, 剩下是25个字符选3个进行排列, 因此答案是4*P(25, 3)。
+A. 字符a在4个位置中确定一个位置, 剩下是25个字符选3个进行排列, 因此答案是$4*P(25, 3)$。
 
-B. 长度为 4 且不重复字符的字符串总数是 $P(26,4)$, 其中不含字符 $a$ 的不重复字符的字符串有 $P(25,4)$ 个, 因此答案是 $P(26$, 4)-P(25,4)。
+B. 长度为 4 且不重复字符的字符串总数是 $P(26,4)$, 其中不含字符 $a$ 的不重复字符的字符串有 $P(25,4)$ 个, 因此答案是 $P(26, 4)-P(25,4)$。
 
-C. 不含字符 $a$ 且不重复字符的长度为 3 的字符串共有 $P(25,3)$ 个, 然后在每个三位串再插入一个a, 插入的位置有 4 个, 因此答案是 $4^* \mathrm{P}(25,3)$ 个。
+C. 不含字符 $a$ 且不重复字符的长度为 3 的字符串共有 $P(25,3)$ 个, 然后在每个三位串再插入一个a, 插入的位置有 4 个, 因此答案是 $4^* P(25,3)$ 个。
 
 D. 字符a出现在第 1 位、第 2 位、第 3 位和第 4 位的不重复字符的长度为 4 的字符串分别有 $P(25,3), P(25,3), P(25,3)$ 和 $P(2$ $5,3)$ 个, 因此答案是 $4^* P(25,3)$ 。
 
@@ -7833,13 +8390,13 @@ D. 字符a出现在第 1 位、第 2 位、第 3 位和第 4 位的不重复字�
 
 计算含有数字1且数字不同的四位数正整数个数,下面哪些解题思路是正确的？
 
-A. 数字1在四位数中确定一个位置, 然后剩下是 9 个数字选 3 个进行排列, 因此答案是 $4 * P(9,3)$ 。
+A. 数字1在四位数中确定一个位置, 然后剩下是 9 个数字选 3 个进行排列, 因此答案是 $4 ^* P(9,3)$.
 
-B. 数字不同的四位数总数是 $9^* P(9,3)$, 不含数字1的数字不同的四位数有 $8^* P(8,3)$ 个, 因此答案是 $9 * P(9,3)-8^* P(8,3)$ 。
+B. 数字不同的四位数总数是 $9^* P(9,3)$, 不含数字1的数字不同的四位数有 $8^* P(8,3)$ 个, 因此答案是 $9 ^* P(9,3)-8^* P(8,3)$ 。
 
-C. 不含数字1的三位数字共有 $9 * 9 * 8$ 个,然后在每个三位数再插入一个 1 ,插入的位置有 4 个,因此答案是 $4^* 9^* 9 * 8$ 个。
+C. 不含数字1的三位数字共有 $9 * 9 * 8$ 个,然后在每个三位数再插入一个 1 ,插入的位置有 4 个,因此答案是 $4 ^* 9 ^* 9 ^* 8$ 个。
 
-D. 数字1出现在千位、百位、个位和十位的数字不同的四位数分别有 $P(9,3), 8^* P(8,2), 8^* P(8,2)$ 和 $8^* P(8,2)$ 个,因此答案是 $P(9,3)+3^* 8^* P(8,2)$ 。
+D. 数字1出现在千位、百位、个位和十位的数字不同的四位数分别有 $P(9,3), 8 ^* P(8,2), 8^* P(8,2)$ 和 $8 ^* P(8,2)$ 个,因此答案是 $P(9,3) + 3^* 8^* P(8,2)$ 。
 
 \textcolor{red}{答案：BD}
 
@@ -7864,7 +8421,7 @@ D. 数字1出现在千位、百位、个位和十位的数字不同的四位数�
 
 \subsubsection{测验题8.50}
 
-下面哪些是对组合数C(n, r)的正确解释？
+下面哪些是对组合数$C(n, r)$的正确解释？
 
 A. 从有 $n$ 个一模一样的球的袋子中选取 $r$ 个球的方法数。
 
@@ -7878,7 +8435,7 @@ D. 长度为 $n$ 且含有 $r$ 个 0 的二进制串个数。
 
 \subsubsection{测验题8.51}
 
-下面对于组合数的计算假些是正确的?
+下面对于组合数的计算哪些是正确的?
 
 A. $C(8,4)=\left(8^* 7^* 6^* 5^* 4\right) /\left(4^* 3^* 2^* 1\right)=280$
 
@@ -7886,7 +8443,7 @@ B. $C(7,5)=(7 * 6 * 5) /(1 * 2)=105$
 
 C. $C(6,3)=6!(2 * 3!)=60$
 
-D. $C(9,4)=\left(9 * 8 * 7^* 6\right) /(1 * 2 * 3 * 4)=126$
+D. $C(9,4)=\left(9 * 8 * 7 * 6\right) /(1 * 2 * 3 * 4)=126$
 
 \textcolor{red}{答案：D}
 
@@ -7934,7 +8491,7 @@ D. 长度为 8 且没有含有 3 个 0 的三进制串有 $2^8+C(8,1) * 2^7+C(8,
 
 下面使用组合数对计数问题进行求解哪些是正确的?
 
-A. 从计算机学院 40 位学生、 10 位教师中推选佮好包含 3 位教师的 8 位代表的方法数有 $C(50,8)$ 种。
+A. 从计算机学院 40 位学生、 10 位教师中推选恰好包含 3 位教师的 8 位代表的方法数有 $C(50,8)$ 种。
 
 B. 从计算机学院20位男生, 15 位女生中推选至少包含 3 位女生的 8 位代表的方法数有 $C(15,3) * C(20+12,5)$ 种。
 
@@ -8074,7 +8631,7 @@ D. $ \sum_{k=1}^n C(n, k) C(n, k-1)=C(2 n+1, n+1) / 2-C(2 n, n), n \geq 1$
 
 下面的计数问题中属于允许重复的排列问题的有㗇些?
 
-A. 由数字1,2,3,4,5,6构成的六位数个数。
+A. 由数字1, 2, 3, 4, 5, 6构成的六位数个数。
 
 B. 由数字1, 2, 3, 4, 5, 6构成的数字不同的六位数个数。
 
@@ -8091,11 +8648,11 @@ D. 长度为6的不出现重复字符的小写英文字符串个数。
 
 A. 从班级 60 位学生中推选5位代表进行依次发言的方法数。
 
-B. 从班级60位学生中推选3位学生获得一等奖学金壹万元,5学生获得二等奖学金伍仟元和10位学生获得三等奖学金讲仟元的方法数。
+B. 从班级60位学生中推选3位学生获得一等奖学金壹万元,5学生获得二等奖学金伍仟元和10位学生获得三等奖学金贰仟元的方法数。
 
 C. 从班级60位学生中推选8位学生担任学生会干部的方法数。
 
-D. 从班级60位学生中推选8位学生各获得伍仠元奖学金的方法数。
+D. 从班级60位学生中推选8位学生各获得伍仟元奖学金的方法数。
 
 \textcolor{red}{答案：B}
 
@@ -8134,7 +8691,7 @@ D. 将 $n$ 个不可区别的球放到不可区别的 $m$ 个盒子的方法数�
 
 A. 这等于将 $n$ 个不可区别的球放到 $r$ 个可区别的盒子中的方法数。
 
-B. 这等于将个不可区别的球放到 $n$ 个可区别的盒子中的方法数。
+B. 这等于将$r$个不可区别的球放到 $n$ 个可区别的盒子中的方法数。
 
 C. 这等于由 $n$ 个 1 和 $r$ 个 0 能构成的二进制串的个数。
 
@@ -8174,11 +8731,11 @@ D. 这等于不定方程 $x_1+\cdots+x_4=10$ 的正整数解个数。
 
 对于从一堆苹果、一堆梨子、一堆橙子和一堆橘子中选10个水果且至少要有2个苹果、3个梨子的方法数,下面哪些说法是正确的？
 
-A. 这等于从这4堆水果中选 5 个水果的方法数, 因此等于 $\mathrm{C}(5,4)$ 。
+A. 这等于从这4堆水果中选 5 个水果的方法数, 因此等于 $C(5,4)$ 。
 
 B. 这等于长度为 13 含有 3 个 0 且第一个 0 之前至少 2 个 1 , 第一个 0 和第二 0 之间至少 3 个 1 的二进制串个数。
 
-C. 这等于长度为 9 且含有 5 个 1 的二进制串个数, 即等于C(9, 5)。
+C. 这等于长度为 9 且含有 5 个 1 的二进制串个数, 即等于$C(9,5)$。
 
 D. 这等于不定方程 $x_1+\cdots+x_4=10$ 满足 $x_1 \geq 2, x_2 \geq 3$ 的非负整数解个数。
 
@@ -8273,7 +8830,7 @@ D. 这等于不定方程 $x_1+x_2+x_3+x_4+x_5=15$ 的非负整数解总数减去
 
 \subsubsection{测验题8.81}
 
-用3个字母a,2个字母b和5个c能组成（1）个长度为10的字母串。
+用3个字母a, 2个字母b和5个c能组成（1）个长度为10的字母串。
 
 \textcolor{red}{答案：（1） 2520}
 
@@ -8284,19 +8841,19 @@ D. 这等于不定方程 $x_1+x_2+x_3+x_4+x_5=15$ 的非负整数解总数减去
 
 \subsubsection{测验题8.83}
 
-从8个苹果,8个梨子和8个橙子中选6个水果的方法数是（1）,而从8个苹果,8个梨子和8个橙子中选10个水果的方法数是（2）。
+从8个苹果, 8个梨子和8个橙子中选6个水果的方法数是（1）, 而从8个苹果, 8个梨子和8个橙子中选10个水果的方法数是（2）。
 
 \textcolor{red}{答案：（1） 28 （2） 57}
 
 \textcolor{red}{解析：（2）这道题可以先算出所有的情况再减去三种之中有任意一种多于8个的情况。
-这些情况包含：（9,1,0）以及（10,0,0）,前者有6种排列,后者有三种。因此答案为$C(12,2)-6-3=57$.}
+这些情况包含：（9,1,0）以及（10,0,0）,前者有6种排列,后者有3种。因此答案为$C(12,2)-6-3=57$.}
 \subsubsection{测验题8.84}
 
-从6本语文书,6本数学书和6本物理书中选4本书的方法数是（1）,而从6本语文书,6本数学书和6本物理书中选8本书的方法数是（2）。
+从6本语文书, 6本数学书和6本物理书中选4本书的方法数是（1）, 而从6本语文书, 6本数学书和6本物理书中选8本书的方法数是（2）。
 
 \textcolor{red}{答案：（1） 15 （2） 36}
 
-\textcolor{red}{解析：（1）注意不是$C(18,4)$,这里考虑的每种书都是一样的。（2）同理不是$C(18,8)$。}
+\textcolor{red}{解析：（1）注意不是$C(18,4)$, 这里考虑的每种书都是一样的。（2）同理不是$C(18,8)$。}
 
 
 \subsubsection{测验题8.85}
@@ -8308,7 +8865,7 @@ D. 这等于不定方程 $x_1+x_2+x_3+x_4+x_5=15$ 的非负整数解总数减去
 
 \subsubsection{测验题8.86}
 
-不定方程 $x_1+x_2+x_3+x_4=16$ 的非负整数解中, 有 （1）个满足 $x_1 \geq 6$ 且 $x_2 \geq 3$ 的解,有 (2)
+不定方程 $x_1+x_2+x_3+x_4=16$ 的非负整数解中, 有 （1）个满足 $x_1 \geq 6$ 且 $x_2 \geq 3$ 的解,有
 （2）个满足 $x_1 \geq 6$ 且 $x_2 \geq 6$ 的解, 有 （3）个满足 $3 \leq x_1 \leq 5$ 且 $3 \leq x_2 \leq 5$ 的解。
 
 \textcolor{red}{答案：（1） 120 （2） 35 （3） 81}
