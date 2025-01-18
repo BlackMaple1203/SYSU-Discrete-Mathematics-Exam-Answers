@@ -6455,7 +6455,7 @@ D. 关系 $S^{-1} \circ R^{-1}$ 的关系矩阵是 $M_{S^{-1} \circ R^{-1}}=\lef
 
 
 \subsubsection{测验题6.13}
-定义整数集Z上的关系 $R=\{\langle x, y\rangle \mid x+y=0\}$ 和关系 $S=\{\langle x, y\rangle \mid x y=0\}$. 下面哪些说法是正确的?
+定义整数集$Z$上的关系 $R=\{\langle x, y\rangle \mid x+y=0\}$ 和关系 $S=\{\langle x, y\rangle \mid x y=0\}$. 下面哪些说法是正确的?
 
 A. 
 $
@@ -6469,7 +6469,7 @@ $
 
 C. 
 $
-R \circ R=\Delta_{\mathrm{Z}}
+R \circ R=\Delta_{\mathbb{Z}}
 $
 
 D. 
@@ -10821,6 +10821,27 @@ D. 顶点序列：$d$ \quad $h$ \quad $p$ \quad $e$ \quad $m$ \quad $b$ \quad $f
 
 \textcolor{red}{答案：C}
 
+\subsubsection{测验题9.41}
+
+使用Dijkstra算法求下面有向图的顶点$a$到其他所有顶点的最短距离，下面说法正确的有哪些？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.43.jpg} % 插入图片
+  \caption{测验题9.41用图}
+\end{figure}
+
+A．算法在确定顶点$d$的最短距离之后，修改了顶点 $c$ 的当前距离和当前路径。
+
+B．算法在确定顶点$e$的最短距离之后，修改了顶点$h$的当前距离和当前路径。
+
+C．算法在确定顶点$f$的最短距离之后，修改了顶点$h$的当前距离和当前路径。
+
+D．算法最终确定的顶点 $a$ 到顶点 $z$ 的最短路径是 $a \rightarrow d \rightarrow e \rightarrow h \rightarrow z$ 。
+
+
+\textcolor{red}{答案：暂缺}
+
 \subsubsection{测验题9.42*}
 
 下面是一个带权无向图的邻接矩阵（矩阵行分别对应顶点 $a, b, c, d, e, f, g, h), ~$ 使用Dijkstra算法求这个图的顶点椡其他所有顶点的最短距离，下面说法正确的有哪些？
@@ -10879,6 +10900,398 @@ D.  算法最终确定的顶点 $a$ 到顶点 $h$ 的最短路径是 $a \rightar
 
 \subsubsection{测验题9.44*}
 
+下面是一个带权无向图的邻接矩阵（矩阵行分别对应顶点$a,b,c,d,e,f,g,h$）：
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+$$
+D=\left[\begin{array}{cccccccc}
+\infty & 10 & 6 & \infty & 6 & \infty & \infty & \infty \\
+10 & \infty & 13 & 13 & \infty & 10 & \infty & \infty \\
+6 & 13 & \infty & 12 & 4 & \infty & 12 & \infty \\
+\infty & 13 & 12 & \infty & 5 & 6 & 5 & \infty \\
+6 & \infty & 4 & 5 & \infty & \infty & \infty & \infty \\
+\infty & 10 & \infty & 6 & \infty & \infty & 4 & 8 \\
+\infty & \infty & 12 & 5 & \infty & 4 & \infty & 12 \\
+\infty & \infty & \infty & \infty & \infty & 8 & 12 & \infty
+\end{array}\right]
+$$
+\end{table}
+
+使用Dijkstra算法求这个图的顶点a到其他所有顶点的最短距离，完成下面表格中的空以给出完整的算法求解过程（每个空以＂整数/字母＂的形式填写，其中整数表示当前距离，而字母表示直接前驱顶点，整数和字母之间用斜杠分隔，中间不要有任何空格，无需考虑用于表示选中的方框）。
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+  \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+    \hline
+    & $a$ & $b$ & $c$ & $d$ & $e$ & $f$ & $g$ & $h$ \\
+    \hline
+    Step 0 & $\boxed{0}/-$ & $10 / a$ & $6 / a$ & $\infty /-$ & $6 / a$ & $\infty /-$ & $\infty /-$ & $\infty /-$ \\
+    \hline
+    Step 1 &  & $10 / a$ & $\boxed{6} / a$ & $18 / c$ & $6/a$ & $\infty /-$ & $18/c$ & $\infty /-$ \\
+    \hline
+    Step 2 &  & $10 / a$ &  & $11 / e$ & $\boxed{6} /a$ & $\infty /-$ & $18/c$ & $\infty/-$ \\
+    \hline
+    Step 3 & & $\boxed{10} / a$ &  & $11/e$ &  & $\underline{(1)}$ & $18 /c$ & $\infty /-$ \\
+    \hline
+    Step 4 & &  & & $\boxed{11} / e$ &  & $\underline{(2)}$ & $16 /d$ & $\infty /-$ \\
+    \hline
+    Step 5 & &  & &  &  & $\underline{(3)}$ & $\boxed{16} / d$ & $\underline{(4)}$ \\
+    \hline
+    Step 6 & & & & & & $\boxed{17} / d$ &  & $\underline{(5)}$ \\
+    \hline
+    Step 7 & &  & & & & & & \underline{(6)} \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\textcolor{red}{答案：(1) $20 / b$
+(2) $17 / d$
+(3) $17 / d$
+(4) $28 / g$
+(5) $25 / f$
+(6) $25 / f$}
+
+\subsubsection{测验题9.45*}
+
+下面是一个带权无向图的邻接矩阵（矩阵行分别对应顶点$a,b,c,d,e,f,g,h$）：
+
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.5}
+  $$
+D=\left[\begin{array}{cccccc}
+\infty & 19 & 18 & 16 & 13 & \infty \\
+19 & \infty & 19 & 2 & 6 & 2 \\
+18 & 19 & \infty & \infty & 4 & \infty \\
+16 & 2 & \infty & \infty & 1 & \infty \\
+13 & 6 & 4 & 1 & \infty & 8 \\
+\infty & 2 & \infty & \infty & 8 & \infty
+\end{array}\right]
+$$
+\end{table}
+
+使用Dijkstra算法求这个图的顶点a到其他所有顶点的最短距离，完成下面表格中的空以给出完整的算法求解过程（每个空以＂整数/字母＂的形式填写，其中整数表示当前距离，而字母表示直接前驱顶点，整数和字母之间用斜杠分隔，中间不要有任何空格，无需考虑用于表示选中的方框）。
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{1.5}
+\centering
+
+\begin{tabular}{c|c|c|c|c|c|c}
+  \hline  & $a$ & $b$ & $c$ & $d$ & $e$ & $f$ \\
+  \hline Step  0 & $\boxed{0} /-$ & $19 / a$ & $18 / a$ & $16 / a$ & $13 / a$ & $\infty /-$ \\
+  \hline Step  1 & & $\underline{(1)}$ & $17 / e$ & $14 / e$ & $\boxed{13} / a$ & $21 / e$ \\
+  \hline Step  2 & & $\underline{(2)}$ & $17 / e$ & $\boxed{14} / e$ & & $\underline{(4)}$ \\
+  \hline Step  3 & & $\underline{(3)}$ & $17 / e$ & & & $\underline{(5)}$ \\
+  \hline Step  4 & & & $\boxed{17} / e$ & & & $\underline{(6)}$ \\
+  \hline Step  5 & & & & & & $\boxed{18} / b$ \\
+  \hline
+\end{tabular}
+
+\end{table}
+
+\textcolor{red}{答案：(1) $19 / a$
+(2) $16 / d$
+(3) $16 / d$
+(4) $21 / e$
+(5) $18 / b$
+(6) $18 / b$}
+
+\subsubsection{测验题9.46*}
+
+使用Kruskal算法求下面无向图的最小生成树，下面哪些说法是正确的？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.46.jpg} % 插入图片
+  \caption{测验题9.46用图}
+\end{figure}
+
+A. 在选择所有权为 3 和 4 的边之后，下一步既可以选择边 $\left(v_0, v_4\right)$ ，也可以选择边 $\left(v_1, v_2\right)$ 作为最后生成树的树枝。
+
+B. 在选择所有权为 3 和 4 的边之后，下一步可选择边 $\left(v_4, v_7\right)$ 作为最后生成树的树枝。
+
+C. 在选择所有权为 3 和 4 的边，以及边 $\left(v_0, v_4\right), ~\left(v_4, v_7\right)$ 和 $\left(v_1, v_6\right)$ 之后，下一步可选边 $\left(v_2, v_4\right)$ 作为最后生成树的树枝。
+
+D. 在选择所有权为 3 和 4 的边，以及边 $\left(v_0, v_4\right), ~\left(v_4, v_7\right)$ 和 $\left(v_1, v_6\right)$ 之后，下一步可选边 $\left(v_7, v_8\right)$ 作为最后生成树的树枝。
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题9.47*}
+
+使用Prim算法从选择顶点 $v_0$开始求下面无向图的最小生成树，下面哪些说法是正确的？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.46.jpg} % 插入图片
+  \caption{测验题9.47用图}
+\end{figure}
+
+A. 选择顶点 $v_0$ 之后，下一步既可以选择 $v_1$ 或 $v_2$ ，也可以选择 $v_3$ 或 $v_4$ 添加到当前的生成 A．树T中。
+
+B. 如果当前生成树 $T$ 选择了顶点 $v_0$ 和 $v_3$ ，则下一步要考虑的边包括 $\left(v_0, v_1\right),\left(v_0, v_2\right)$ ， B．$\left(v_0, v_4\right),\left(v_3, v_4\right),\left(v_1, v_2\right)$ 和 $\left(v_2, v_4\right)$ 。
+
+C. 如果当前生成树 $T$ 选择了顶点 $v_0, v_3, v_2, v_5, v_1, v_4, v_7$ ，则下一步要考虑的边包括 $\left(v_1, v_6\right)$ ， C．$\left(v_5, v_6\right),\left(v_5, v_8\right)$ 和 $\left(v_7, v_8\right)$ 。
+
+D．最后得到上述无向图的最小生成树所有树枝权重之和是 37 。
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题9.48*}
+
+使用Kruskal算法求下面无向图的最小生成树，下面㖿些说法是正确的？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.48.jpg} % 插入图片
+  \caption{测验题9.48用图}
+\end{figure}
+
+A．在选择所有权为 1 和 3 的边之后，下一步可选择边 $\left(v_3, v_1\right)$ 作为最后生成树的树枝。
+
+B，在考虑所有权为 1,3 和 4 的边之后，下一步可选择边 $\left(v_0, v_1\right)$ 作为最后生成树的树枝。
+
+C. 在考虑所有权为 1,3 和 4 的边，再选择边 $\left(v_2, v_3\right)$ 之后，下一步可选边 $\left(v_1, v_4\right)$ 作为最后生成树的树枝。
+
+D. 在考虑所有权为 1,3 和 4 的边，再选择边 $\left(v_2, v_3\right)$ 之后，下一步可选边 $\left(v_1, v_2\right)$ 作为最后生成树的树枝。
+
+\textcolor{red}{答案：A}
+
+\subsubsection{测验题9.49*}
+
+使用Prim算法从选择顶点$v_0$开始求下面无向图的最小生成树，下面哪些说法是正确的？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.48.jpg} % 插入图片
+  \caption{测验题9.49用图}
+\end{figure}
+
+A．
+选择顶点 $v_0$ 之后，下一步既可以选择 $v_1$ 或 $v_3$ ，也可以选择 $v_5$ 添加到当前的生成树 $T$ 中。
+
+B．
+如果当前生成树 $T$ 选择了顶点 $v_0$ 和 $v_5$ ，则下一步应该选择边 $\left(v_0, v_1\right)$ 添加到当前的生成树 $T$ 中。
+
+C．
+如果当前生成树 $T$ 选择了顶点 $v_0, v_5, v_3, v_1, v_2$ ，则下一步要考虑的边包括 $\left(v_2, v_6\right)$ ， $\left(v_2, v_4\right)$,$\left(v_3, v_6\right)$,\\$\left(v_1, v_6\right)$,$\left(v_4, v_5\right)$ 和 $\left(v_1, v_4\right)$ 。
+
+D．
+最后得到上述无向图的最小生成树所有树枝权重之和是24。
+
+\textcolor{red}{答案：C}
+
+\subsubsection{测验题9.50*}
+
+关于求无向图的最小生成树的Kruskal算法和
+Prim算法，下面哪些说法是正确的？
+
+A. Prim算法每一次选择的边及顶点都与已选的边和顶点构成了一个棵树。
+
+B. Kruskal算法每一次选择的边都与已选的边构成了一个棵树。
+
+C. 对一个无向图，Prim算法和Kruskal算法得到的最小生成树总是相同。
+
+D.
+对一个无向图，Prim算法和Kruskal算法得到的最小生成树的边权之和总是相同。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题9.51*}
+
+哈夫曼算法在构造叶子节点$a,b,c,d,e,f$及其权分别是 $5,10,10,20,25,30$ 的最优二叉树时，算法每一步得到的是一些二叉树构成的森林，
+可使用这些二叉树的根及其权重的序列表示，例如初始的森林可
+使用序列 $a[5], b[10], c[10], d[20], e[25], f[30]$ 表示，下面哪些是算法执
+行过程中可能得到的森林的序列表示（其中$t_i(i=0,1,2, \dots )$用于标记新构造的一些节点）？
+
+A. 序列：$c[10],t_0[15],d[20],e[25],f[30]$
+
+B. 序列：$a[5], t_0[20], d[20], e[25], f[30]$
+
+C. 序列：$t_1[25],f[30], t_2[45]$
+
+D. 序列：$e[25], f[30], t_2[45]$
+
+\textcolor{red}{答案：ACD}
+
+\subsubsection{测验题9.52*}
+
+哈夫曼算法在构造叶子节点$a,b,c,d,e,f,g,h$及其权分别是5，8，8，12，12，15，20，20的最优二叉树时，算法每一步得到的是一些二叉树构成的森林，
+可使用这些二叉树的根及其权重的序列表示，例如初始的森林
+可使用序列$a[5],b[8],c[8],d[12],e[12],f[15],g[20],h[20]$
+表示，下面哪些是算法执行过程中可能得到的森林的序列表示 （其中$t_{i}({i}=0,1,2, \ldots)$用于标记新构造的一些节点）？
+
+A．序列：$c[8],d[12],e[12],t_0[13],f[15],g[20],h[20]$
+
+B，序列：$c[8],t_O[13],f[15],g[20],h[20],t_1[24]$
+
+C，序列：$f[15],t_1[20],g[20],h[20],t_2[25]$
+
+D，序列：$t_3[35],t_4[40]$
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题9.53*}
+
+对于权分别为 $10,20,30,40$ 的叶子节点 $a, b, c, d$ ，下面哪些二叉树是最优二叉树？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.53_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.53 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.1\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.53_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.53 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.53_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.53 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.1\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.23\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.53_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.53 D选项}
+\end{minipage}
+\end{figure}
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题9.54*}
+
+使用哈夫曼算法构造权分别是$5,10, 10,20,25,30$的叶子节点$a, b, c, d, e, f$
+的最优二叉树，最终得到的最优二叉树的权是？
+
+\textcolor{red}{答案：240}
+
+\subsubsection{测验题9.55*}
+
+使用哈夫曼算法构造权分别是$5, 8, 8, 12, 12, 15，20,20$的叶子节点$a,b,c,d,e,f,g,h$的最优二叉树，最终得到的最优二叉树的权
+是？
+
+\textcolor{red}{答案：293}
+
+\subsubsection{测验题9.56*}
+
+使用哈夫曼算法构造权分别是 $4,5,6,10,10,15,20,30$ 的叶子节点的最优二叉树，
+最终得到的最优二叉树如下。下图使用 $a, b, c, d, e, f, g, h$ 等字符
+标记了各叶子节点。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.56.jpg} % 插入图片
+  \caption{测验题9.56用图}
+\end{figure}
+
+根据上述最优二叉树，整棵树的权是$\underline{\quad (1) \quad}$叶子节点$e$的编码是
+$\underline{\quad (2)\quad}$,叶子节点$f$的编码是$\underline{\quad (3)\quad}$。
+
+\textcolor{red}{答案：(1) 274, (2) 101, (3) 0001}
+
+\subsubsection{测验题9.57*}
+
+使用哈夫曼算法构造权分别是$4,5, 8, 8, 10, 15, 15, 15,20$的叶子节点的最优二
+叉树，最终得到的最优二叉树如下。下图使用$a, b, c, d, e, f, g,h, z$
+等字符标记了各叶子节点。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.57.jpg} % 插入图片
+  \caption{测验题9.57用图}
+\end{figure}
+
+根据上述最优二叉树，整棵树的权是$\underline{\quad (1) \quad}$，叶子节点$b$的编码是$\underline{\quad (2)\quad}$，叶子节点$c$的编码是$\underline{\quad (3)\quad}$。
+
+\textcolor{red}{答案：(1) 305, (2) 0001, (3) 1100}
+
+\subsubsection{测验题9.58*}
+
+下面哪些符号串集是二元前缀码？
+
+A．符号串集：$B_1 =\{0,10,110,1111\}$
+
+B．$B_2=\{1,01,001,000\}$
+
+C．$B_3=\{1,11,101,0001,0011\}$
+
+D．$B_4=\{0,01,010,101,110,1011,1111\}$
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题9.59}
+
+下面哪些图是可平面图？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.3\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.59_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.59 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.1\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.59_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.59 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.26\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.59_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.59 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.2\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.26\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.59_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.59 D选项}
+\end{minipage}
+\end{figure}
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题9.60}
+
+下面哪些图是可平面图？
+
+A. 完全图$K_6$
+
+B. 圈图$C_6$
+
+C. 轮图$W_6$
+
+D. 完全二部图$K_{6,6} $
+
+\textcolor{red}{答案：BC}
+
 \subsubsection{测验题9.61}
 
 下面哪些图是极大平面图？
@@ -10921,6 +11334,44 @@ D.  算法最终确定的顶点 $a$ 到顶点 $h$ 的最短路径是 $a \rightar
 
 \textcolor{red}{答案：CD}
 
+\subsubsection{测验题9.62}
+
+对于下面的平面图，下面哪些说法是正确的？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{9.62.jpg} % 插入图片
+  \caption{测验题9.62用图}
+\end{figure}
+
+A．这个平面图总共有两个面。
+
+B．这个平面图中的边 $e_8$ 是它的外部面和外部面自己的边界。
+
+C．这个平面图的外部面的边界是$baefdcbgh$，其度数为7。
+
+D．这个平面图的所有面的度数之和等于 16 。
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题9.63}
+
+对于下面的平面图，下面哪些说法是正确的？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.79\textwidth]{9.63.jpg} % 插入图片
+  \caption{测验题9.63用图}
+\end{figure}
+
+A．这个平面图总共有四个面。
+
+B．这个平面图中的边 $e_1$ 是面 $R_1$ 和外部面 $R_0$ 的边界。
+
+C．这个平面图的外部面的边界是$bcdeaghz$，其度数为 8 。
+
+D．这个平面图的所有面的度数之和等于 20 。
+
 \subsubsection{测验题9.64}
 
 设平面图$G$的顶点数是$n$，边数是$m$，面数是$d$，下面哪些说法是正确的？
@@ -10937,9 +11388,99 @@ D. 对于任意平面图 $G$ ，总有 $m \leq 3 n-6$ 且 $d \leq 2 n-4$ 。
 
 \subsubsection{测验题9.65}
 
-设图G是连通的简单平面图，顶点数n = 6，且所有顶点的度数之和是24，则图G有(1)个面，且其中外部面的度数是(2)。
+设图G是连通的简单平面图，顶点数$n = 6$，且所有顶点的度数之和是24，则图G有$\underline{\quad (1) \quad }$个面，且其中外部面的度数是$\underline{\quad (2) \quad }$。
 
 \textcolor{red}{答案：(1) 8, (2) 3}
+
+\subsubsection{测验题9.66}
+
+完全二部图$K_{2,4}$是一个连通的简单平面图，它有\underline{\quad (1)\quad}个面，且其中外部面的度数是\underline{\quad (2)\quad}。
+
+\textcolor{red}{答案：(1) 4, (2) 4}
+
+\subsubsection{测验题9.67}
+
+下面哪些图是欧拉图？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.67 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.1\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.67 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.67 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.22\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.67 D选项}
+\end{minipage}
+\end{figure}
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题9.68}
+
+下面哪些图不是欧拉图但却是半欧拉图？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.68 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.1\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.68 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.68 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.22\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.68 D选项}
+\end{minipage}
+\end{figure}
+
+\textcolor{red}{答案：D}
 
 \subsubsection{测验题9.69}
 
@@ -10955,6 +11496,91 @@ D. 完全二部图$K_{6,6}$
 
 \textcolor{red}{答案：BD}
 
+\subsubsection{测验题9.70}
+
+下面哪些图是哈密顿图？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.70 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.1\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.70 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.70 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.22\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.70 D选项}
+\end{minipage}
+\end{figure}
+
+
+\textcolor{red}{答案：ABC}
+
+\subsubsection{测验题9.71}
+
+下面哪些图不是哈密顿图但却是半哈密顿图？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.71 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.1\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.71 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.71 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.22\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.35\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{9.67_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题9.71 D选项}
+\end{minipage}
+\end{figure}
+
+\textcolor{red}{答案：D}
+
 \subsubsection{测验题9.72}
 
 下面哪些图是哈密顿图？
@@ -10969,9 +11595,1075 @@ D. 完全二部图$K_{6,6}$
 
 \textcolor{red}{答案：ABCD}
 
+\subsubsection{测验题9.73}
+
+下面哪些说法是正确的？
+
+A．
+如果一个图的所有顶点的度数都是偶数，则它是欧拉图。
+
+B．
+如果一个图是欧拉图，则它所有顶点的度数都是偶数。
+
+C．
+如果一个 $n$($n$ 大于等于 3)阶图的任意两个顶点度数之和大于等于 $n$, 则它必定是哈密顿图。
+
+D．
+如果一个 $n$($n$ 大于等于3)阶图是哈密顿图，则它的任意两个顶点度数之和都大于等于 $n$.
+
+\textcolor{red}{答案：B}
+
 \clearpage
 
 \section{代数系统*}
 
+\subsubsection{测验题10.1*}
+
+关于集合上的运算，下面哪些说法是正确的？
+
+A，加法，减法，乘法和除法都是自然数集上的运算。
+
+B，加法，减法，乘法和除法都是有理数集上的运算。
+
+C，对于集合 $A$ 和 $B$ 的关系，关系复合是集合 $\wp(A \times B)$ 上的运算。
+
+D，对于集合 $A$ 上的函数，函数复合是集合 $A^A$ 上的运算。
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题10.2*}
+
+对于运算的封闭性，下面哪些说法是正确的？
+
+A. 设集合 $A=\{2 k+1 \mid k \in \mathbb{Z}\}$ ，则整数集 $\mathbb{Z} 上$ 的加法运算对集合 $A$ 封闭。
+
+B. 设集合 $A=\{2 k+1 \mid k \in \mathbb{Z}\}$ ，则整数集 $\mathbb{Z} 上$ 的乘法运算对集合 $A$ 封闭。
+
+C. 给定非空集 $A$ ，设集合 $Q=\{R \subseteq A \times A \mid R$ 是传递的 $\}$ ，则 $\wp(A \times A)$ 上的集合交运算对集合 $Q$ 封闭。
+
+D. 给定非空集 $A$ ，设集合 $Q=\{R \subseteq A \times A \mid R$ 是传递的 $\}$ ，则 $\wp(A \times A)$ 上的集合并运算对集合 $Q$ 封闭。
+
+
+\textcolor{red}{答案：暂缺}
+
+\subsubsection{测验题10.3*}
+
+对于运算的交换律，下面哪些说法是正确的？
+
+A，实数集上的乘法运算满足交换律。
+
+B. 整数集上的减法运算满足交换律。
+
+C. 所有 $n$ 乘 $n$ 的实数矩阵构成的集合上的矩阵乘法满足交换律。
+
+D. 所有 $A$ 上的函数集合 $A^A$ 上的函数复合运算满足交换律。
+
+\textcolor{red}{答案：暂缺}
+
+\subsubsection{测验题10.4*}
+
+对于运算的结合律，下面哪些说法是正确的？
+
+A．实数集上的乘法运算满足结合律。
+
+B. 整数集上的减法运算满足结合律。
+
+C．所有 $n$ 乘 $n$ 的实数知阵构成的集合上的矩阵乘法满足结合律。
+
+D．所有 $A$ 上的函数集合 $A^A$ 上的函数复合运算满足结合律。
+
+\textcolor{red}{答案：ACD}
+
+\subsubsection{测验题10.5*}
+
+对于运算的幂等律，下面哪些说法是正确的？
+
+A. 非空集 $A$ 的幂集 $\wp(A)$ 上的集合交运算满足幂等律。
+
+B. 整数 0 是整数集上加法和乘法运算的幂等元。
+
+C. 正整数集上计算两个正整数的最大公约数运算满足幂等律。
+
+D. 所有 $A$ 上的函数集合 $A^A$ 上的函数复合运算满足幂等律。
+
+\textcolor{red}{答案：暂缺}
+
+\subsubsection{测验题10.6*}
+
+对于运算的分配律，下面哪些说法是正确的？
+
+A．正整数集上计算两数最大公约数运算对计算两数最小公倍数运算满足分配律。
+
+B，整数集上的加法对乘法满足分配律。
+
+C．给定非空集 $A$ ，集合 $\wp(A \times A)$ 上的关系复合运算对集合并运算满足分配律。
+
+D．给定非空集 $A$ ，集合 $\varphi(A \times A)$ 上的关系复合运算对集合交运算满足分配律。
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题10.8*}
+
+对于运算的单位元，下面哪些说法是正确的？
+
+A. 整数 0 是正整数集上计算两数最大公约数运算的单位元。
+
+B. 整数 1 是正整数集上计算两数最小公倍数运算的单位元。
+
+C．布尔值 $\mathbf{0}$ 是布尔集 $\mathbf{2}=\{\mathbf{0}, \mathbf{1}\}$ 上的逻辑与运算的单位元。
+
+D，给定非空集 $A$ ，恒等关系是集合 $\wp(A \times A)$ 上关系复合运算的单位元。
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题10.9*}
+
+对于运算的零元，下面哪些说法是正确的？
+
+A，整数 1 是正整数集上计算两数最大公约数运算的零元。
+
+B，整数 0 是正整数集上计算两数最小公倍数运算的零元。
+
+C，布尔值 $\mathbf{0}$ 是布尔集 $\mathbf{2}=\{\mathbf{0}, \mathbf{1}\}$ 上的逻辑与运算的零元。
+
+D，给定非空集 $A$ ，空关系是集合 $\wp(A \times A)$ 上关系复合运算的零元。
+
+\textcolor{red}{答案：ACD}
+
+\subsubsection{测验题10.10*}
+
+
+对于集合元素关于某个运算的逆元，下面哪些说法是正确的？
+
+A，整数1是它自己关于整数乘法运算的逆元。
+
+B，每个实数关于实数乘法都存在逆元。
+
+C，给定非空集 $A, A$ 的子集 $S$ 的补集 $\bar{S}$ 是 $S$ 关于集合并运算的逆元。
+
+D，给定非空集 $A, A$ 上关系 $R$ 的逆关系 $R^{-1}$ 是 $R$ 关于关系复合运算的逆元。
+
+\textcolor{red}{答案：A}
+
+\subsubsection{测验题10.11*}
+
+下面哪些说法是正确的？
+
+A. 集合$S$上的运算只可能有一个左单位元。
+
+B.
+若集合$S$上的运算既有零元又有单位元（且它们不相同），则它的零元不可能存在逆元。
+
+C. 若集合$S$上的运算有零元，则它有唯一的左零元。
+
+D. 若集合$S$的元素$x$关于集合$S$的运算既有左逆元又有右逆元，则它有唯一的逆元。
+
+\textcolor{red}{答案：BC}
+
+
+\subsubsection{测验题10.12*}
+
+在实数集 $\mathbb{R}$上定义二元运算 $*:$ 对任意实数 $x, y, x * y=x+y-x y$ ，下面哪些说法是正确的？
+
+A，运算＊满足交换律。
+
+B，运算＊满足结合律。
+
+C，运算＊有单位元，且单位元是1。
+
+D，运算＊有零元，且零元是 0 。
+
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题10.13*}
+
+在实数集 $\mathbb{R}$ 上定义二元运算 $*$ ：对任意实数 $x, y, x * y=x y-x-y$ ，下面哪些说法是正确的？
+
+A，运算＊满足交换律。
+
+B，运算＊满足结合律。
+
+C，运算＊有单位元，且单位元是1。
+
+D．运算＊有零元，且零元是 0 。
+
+\textcolor{red}{答案：A}
+
+\subsubsection{测验题10.14*}
+
+在自然数集 $\mathbb{N} $ 上定义二元运算 $*$ ：对任意实数 $x, y, x * y=|x-y|$ ，下面哪些说法是正确的？
+
+A，运算＊满足交换律。
+
+B，运算＊满足结合律。
+
+C，运算＊有单位元，且单位元是 0 。
+
+D，每个自然数关于运算夫都有逆元。
+
+\textcolor{red}{答案：ACD}
+
+\subsubsection{测验题10.15*}
+
+在实数集 $\mathbb{R}$ 上定义运算 $*$ ，对任意实数 $x, y, x * y=\min \{x, y\}$ ，即 $x * y$ 等于 $x$ 和 $y$ 的小者；
+又定义运算 $\circ$ ，对任意实数 $x, y, x \circ y=\max \{x, y\}$ ，即 $x \circ y$ 等
+于 $x$ 和 $y$ 的大者。下面哪些说法是正确的？
+
+A．运算 $*$ 和$\circ$都有单位元。
+
+B. 运算 $*$ 和 0 都有零元。
+
+C. 运算 $*$ 和 $\circ$ 满足吸收律。
+
+D，运算＊对$\circ$满足分配律。
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题10.16*}
+
+设集合A $=\{0,1,2\}$ 上的二元运算＊如下面运算表所定义。下面哪些说法是正确的？
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|lll}
+\hline$*$ & 0 & 1 & 2 \\
+\hline 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 2 \\
+2 & 0 & 2 & 1 \\
+\hline
+\end{tabular}
+\end{table}
+
+A，运算$*$满足交换律。
+
+B，运算$*$满足结合律。
+
+C，运算$*$满足幂等律。
+
+D，集合$A$的每个元素关于运算$*$都有逆元。
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题10.17*}
+
+设集合 $A=\{0,1,2\}$ 上的二元运算$*$如下面运算表所定义。下面哪些说法是正确的？
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|lll}
+\hline$*$ & 0 & 1 & 2 \\
+\hline 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 1 \\
+2 & 0 & 1 & 2 \\
+\hline
+\end{tabular}
+\end{table}
+
+A．运算$*$满足结合律。
+
+B，运算$*$满足幂等律。
+
+C，运算$*$既有单位元又有零元。
+
+D，集合$A$的每个元素关于运算$*$都有逆元。
+
+\textcolor{red}{答案：ABC}
+
+\subsubsection{测验题10.18*}
+
+设集合 $A=\{0,1,2\}$ 上的二元运算 0 和 $*$ 如下面两个运算表所定义。下面哪些说法是正确的？
+  \begin{table}[H]
+    \renewcommand{\arraystretch}{1.5}
+    \centering
+\begin{minipage}{0.45\textwidth}
+
+  \begin{tabular}{l|lll}
+  \hline
+  $\circ$ & 0 & 1 & 2 \\
+  \hline
+  0 & 0 & 0 & 0 \\
+  1 & 0 & 1 & 2 \\
+  2 & 0 & 2 & 1 \\
+  \hline
+  \end{tabular}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+  \begin{tabular}{l|lll}
+  \hline
+  $*$ & 0 & 1 & 2 \\
+  \hline
+  0 & 0 & 0 & 0 \\
+  1 & 0 & 1 & 1 \\
+  2 & 0 & 1 & 2 \\
+  \hline
+  \end{tabular}
+
+\end{minipage}
+\end{table}
+A．运算 $\circ$ 和运算$*$都既有单位元又有零元。
+
+B．运算 $\circ$ 和运算 $*$ 满足吸收律。
+
+C. 运算 $\circ$ 对运算 $*$满足分配律。
+
+D，运算 $*$ 对运算 $\circ$ 满足分配律。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.19*}
+
+下面哪些说法是正确的？
+
+A．代数 $(\mathbb{Z},+,-)$ 和 $(\mathbb{N},+, *)$ 是同类型代数，这里 $-$ 是一元运算。
+
+B，代数 $(\wp(A), \cap)$ 和 $(\wp(A), \cup, \overline{-})$ 是同类型代数，这里$\overline{-}$是集合补运算。
+
+C．代数 $(\wp(A), \cap)$ 和 $(\mathbf{2}=\{\mathbf{0}, \mathbf{1}\}, \wedge)$ 是同类型代数。
+
+D，代数 $(\wp(A), \cup, \varnothing)$ 和 $(\mathbb{Z}, *, 0)$ 是同类型代数。
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题10.20*}
+
+设 $(A, \circ, e)$ 是代数，其中$\circ$是二元运算，$e$ 是零元运算，$B$ 是 $A$ 的子集，下面哪些说法是正确的？
+
+A．说 $B$ 对二元运算$\circ$封闭是指对 $A$ 的任意元素 $x, y$ 有 $x \circ y \in B$ 。
+
+B，说 $B$ 对零元运算 $e$ 封闭是指 $e \in B$ 。
+
+C．说 $B$ 构成 $(A, \circ, e)$ 的子代数，则必有 $e \in B$ 。
+
+D．若 $B$ 构成 $(A, \circ, e)$ 的子代数，则该子代数是与 $(A, \circ, e)$ 同类型的代数。
+
+\textcolor{red}{答案：BCD}
+
+\subsubsection{测验题10.21*}
+
+下面关于子代数的说法哪些是正确的？
+
+A．设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k+1)\}$ ，则 $(A,+)$ 是代数 $(\mathbb{Z},+)$ 的子代数。
+
+B，设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k+1)\}$ ，则 $(A, *)$ 是代数 $(\mathbb{Z}, *)$ 的子代数。
+
+C．设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k)\}$ ，则 $(A,+, *)$ 是代数 $(\mathbb{Z},+, *)$ 的子代数。
+
+D．设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k)\}$ ，则 $(A, *)$ 是代数 $(\mathbb{Z}, *, 1)$ 的子代数。
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题10.23*}
+
+对于代数 $(\mathbb{Z},+)$ ，下面哪些关系是这个代数上的同余关系？
+
+A，关系 $R_1=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x \leq 0 \wedge y \leq 0) \vee(x \geq 0 \wedge y \geq 0)\}$ 。
+
+B，关系 $R_2=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee x y>0\}$ 。
+
+C，关系 $R_3=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee(x \neq 0 \wedge y \neq 0)\}$ 。
+
+D，关系 $R_4=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid \exists k(|x-y|=5 k)\}$ 。
+
+
+\textcolor{red}{答案：D}
+
+\subsubsection{测验题10.24*}
+
+对于代数 $(\mathbb{R}, *)$ ，这里 $*$ 是普通实数乘法，下面哪些关系是这个代数上的同余关系？
+
+A．关系 $R_1=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y \vee x=-y)\}$ 。
+
+B，关系 $R_2=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee x y>0\}$ 。
+
+C．关系 $R_3=\left\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid\left(x^2+y^2 \geq 0\right)\right\}$ 。
+
+D．关系 $R_4=\Delta_{\mathbb{R}} \cup\{\langle 0,1\rangle,\langle 1,0\rangle\}$ 。
+
+
+\textcolor{red}{答案：ABC}
+
+\subsubsection{测验题10.25*}
+
+设 $\mathbf{A}=(A, \circ, \overline{(-)})$ 是一个代数，其中 $\circ$ 是二元运算，$\overline{(-)}$ 是一元运算，$R \subseteq A \times A$ 是 $A$ 上的一个关系，下面哪些说法是正确的？
+
+A，若$\circ$和 $\overline{(-)}$ 都保持关系 $R$ ，则 $R$ 是同余关系。
+
+B，若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c \in A$ ，若 $\langle b, c\rangle \in R$ ，则 $\langle a \circ b, a \circ c\rangle \in R$ 。
+
+C，若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c, d \in A$ ，若 $\langle a, b\rangle,\langle c, d\rangle \in R$ ，则 $\langle a \circ b, c \circ d\rangle \in R$ 。
+
+D，若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c, d \in A$ ，若 $\langle a, b\rangle,\langle c, d\rangle \in R$ ，则 $\langle\bar{a} \circ \bar{c}, \bar{b} \circ \bar{d}\rangle \in R$ 。
+
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题10.26*}
+
+设集合 $A=\{0,1,2\}$ 上的二元运算。如下面运算表所定义。对于代数 $(A, *)$ 上的同余关系，下面哪些说法是正确的？
+
+A．关系 $A \times A$ 是代数 $(A, *)$ 上的同余关系。
+
+B，关系 $R_1=\Delta_A \cup\{\langle 0,1\rangle,\langle 1,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+
+C．关系 $R_2=\Delta_A \cup\{\langle 0,2\rangle,\langle 2,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+
+D．关系 $R_3=\Delta_A \cup\{\langle 1,2\rangle,\langle 2,1\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.27*}
+
+设集合 $A=\{0,1,2\}$ 上的二元运算 $*$ 如下面运算表所定义。对于代数 $(A, *)$ 上的同余关系，下面哪些说法是正确的？
+
+A．关系 $\Delta_A$ 是代数 $(A, *)$ 上的同余关系。
+
+B，关系 $R_1=\Delta_A \cup\{\langle 0,1\rangle,\langle 1,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+
+C，关系 $R_2=\Delta_A \cup\{\langle 0,2\rangle,\langle 2,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+
+D．关系 $R_3=\Delta_A \cup\{\langle 1,2\rangle,\langle 2,1\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+
+\textcolor{red}{答案：ABD}
+
+\subsubsection{测验题10.28*}
+
+对于代数 $(\mathbb{Z},+)$ ，关系 $R=\{(x, y) \mid x \equiv y(\bmod 3)\}$ ，即 $R$ 是模 3 同余关系，可以证明 $R$ 是代数 $(\mathbb{Z},+)$ 上的同余关系，记该代数关于 $R$ 的商代数的运算为 $\oplus_3$ ，下面哪些说法是正确的？
+
+A．代数 $(\mathbb{Z},+)$ 关于同余关系 $R$ 的商代数的基集是 $\mathbb{Z}_3=\left\{[0]_R,[1]_R,[2]_R\right\}$ 。
+
+B，根据商代数运算 $\oplus_3$ 的定义有：$[0]_R \oplus[1]_R=1$ 。
+
+C．根据商代数运算 $\oplus_3$ 的定义有：$[2]_R \oplus[6]_R=[2]_R$ 。
+
+D．根据商代数运算 $\oplus_3$ 的定义有：$[2]_R \oplus[8]_R=[2]_R$ 。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.29*}
+
+对于代数 $(\mathbb{R}, *)$ ，这里＊是普通实数乘法。关系 $R=\{\langle x, y\rangle| | x|=|y|\}$ ，可证明 $R$ 是代数 $(\mathbb{R}, *)$ 上的同余关系，记该代数关于 $R$ 的商代数的运算为 $\otimes$ ，下面哪些说法是正确的？
+
+A．代数 $(\mathbb{R}, *)$ 关于同余关系 $R$ 的商代数的基集是 $\{\{x,-x\} \mid x \in \mathbb{R}\}$ 。
+
+B，根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[1]_R=\{0\}$ 。
+
+C．根据商代数运算 $\otimes$ 的定义有：$[2]_R \otimes[-3]_R=[6]_R$ 。
+
+D．根据商代数运算 $\otimes$ 的定义有：$[3]_R \otimes[3]_R=\{3,-3\}$ 。
+
+\textcolor{red}{答案：ABC}
+
+\subsubsection{测验题10.30*}
+
+设集合 $A=\{0,1,2\}$ 上的二元运算。如下面运算表所定义。可以证明 $A$ 上关系 $R=\Delta_A \cup$ $\{\langle 0,2\rangle,\langle 2,0\rangle\}$ 是代数 $(A, \circ)$ 上的同余关系，记该代数关于 $R$ 的商代数的运算为 $\otimes$ ，下面哪些说法是正确的？
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+  \begin{tabular}{l|lll}
+\hline$\circ$ & 0 & 1 & 2 \\
+\hline 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 2 \\
+2 & 0 & 2 & 2 \\
+\hline
+\end{tabular}
+\end{table}
+
+A．代数 $(A, \circ)$ 关于同余关系 $R$ 的商代数的基集是 $\{\{0,2\},\{1\}\}$ 。
+
+B，根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[1]_R=\{0\}$ 。
+
+C．根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[2]_R=\{0,2\}$ 。
+
+D．根据商代数运算 $\otimes$ 的定义有：$[1]_R \otimes[2]_R=\{1,2\}$ 。
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题10.31*}
+
+对于代数 $(\mathbb{Z},+, *)$ 和 $\left(\mathbb{Z}_3=\{0,1,2\}, \oplus_3, \otimes_3\right)$ ，这里 $\oplus_3$ 和 $\otimes$ 分别是模 3 加和模 3 乘运算。定义函数 $f: \mathbb{Z} \rightarrow \mathbb{Z}_3, \forall x \in \mathbb{Z}, f(x)=x \bmod 3$ ，下面哪些说法是正确的？
+
+A. 因为对任意 $x, y \in \mathbb{Z}$ ，有 $f(x+y)=f(x) \oplus_3 f(y)$ 和 $f(x * y)=f(x) \otimes_3 f(y)$ ，因此 $f$ 是代数 $(\mathbb{Z},+, *)$ 到 $\left(\mathbb{Z}_3=\{0,1,2\}, \oplus_3, \otimes_3\right)$ 的同态。
+
+B. $f$ 是代数 $(\mathbb{Z},+, *)$ 到 $\left(\mathbb{Z}_3=\{0,1,2\}, \oplus_3, \otimes_3\right)$ 的单同态。
+
+C. $f$ 是代数 $(\mathbb{Z},+, *)$ 到 $\left(\mathbb{Z}_3=\{0,1,2\}, \oplus_3, \otimes_3\right)$ 的满同态。
+
+D. $f$ 是代数 $(\mathbb{Z},+, *)$ 到 $\left(\mathbb{Z}_3=\{0,1,2\}, \oplus_3, \otimes_3\right)$ 的同构。
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题10.33*}
+
+给定实数集 $\mathbb{R}$ 及其上的普通乘法 $*$ 构成的代数 $(\mathbb{R}, *)$ ，下面定义的函数 $f_i: \mathbb{R} \rightarrow \mathbb{R}, 1 \leq i \leq 4$ 哪些是代数 $(\mathbb{R}, *)$ 的自同态（即该代数到它自己的同态）？
+
+A．$ f_1(x)=|x|$
+
+B．$f_2(x)=x^2$
+
+C．$f_3(x)=2 x$
+
+D．$f_4(x)=-x$
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题10.34*}
+
+设集合 $A=\{0,1,2\}$ 上的二元运算。如下面运算表所定义。下面定义的函数 $f_i: A \rightarrow A$ 哪些是代数 $(A, \circ)$ 的自同态（即该代数到它自己的同态）？
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|lll}
+\hline$\circ$ & 0 & 1 & 2 \\
+\hline 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 1 \\
+2 & 0 & 1 & 2 \\
+\hline
+\end{tabular}
+\end{table}
+
+A．函数 $f_1: A \rightarrow A$ 定义为 $f_1(0)=0, f_1(1)=1, f_1(2)=1$ 。
+
+B，函数 $f_2: A \rightarrow A$ 定义为 $f_2(0)=1, f_2(1)=0, f_2(2)=1$ 。
+
+C．函数 $f_3: A \rightarrow A$ 定义为 $f_3(0)=0, f_3(1)=1, f_3(2)=0$ 。
+
+D．函数 $f_4: A \rightarrow A$ 定义为 $f_4(0)=0, f_4(1)=0, f_4(2)=1$ 。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.35*}
+
+设 $f:(A, \circ) \rightarrow(B, *)$ 是同态，这里$\circ$和$*$都是二元运算，下面哪些说法是正确的？
+
+A，如果$\circ$满足交换律，则$*$也必定满足交换律。
+
+B，如果 $f$ 是单同态，则 $e$ 是运算 $\circ$ 的单位元蕴涵 $f(e)$ 是 $*$ 的单位元。
+
+C，如果 $f$ 是满同态，则 $\theta$ 是运算 $\circ$ 的零元蕴涵 $f(\theta)$ 是 $*$ 的零元。
+
+D，如果 $f$ 是同构，则 $\circ$ 满足消去律蕴涵$*$也满足消去律。
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题10.36*}
+
+下面哪些集合及其二元运算构成群？
+
+A，整数集及普通加法运算。
+
+B，实数集及普通乘法运算。
+
+C，非空集A的幂集及集合交运算。
+
+D，非空集A上的所有双函数构成的集合及函数复合运算。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.37*}
+
+对于 $U(7)=\{1,2,3,4,5,6\}$ 与模 7 乘构成的 $U(7)$ 群，下面对于元素逆的说法哪些是正确的？
+
+A．元素2的逆元是4。
+
+B，元素 3 的逆元是 3 。
+
+C，元素4的逆元是 5 。
+
+D，元素6的逆元是6。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.40*}
+
+对于 $U(7)=\{1,2,3,4,5,6\}$ 与模 7 乘构成的 $U(7)$ 群，下面对于元素阶的说法哪些是正确的？
+
+A，元素2的阶是3。
+
+B，元素3的阶是 3 。
+
+C，元素4的阶是 3 。
+
+D，元素6的阶是3。
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题10.41*}
+
+设 $a, b, c$ 是群 $G$ 的任意元素，下面哪些说法是正确的？
+
+A．如果 $|a|=n$ 且 $|b|=m$ ，则 $|a b|=n m$ 。
+
+B，如果 $|a b|=n$ ，则 $|b a|=n$ 。
+
+C．如果 $|a|=n$ ，则 $\left|b a b^{-1}\right|=n$ 。
+
+D．如果 $|a b c|=n$ ，则 $|b c a|=|c a b|=n$ 。
+
+
+\textcolor{red}{答案：BCD}
+
+\subsubsection{测验题10.43*}
+
+对于 $U(8)=\{1,3,5,7\}$ 与模 8 乘构成的 $U(8)$ 群，下面哪些子集是它的子群？
+
+A．$\{1,3\}$
+
+B．$\{1,3,5\}$
+
+C．$\{1,7\}$
+
+D．$\{1,5,7\}$
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题10.44*}
+
+群 $G=\{e, a, b, c, d, f\}$ 的运算。如下表定义，下面哪些子集是 $G$ 的子群？
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|llllll}
+\hline$\circ$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+\hline$e$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+$a$ & $a$ & $b$ & $f$ & $e$ & $c$ & $d$ \\
+$b$ & $b$ & $f$ & $d$ & $a$ & $e$ & $c$ \\
+$c$ & $c$ & $e$ & $a$ & $d$ & $f$ & $b$ \\
+$d$ & $d$ & $c$ & $e$ & $f$ & $b$ & $a$ \\
+$f$ & $f$ & $d$ & $c$ & $b$ & $a$ & $e$ \\
+\hline
+\end{tabular}
+\end{table}
+
+A．$\{e, a\}$
+
+B，$\{e, b\}$
+
+C，$\{e, b, d\}$
+
+D，$\{e, f\}$
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题10.45*}
+
+群 $G=\{e, a, b, c, d, f\}$ 的运算○如下表定义，下面哪些子集是 $G$ 的子群？
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|llllll}
+\hline$\circ$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+\hline$e$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+$a$ & $a$ & $e$ & $f$ & $d$ & $c$ & $b$ \\
+$b$ & $b$ & $d$ & $e$ & $f$ & $a$ & $c$ \\
+$c$ & $c$ & $f$ & $d$ & $e$ & $b$ & $a$ \\
+$d$ & $d$ & $b$ & $c$ & $a$ & $f$ & $e$ \\
+$f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
+\hline
+\end{tabular}
+\end{table}
+
+A．$\{e, a\}$
+
+B ．$\{e, a, b\}$
+
+C．$\{e, c, d\}$
+
+D．$\{e, d, f\}$
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.47*}
+
+对于 $\mathbb{Z}_{12}=\{k \in \mathbb{Z} \mid 0 \leq k<12\}$ 与模 12 加构成的模 12 加群，下面对于子群及其陪集的哪些说法是正确的？
+
+A．子集 ${H}=\{0,2,4,6\}$ 是子群，且陪集 $3 {H}=\{0,6\}$ 。
+
+B，子集 ${H}=\{0,3,6,9\}$ 是子群，且陪集 $2 {H}=\{0,6\}$ 。
+
+C．子集 $H=\{0,6\}$ 是子群，且陪集 $4 {H}=\{4,10\}$ 。
+
+D．子集 ${H}=\{0,3,6,9\}$ 是子群，且陪集 $4 {H}=\{4,7,10,1\}$ 。
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题10.48*}
+
+对于 ${U}(14)=\{1,3,5,9,11,13\}$ 与模14乘构成的 $U(14)$ 群，下面对于子群及其陪集的哪些说法是正确的？
+
+A．子集 ${H}=\{1,3,5\}$ 是子群，且陪集 $9 {H}=\{3,9,13\}$ 。
+
+B，子集 $H=\{1,9,11\}$ 是子群，且陪集 $3 H=\{3,5,13\}$ 。
+
+C．子集 ${H}=\{1,13\}$ 是子群，且陪集 $9 {H}=\{5,9\}$ 。
+
+D．子集 ${H}=\{1,9,11\}$ 是子群，且陪集 $5 {H}=\{1,3,5\}$ 。
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题10.50*}
+
+群 $G=\{e, a, b, c, d, f\}$ 的运算 $\circ$ 如下表定义，下面对于子群及其陪集的哪些说法是正确的？
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|llllll}
+\hline$\circ$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+\hline$e$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+$a$ & $a$ & $e$ & $f$ & $d$ & $c$ & $b$ \\
+$b$ & $b$ & $d$ & $e$ & $f$ & $a$ & $c$ \\
+$c$ & $c$ & $f$ & $d$ & $e$ & $b$ & $a$ \\
+$d$ & $d$ & $b$ & $c$ & $a$ & $f$ & $e$ \\
+$f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
+\hline
+\end{tabular}
+\end{table}
+
+A．子集 $H=\{e, a\}$ 是子群，且陪集 $c H=\{c, f\}$ 。
+
+B，子集 $H=\{e, d, f\}$ 是子群，且陪集 $c H=\{c, a, b\}$ 。
+
+C，子集 $H=\{e, a\}$ 是子群，且陪集 $H c=\{c, f\}$ 。
+
+D，子集 $H=\{e, d, f\}$ 是子群，且陪集 $H c=\{c, a, b\}$ 。
+
+\textcolor{red}{答案：ABD}
+
+\subsubsection{测验题10.52*}
+
+对于 $U(9)=\{1,2,4,5,7,8\}$ 与模 9 乘构成的 $U(9)$ 群，下面哪些说法是正确的？
+
+A．子集 $H=\{1,2,4\}$ 是 $U(9)$ 的正规子群。
+
+B，子集 $H=\{1,8\}$ 是 $U(9)$ 的正规子群。
+
+C．子集 ${H}=\{1,4,7\}$ 是 ${U}(9)$ 的正规子群。
+
+D，子集 $H=\{1,5\}$ 是 $U(9)$ 的正规子群。
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题10.53*}
+
+群 $G=\{e, a, b, c, d, f\}$ 的运算 0 如下表定义，下面哪些说法是正确的？
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|llllll}
+\hline$\circ$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+\hline$e$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+$a$ & $a$ & $e$ & $f$ & $d$ & $c$ & $b$ \\
+$b$ & $b$ & $d$ & $e$ & $f$ & $a$ & $c$ \\
+$c$ & $c$ & $f$ & $d$ & $e$ & $b$ & $a$ \\
+$d$ & $d$ & $b$ & $c$ & $a$ & $f$ & $e$ \\
+$f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
+\hline
+\end{tabular}
+\end{table}
+
+A．子集 $H=\{e, a\}$ 是群 $G$ 的正规子群。
+
+B，子集 $H=\{e, d, f\}$ 是群 $G$ 的正规子群。
+
+C，子集 $H=\{e, b\}$ 是群 $G$ 的正规子群。
+
+D，子集 $H=\{e, c\}$ 是群 $G$ 的正规子群。
+
+\textcolor{red}{答案：B}
+
+\subsubsection{测验题10.54*}
+
+设 H 是群 G 是一个子集，下面哪些说法是正确的？
+
+A．若对任意 $a \in G$ 有 $a H=H a$ ，则 $H$ 是群 $G$ 的正规子群。
+
+B，若 $H$ 是 $G$ 的子群，且对任意 $a \in G$ ，有 $a H a^{-1}=H$ ，则 $H$ 是群 $G$ 的正规子群。
+
+C，若 H 是 G 的子群，且 H 的陪集恰好有 3 个，则 H 是群 G 的正规子群。
+
+D，若 H 是 G 的子群，且H的陪集恰好有 2 个，则 H 是群 G 的正规子群。
+
+\textcolor{red}{答案：BD}
+
+
+\subsubsection{测验题10.55*}
+
+对于 $U(14)=\{1,3,5,9,11,13\}$ 与模 14 乘构成的 $U(14)$ 群，子集 $N=\{1,13\}$ 是 $U(14)$ 的正规子群，下面哪些说法是正确的？
+
+A．G关于N的商群的基集是 $\{1,13\},\{3,11\},\{5,9\}\}$ 。
+
+B，G关于 $N$ 的商群 $G / N$ 的单位元 $\{1,13\}$ 。
+
+C，在G关于 $N$ 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集N3的逆元是陪集N11。
+
+D，在G关于 $N$ 的商群 $G / N$ 中，陪集N3与陪集N11的运算结果是陪集N13。
+
+\textcolor{red}{答案：AB}
+
+\subsubsection{测验题10.56*}
+
+群 $G=\{e, a, b, c, d, f\}$ 的运算 $*$ 定义如下表，子集 $N=\{e, d, f\}$ 是 $G$ 的正规子群，下面哪些说法是正确的？
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{l|llllll}
+\hline$*$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+\hline$e$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+$a$ & $a$ & $e$ & $f$ & $d$ & $c$ & $b$ \\
+$b$ & $b$ & $d$ & $e$ & $f$ & $a$ & $c$ \\
+$c$ & $c$ & $f$ & $d$ & $e$ & $b$ & $a$ \\
+$d$ & $d$ & $b$ & $c$ & $a$ & $f$ & $e$ \\
+$f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
+\hline
+\end{tabular}
+\end{table}
+
+A，G关于N的商群的基集是 $\{\{\mathrm{e}, \mathrm{d}, \mathrm{f}\},\{\mathrm{c}, \mathrm{a}, \mathrm{b}\}\}$ 。
+
+B，G关于 $N$ 的商群 $G / N$ 的单位元e。
+
+C，在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 的逆元是陪集 Nc 。
+
+D，在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 与陪集 Nd 的运算结果是陪集 Nc 。
+
+\textcolor{red}{答案：ACD}
+
+
+\subsubsection{测验题10.57*}
+
+设 $(G, *)$ 和 $(H, \circ)$ 都是群，$f: G \rightarrow H$ 是函数，下面哪些说法是正确的？
+
+A．如果对任意 $a \in G$ 有 $[f(a)]^{-1}=f\left(a^{-1}\right)$ ，则 $f$ 是群同态。
+
+B，如果 $f$ 是群同态，则对任意 $a \in G$ 有 $[f(a)]^{-1}=f\left(a^{-1}\right)$ 。
+
+C．如果对任意 $a, b \in G$ 有 $f(a * b)=f(a) \circ f(b)$ ，则 $f$ 是群同态。
+
+D，如果 $f$ 是群同态，则 $f^{-1}\left(\left\{e^{\prime}\right\}\right)$ 是 $G$ 的子群，这里 $e^{\prime}$ 是群 $H$ 的单位元。
+
+\textcolor{red}{答案：BCD}
+
+\subsubsection{测验题10.58*}
+
+下面哪些集合及其上的二元关系构成格？
+
+A，给定非空集 $A$ 的幂集 $\wp(A)$ 及其上的子集关系 $\subseteq$ 。
+
+B，给定非空集 $A$ ，集合 $\mathcal{T}=\{R \mid R \subseteq A \times A$ 且是传递的 $\}$ 及其上的子集关系 $\subseteq$ 。
+
+C，整数集 $\mathbb{Z}$ 及其上的小于关系 $<$ 。
+
+D，正整数集 $\mathbb{Z}^{+}$及其上的整除关系$\mid$。
+
+\textcolor{red}{答案：AD}
+
+\subsubsection{测验题10.60*}
+
+设 $(L, \preceq)$ 是格，$\vee$ 和 $\wedge$ 分别是格的上确界和下确界运算，下面哪些说法是正确的？
+
+A．对任意 $a, b, c \in L, \quad b \wedge c \preceq a$ 当且仅当 $b \preceq a$ 且 $c \preceq a$ 。
+
+B，对任意 $a, b, c \in L, ~ a \preceq b \wedge c$ 当且仅当 $a \preceq b$ 且 $a \preceq c$ 。
+
+C．对任意 $a, b, c \in L, a \preceq b \vee c$ 当且仅当 $a \preceq b$ 或 $a \preceq c$ 。
+
+D．对任意 $a, b, c \in L, \quad b \vee c \preceq a$ 当且仅当 $b \preceq a$ 或 $c \preceq a$ 。
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题10.61*}
+
+设 $(L, \preceq)$ 是格，$\vee$ 和 $\wedge$ 分别是格的上确界和下确界运算，下面哪些说法是正确的？
+
+A．运算 $\vee$ 和 $\wedge$ 都满足交换律。
+
+B，运算 $\vee$ 和 $\wedge$ 都满足结合律。
+
+C，运算 $\vee$ 和 $\wedge$ 满足吸收律。
+
+D．运算 $\vee$ 对 $\wedge$ 满足分配律。
+
+\textcolor{red}{答案：ABC}
+
+\subsubsection{测验题10.62*}
+
+设 $(S, *, \circ$ ）是有两个二元运算的代数系统，下面哪些说法是正确的？
+
+A. 如果运算 $*$ 和 $\circ$ 满足吸收律，则它们也都满足幂等律。
+
+B. 在 $S$ 上定义二元关系 $R$ ，对任意 $a, b \in S,\langle a, b\rangle \in R$ 当且仅当 $a \circ b=b$ ，则 $R$ 是偏序。
+
+C. 如果运算 $*$ 和$\circ$满足交换律和吸收律，则对任意 $a, b \in S, a \circ b=b$ 当且仅当 $a * b=a$ 。
+
+D. 如果运算 $*$ 和 $\circ$ 满足交换律，吸收律和结合律，在 $S$ 上定义二元关系 $R$ ，对任意 $a, b \in$
+$S,\langle a, b\rangle \in R$ 当且仅当 $a \circ b=a$ ，则 $R$ 是偏序，且在偏序集 $(S, R)$ 中，对任意 $c, d \in$ $S, c \circ d$ 给出 $c$ 和 $d$ 的下确界。
+
+
+\textcolor{red}{答案：ACD}
+
+\subsubsection{测验题10.63*}
+
+设 $(L, \preceq)$ 是格， V 和 $\wedge$ 分别是上确界和下确界运算，下面哪些说法是正确的？
+
+A．对任意 $a, b \in L, a \preceq b$ 当且仅当 $a \vee b=b$ ，当且仅当 $a \wedge b=a$ 。
+
+B，对任意 $a, b, c \in L, a \vee(b \wedge c) \preceq(a \vee b) \wedge(a \vee c)$ 。
+
+C．对任意 $a, b, c \in L, a \wedge(b \vee c) \preceq(a \wedge b) \vee(a \wedge c)$ 。
+
+D．对任意 $a, b \in L, a \vee b=a \wedge b$ 当且仅当 $a=b$ 。
+
+\textcolor{red}{答案：ABD}
+
+\subsubsection{测验题10.64*}
+
+下面哪些格是分配格？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.14\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.64_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.64 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.23\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.64_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.64 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.64_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.64 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.22\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.64_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.64 D选项}
+\end{minipage}
+\end{figure}
+
+\textcolor{red}{答案：AC}
+
+\subsubsection{测验题10.65*}
+
+下面哪些偏序集是分配格？
+
+A．偏序集 $(\mathbb{R}, \leq)$ ，这里 $\leq$ 是普通的小于等于关系。
+
+B，给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
+
+C．给定非空集 $A, \mathcal{F}=\{R \subseteq A \times A \mid R$ 是自反的 $\}$ ，偏序集 $(\mathcal{F}, \subseteq)$ 。
+
+D．集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{36}, \mid\right)$ ，这里｜是整除关系。
+
+\textcolor{red}{答案：ABCD}
+
+\subsubsection{测验题10.66*}
+
+下面哪些偏序集是有界格？
+
+A．偏序集 $(\mathbb{R}, \leq)$ ，这里 $\leq$ 是普通的小于等于关系。
+
+B，给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
+
+C．给定非空集 $A, \mathcal{F}=\{R \subseteq A \times A \mid R$ 是自反的 $\}$ ，偏序集 $(\mathcal{F}, \subseteq)$ 。
+
+D，集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{36}, \mid\right)$ ，这里｜是整除关系。
+
+\textcolor{red}{答案：BCD}
+
+\subsubsection{测验题10.68*}
+
+对于下面偏序图给出的有界格，下面关于补元的哪些说法是正确的？
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{10.68.jpg} % 插入图片
+\end{figure}
+
+
+A．元素$e$和$b$都没有补元。
+
+B，元素 $d$ 的补元有 $1$ 和 $c$ 。
+
+C．元素$a$的补元是$f$。
+
+D，元素 $c$ 的补元是 $d$ 。
+
+\textcolor{red}{答案：CD}
+
+\subsubsection{测验题10.69*}
+
+下面哪些偏序集是布尔代数？
+
+A．偏序集 $(\mathbb{R}, \leq)$ ，这里 $\leq$ 是普通的小于等于关系。
+
+B，给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
+
+C，给定非空集 $A, \mathcal{F}=\{R \subseteq A \times A \mid R$ 是自反的 $\}$ ，偏序集 $(\mathcal{F}, \subseteq)$ 。
+
+D，集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{36}, \mid\right)$ ，这里$\mid$是整除关系。
+
+\textcolor{red}{答案：BC}
+
+\subsubsection{测验题10.70*}
+
+记 $F_n$ 是 $n$ 的所有正因子构成的集合，以整除关系 $\mid$ 为偏序，下面哪些是布尔代数？
+
+A．$ F_6$
+
+B．$ F_{30}$
+
+C．$F_{48}$
+
+D．$ F_{110}$
+
+\textcolor{red}{答案：BD}
+
+\subsubsection{测验题10.72*}
+
+设 $(L, \preceq)$ 是布尔代数，$\vee$ 和 $\wedge$ 分别是上确界和下确界运算， 0 和 1 分别是最小元和最大元，$\neg$ 是补元运算，下面哪些说法是正确的？
+
+A．对任意 $a, b, c \in L$ ，若 $a \vee b=a \vee c$ 且 $a \wedge b=a \wedge c$ ，则 $b=c$ 。
+
+B，对任意 $a, b, c \in L$ ，若 $a \vee b=a \vee c$ 且 $\neg a \vee b=\neg a \vee c$ ，则 $b=c$ 。
+
+C．对任意 $a, b, c \in L$ ，若 $a \wedge b=a \wedge c$ 且 $\neg a \wedge b=\neg a \wedge c$ ，则 $b=c$ 。
+
+D．对任意 $a, b \in L$ ，若 $a \wedge \neg b=\mathbf{0}$ 且 $\neg a \wedge b=\mathbf{0}$ ，则 $a=b$ 。
+
+
+\textcolor{red}{答案：ABCD}
+
+\subsubsection{测验题10.73*}
+
+设 $(B, *, \circ)$ 是有两个二元运算的代数系统，$*$ 和 $\circ$ 都满足交换律，$*$ 对 $\circ$ 满足分配律，$\circ$ 对 $*$ 也满足分配律，运算 $*$ 存在单位元 $\mathbf{0}$ ，运算 $\circ$ 存在单位元 $\mathbf{1}$ ，且对任意 $a \in B$ ，存在 $b \in B$ 使得 $a \circ b=\mathbf{0}$ 且 $a * b=\mathbf{1}$ 。下面哪些说法是正确的？
+
+A．运算$*$和$\circ$满足吸收律。
+
+B，运算 $*$ 的单位元 $\mathbf{0}$ 是$\circ$的零元，而$\circ$的单位元 $\mathbf{1}$ 是 $*$ 的零元。
+
+C，运算 $*$ 和 $\circ$ 都满足结合律。
+
+D，代数系统 $(B, *, \circ)$ 是布尔代数，且$\circ$和 $*$ 分别是上确界和下确界运算。
+
+\textcolor{red}{答案：ABC}
 
 \end{document}
