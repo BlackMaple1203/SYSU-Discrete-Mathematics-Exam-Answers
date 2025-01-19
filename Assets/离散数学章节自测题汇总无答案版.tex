@@ -23,7 +23,7 @@
 \usepackage{url,hyperref}
 \hypersetup{colorlinks=true,linkcolor=black,citecolor=black} % 去掉目录红框
 %-----制作目录-----
-\usepackage{imakeidx}
+\usepackage{imakeidx} 
 % 设置颜色
 % \usepackage{color,xcolor}
 % 插入图片
@@ -155,15 +155,66 @@
 % \clearpage
 
 
-\thispagestyle{fancy}
 % -----------------从这里开始写文章-----------------
 
-\textbf{写在前面：}这篇文档结合了多位同学的学习通题目,旨在方便大家复习离散数学,\textbf{仅供学习交流使用},如有侵权,请联系删除。
-\textbf{不要只看题目序号,选项可能会换顺序！！！}由于题目数量大,文档中难免会有小的文字识别错误,还望谅解。
+\phantomsection
+\addcontentsline{toc}{section}{简介}
+\section*{简介}
 
+本文档为中山大学计算机学院课程《离散数学基础》(Elementary Discrete Mathematics)(\textit{ISBN：9787302576679,清华大学出版社,作者：周晓聪，乔海燕})的测验题答案。
+下表是该文档统计的所有测验题目的章节分布情况。
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{|c|c|c|c|c|}
+  \hline 章节序号 & 章节名称 & 归档题数 & 已知最大题号 & 缺失题目 \\
+  \hline 0 & 序言 & 4 & 4 & - \\
+  \hline 1 & 基础知识 & 17 & 17 & - \\
+  \hline 2 & 命题逻辑 & 99 & 100 & 2.99 \\
+  \hline 3 & 一阶逻辑 & 100 & 100 & - \\
+  \hline 4 & 证明方法 & 44 & 45 & 4.32 \\
+  \hline 5 & 集合 & 61 & 61 & - \\
+  \hline 6 & 关系 & 95 & 95 & - \\
+  \hline 7 & 函数 & 48 & 48 & - \\
+  \hline 8 & 计数与组合 & 114 & 114 & - \\
+  \hline 9 & 图与树 & 73 & 73 & 9.70 （缺答案） \\
+  \hline 10 & 代数系统 & 61 & 73 & 见下 \\
+  \hline 总计& & 716 & 730 & 18 \\
+  \hline
+  \end{tabular}
+\end{table}
+
+其中第十章缺少的题目为：10.2（缺答案），10.3（缺答案），10.5（缺答案），10.7，10.22，10.32，10.38，10.39，10.42，10.46，10.49，10.51，10.59，10.67，10.71。
+
+本文档中所有测验题均来自在线学习平台\textit{学习通}的章节测试题目，整合数十位同学的题目截图后转化为LaTeX格式完成本文档。
+目前该文档以及创建的依赖图片和tex源文件都已经上传至\href{https://github.com/BlackMaple1203/SYSU-Discrete-Mathematics-Exam-Answers}{这个github仓库},
+欢迎大家前往查看。对于文档中的任何问题，欢迎大家提出issue或者pull request。
+
+本文档仅供学习交流使用，旨在课后解答题的基础上拓充有关选择题的练习。如若某些练习题恰好出现在课程教学过程中的章节小测中，纯属巧合。
+
+\textbf{关于pdf文档的使用}：每一章节每道题目都可以在目录中找到，点击题目序号即可跳转到对应题目。
+文档中部分题目答案后跟随的解析是笔者做题时自己的思考，不代表任何权威人士的见解，仅供参考。
+
+部分章节中的部分习题后标注了星号，表示此部分内容不在2023级计算机学院的的期末考试范围中，不代表除此之外的级别的考试范围，也不代表知识的重要程度。
+2023级学生的非考试范围有：
+\begin{itemize}
+  \item \textbf{第一章.基础知识的全部内容}
+  \item \textbf{第七章第二节.函数基数基础知识}
+  \item \textbf{第九章第三节.带权图及其应用：} 此部分在数据结构课程中重点考察，不在离散数学课程考试范围内。
+  \item \textbf{第十章.代数系统的全部内容}
+\end{itemize}
+
+本文档\textbf{仅供学习交流使用},如有侵权,请联系删除。在实际做题时，
+\textbf{请不要只看题目序号填写答案,选项可能会换顺序。}由于题目数量大,文档中难免会有小的文字识别错误,还望谅解。
+
+最后再宣传一下该\href{https://github.com/BlackMaple1203/SYSU-Discrete-Mathematics-Exam-Answers}{离散数学章节自测题答案}的github仓库，
+欢迎大家前往查看。
+\clearpage
 
 \phantomsection
 \addcontentsline{toc}{section}{前言}
+
+
 \section*{前言}
 
 \subsubsection{测验题0.1}
@@ -11635,9 +11686,9 @@ D，对于集合 $A$ 上的函数，函数复合是集合 $A^A$ 上的运算。
 
 对于运算的封闭性，下面哪些说法是正确的？
 
-A. 设集合 $A=\{2 k+1 \mid k \in \mathbb{Z}\}$ ，则整数集 $\mathbb{Z} 上$ 的加法运算对集合 $A$ 封闭。
+A. 设集合 $A=\{2 k+1 \mid k \in \mathbb{Z}\}$ ，则整数集 $\mathbb{Z} $上的加法运算对集合 $A$ 封闭。
 
-B. 设集合 $A=\{2 k+1 \mid k \in \mathbb{Z}\}$ ，则整数集 $\mathbb{Z} 上$ 的乘法运算对集合 $A$ 封闭。
+B. 设集合 $A=\{2 k+1 \mid k \in \mathbb{Z}\}$ ，则整数集 $\mathbb{Z} $上的乘法运算对集合 $A$ 封闭。
 
 C. 给定非空集 $A$ ，设集合 $Q=\{R \subseteq A \times A \mid R$ 是传递的 $\}$ ，则 $\wp(A \times A)$ 上的集合交运算对集合 $Q$ 封闭。
 
@@ -11668,7 +11719,7 @@ A．实数集上的乘法运算满足结合律。
 
 B. 整数集上的减法运算满足结合律。
 
-C．所有 $n$ 乘 $n$ 的实数知阵构成的集合上的矩阵乘法满足结合律。
+C．所有 $n$ 乘 $n$ 的实数矩阵构成的集合上的矩阵乘法满足结合律。
 
 D．所有 $A$ 上的函数集合 $A^A$ 上的函数复合运算满足结合律。
 
@@ -11698,7 +11749,7 @@ B，整数集上的加法对乘法满足分配律。
 
 C．给定非空集 $A$ ，集合 $\wp(A \times A)$ 上的关系复合运算对集合并运算满足分配律。
 
-D．给定非空集 $A$ ，集合 $\varphi(A \times A)$ 上的关系复合运算对集合交运算满足分配律。
+D．给定非空集 $A$ ，集合 $\wp(A \times A)$ 上的关系复合运算对集合交运算满足分配律。
 
 \textcolor{white}{答案：AC}
 
@@ -11800,7 +11851,7 @@ B，运算＊满足结合律。
 
 C，运算＊有单位元，且单位元是 0 。
 
-D，每个自然数关于运算夫都有逆元。
+D，每个自然数关于运算$*$都有逆元。
 
 \textcolor{white}{答案：ACD}
 
@@ -11812,7 +11863,7 @@ D，每个自然数关于运算夫都有逆元。
 
 A．运算 $*$ 和$\circ$都有单位元。
 
-B. 运算 $*$ 和 0 都有零元。
+B. 运算 $*$ 和 $\circ$ 都有零元。
 
 C. 运算 $*$ 和 $\circ$ 满足吸收律。
 
@@ -12424,7 +12475,7 @@ $f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
 
 A，G关于N的商群的基集是 $\{\{\mathrm{e}, \mathrm{d}, \mathrm{f}\},\{\mathrm{c}, \mathrm{a}, \mathrm{b}\}\}$ 。
 
-B，G关于 $N$ 的商群 $G / N$ 的单位元e。
+B，G关于 N 的商群 $G / N$ 的单位元e。
 
 C，在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 的逆元是陪集 Nc 。
 
@@ -12465,13 +12516,13 @@ D，正整数集 $\mathbb{Z}^{+}$及其上的整除关系$\mid$。
 
 设 $(L, \preceq)$ 是格，$\vee$ 和 $\wedge$ 分别是格的上确界和下确界运算，下面哪些说法是正确的？
 
-A．对任意 $a, b, c \in L, \quad b \wedge c \preceq a$ 当且仅当 $b \preceq a$ 且 $c \preceq a$ 。
+A．对任意 $a, b, c \in L,  b \wedge c \preceq a$ 当且仅当 $b \preceq a$ 且 $c \preceq a$ 。
 
 B，对任意 $a, b, c \in L, ~ a \preceq b \wedge c$ 当且仅当 $a \preceq b$ 且 $a \preceq c$ 。
 
 C．对任意 $a, b, c \in L, a \preceq b \vee c$ 当且仅当 $a \preceq b$ 或 $a \preceq c$ 。
 
-D．对任意 $a, b, c \in L, \quad b \vee c \preceq a$ 当且仅当 $b \preceq a$ 或 $c \preceq a$ 。
+D．对任意 $a, b, c \in L,  b \vee c \preceq a$ 当且仅当 $b \preceq a$ 或 $c \preceq a$ 。
 
 \textcolor{white}{答案：BD}
 
@@ -12507,7 +12558,7 @@ $S,\langle a, b\rangle \in R$ 当且仅当 $a \circ b=a$ ，则 $R$ 是偏序，
 
 \subsubsection{测验题10.63*}
 
-设 $(L, \preceq)$ 是格， V 和 $\wedge$ 分别是上确界和下确界运算，下面哪些说法是正确的？
+设 $(L, \preceq)$ 是格， $\vee$ 和 $\wedge$ 分别是上确界和下确界运算，下面哪些说法是正确的？
 
 A．对任意 $a, b \in L, a \preceq b$ 当且仅当 $a \vee b=b$ ，当且仅当 $a \wedge b=a$ 。
 
