@@ -149,11 +149,15 @@
 \fancyhead[R]{Tony 计算机科学与技术}
 \title{\LARGE \textbf{离散数学章节自测题汇总}}
 \author{Tony \hspace{2.89cm} 计算机科学与技术}
+
+
 \begin{document}
+
 \maketitle
 
 % \clearpage
-
+\tableofcontents
+\clearpage
 
 % -----------------从这里开始写文章-----------------
 
@@ -187,7 +191,7 @@
 其中第十章缺少的题目为：10.2（缺答案），10.3（缺答案），10.5（缺答案），10.7，10.22，10.32，10.38，10.39，10.42，10.46，10.49，10.51，10.59，10.67，10.71。
 
 本文档中所有测验题均来自在线学习平台\textit{学习通}的章节测试题目，整合数十位同学的题目截图后转化为LaTeX格式完成本文档。
-目前该文档以及创建的依赖图片和tex源文件都已经上传至\href{https://github.com/BlackMaple1203/SYSU-Discrete-Mathematics-Exam-Answers}{这个github仓库},
+目前该文档以及创建的依赖图片和tex源文件都已经上传至\href{https://github. com/BlackMaple1203/SYSU-Discrete-Mathematics-Exam-Answers}{这个github仓库},
 欢迎大家前往查看。对于文档中的任何问题，欢迎大家提出issue或者pull request。
 
 本文档仅供学习交流使用，旨在课后解答题的基础上拓充有关选择题的练习。如若某些练习题恰好出现在课程教学过程中的章节小测中，纯属巧合。
@@ -207,8 +211,10 @@
 本文档\textbf{仅供学习交流使用},如有侵权,请联系删除。在实际做题时，
 \textbf{请不要只看题目序号填写答案,选项可能会换顺序。}由于题目数量大,文档中难免会有小的文字识别错误,还望谅解。
 
-最后再宣传一下该\href{https://github.com/BlackMaple1203/SYSU-Discrete-Mathematics-Exam-Answers}{离散数学章节自测题答案}的github仓库，
+最后再宣传一下该\href{https://github. com/BlackMaple1203/SYSU-Discrete-Mathematics-Exam-Answers}{离散数学章节自测题答案}的github仓库，
 欢迎大家前往查看。
+
+
 \clearpage
 
 \phantomsection
@@ -364,7 +370,7 @@ D. $Q \subseteq P$
 
 \subsubsection{测验题1.6}
 
-设 $D=\{1,2,3,4\}, Q=D \times D$, 在 $Q$ 上定义关系 $R$, 对任意 $a, b, c, d \in D,\langle a, b)$ 和 $\langle c, d\rangle$ 有关系 $R$, 当且仅当 $a \cdot d=b \cdot c$ (这里•是整数乘法), 即:
+设 $D=\{1,2,3,4\}, Q=D \times D$, 在 $Q$ 上定义关系 $R$, 对任意 $a, b, c, d \in D,\langle a, b)$ 和 $\langle c, d\rangle$ 有关系 $R$, 当且仅当 $a \cdot d=b \cdot c$ (这里$\cdot$是整数乘法), 即:
 $$
 \langle\langle a, b\rangle,\langle c, d\rangle\rangle \in R \text { 当且仅当 } a \cdot d=b \cdot c
 $$
@@ -841,7 +847,7 @@ B. 当 $\sigma(A)=1$ 时，$\sigma(A \vee B)=1$ 。
 
 C. 当 $\sigma(A)=1$ 时，$\sigma(A \rightarrow B)=\sigma(B)$
 
-D.  当 $\sigma(B)=1$ 时，$\sigma(A \rightarrow B)=\sigma(A)$
+D. 当 $\sigma(B)=1$ 时，$\sigma(A \rightarrow B)=\sigma(A)$
 
 \textcolor{red}{答案：D}
 
@@ -855,7 +861,7 @@ B. 当 $\sigma(A)=0$ 时，$\sigma(A \vee B)=\sigma(B)$ 。
 
 C. 当 $\sigma(A)=0$ 时，$\sigma(A \rightarrow B)=\sigma(B)$
 
-D.  当 $\sigma(B)=0$ 时，$\sigma(A \rightarrow B)=\sigma(\neg A)$
+D. 当 $\sigma(B)=0$ 时，$\sigma(A \rightarrow B)=\sigma(\neg A)$
 
 \textcolor{red}{答案：C}
 
@@ -1040,11 +1046,11 @@ D. 0111
 
 A. 0000
 
-B.  0101
+B. 0101
 
-C.  0110
+C. 0110
 
-D.   1111
+D. 1111
 
 \textcolor{red}{答案：C}
 
@@ -1080,7 +1086,7 @@ B.
 C. 
 1100
 
-D.  
+D. 
 1111
 
 \textcolor{red}{答案：D}
@@ -1119,7 +1125,7 @@ B.
 C. 
 公式 $\neg(p \vee q) \vee(\neg p \wedge((p \vee q) \leftrightarrow \neg p))$ 是公式 $A$ 的一个替换实例。
 
-D.  
+D. 
 公式 $\neg p \vee(\neg q \wedge(p \leftrightarrow \neg q))$ 是公式 $A$ 的一个替换实例。
 
 
@@ -1177,9 +1183,9 @@ D. 无法判断
 
 A. 永真式
 
-B.  矛盾式
+B. 矛盾式
 
-C.   非永真的可满足式
+C. 非永真的可满足式
 
 D. 无法判断
 
@@ -1237,7 +1243,7 @@ A. $p \vee(q \wedge p) \equiv p$
 
 C. $(p \wedge q) \vee(p \wedge q \wedge r) \equiv p \wedge q$
 
-D.  $(p \wedge q \wedge r) \vee(p \wedge q) \equiv p \wedge q$
+D. $(p \wedge q \wedge r) \vee(p \wedge q) \equiv p \wedge q$
 
 \textcolor{red}{答案：ABCD}
 
@@ -1400,7 +1406,7 @@ D. 公式 $(p \vee q) \leftrightarrow r$ 和 $(p \leftrightarrow r) \vee(q \left
 
 A. 公式 $p \rightarrow q$ 和 $\neg q \rightarrow \neg p$
 
-B.  公式 $p \leftrightarrow q$ 和 $\neg q \leftrightarrow \neg p$
+B. 公式 $p \leftrightarrow q$ 和 $\neg q \leftrightarrow \neg p$
 
 C. 公式 $p \rightarrow(q \rightarrow r)$ 和 $(p \rightarrow q) \rightarrow r$
 
@@ -1418,7 +1424,7 @@ B. 公式 $\neg(p \wedge q)$ 和 $\neg p \vee \neg q$
 
 C. 公式 $\neg(p \rightarrow q)$ 和 $p \rightarrow \neg q$
 
-D.  公式 $\neg(p \leftrightarrow q)$ 和 $p \leftrightarrow \neg q$
+D. 公式 $\neg(p \leftrightarrow q)$ 和 $p \leftrightarrow \neg q$
 
 \textcolor{red}{答案：C}
 
@@ -1452,7 +1458,7 @@ B.
 C. 
 每个命题逻辑公式都存在与之等值的只含合取和析取运算符的公式。
 
-D.  
+D. 
 无论是析取范式还是合取范式，逻辑否定运算符都只出现在命题变量之前。
 
 \textcolor{red}{答案：C}
@@ -1552,7 +1558,7 @@ B. $(p \wedge \neg q) \vee r$
 
 C. $(p \vee r) \wedge(\neg q \vee r)$
 
-D.  $(\neg p \wedge q) \vee r$
+D. $(\neg p \wedge q) \vee r$
 
 \textcolor{red}{答案：B}
 
@@ -1578,7 +1584,7 @@ B. 极小项是简单析取式，极大项是简单合取式
 
 C. 主析取范式是一个或多个极小顶的析取，主合取范式是一个或多个极大项的合取
 
-D.  主析取范式是析取范式，主合取范式是合取范式
+D. 主析取范式是析取范式，主合取范式是合取范式
 
 \textcolor{red}{答案：BC}
 
@@ -1590,9 +1596,9 @@ A. 每个命题逻辑公式既存在与之等值的主合取范式,也存在与�
 
 B. 极小项的编码是使得这个极小项的真值为真的唯一的真值赋值方式
 
-C.设有 3 个命题变量,极小项 $m_2$ 的否定与 $M_2$ 逻辑等值。
+C. 设有 3 个命题变量,极小项 $m_2$ 的否定与 $M_2$ 逻辑等值。
 
-D.与主析取范式 $m_1 \vee m_3 \vee m_5$ 逻辑等值的主合取范式是 $M_1 \wedge M_3 \wedge M_5$ 。
+D. 与主析取范式 $m_1 \vee m_3 \vee m_5$ 逻辑等值的主合取范式是 $M_1 \wedge M_3 \wedge M_5$ 。
 
 \textcolor{red}{答案：D}
 
@@ -1606,7 +1612,7 @@ B. $p \wedge \neg q \wedge r$
 
 C. $p \wedge r$
 
-D.  $p \vee r$
+D. $p \vee r$
 
 \textcolor{red}{答案：B}
 
@@ -1670,7 +1676,7 @@ B. $M_3$
 
 C. $M_5$
 
-D.  $M_7$
+D. $M_7$
 
 \textcolor{red}{答案：CD}
 
@@ -1708,7 +1714,7 @@ M_0 \wedge M_1 \wedge M_2 \wedge M_3 \wedge M_4
 $
 
 
-D.  $
+D. $
 M_5 \wedge M_6 \wedge M_7
 $
 
@@ -1915,7 +1921,7 @@ B.
 C. 
 附加规则
 
-D.  
+D. 
 析取三段论
 
 \textcolor{red}{答案：C}
@@ -1986,7 +1992,7 @@ B. 由上面 (9)可得到公式 $(H \wedge(r \wedge \neg s)) \rightarrow s$ 是�
 
 C. 由上面 (9) 可得到公式 $(H \wedge(r \wedge \neg s) \wedge p) \rightarrow s$ 是永真式。
 
-D.  由上面 (11) 可得到公式 $(H \wedge(r \wedge \neg s)) \rightarrow \neg p$ 是永真式。
+D. 由上面 (11) 可得到公式 $(H \wedge(r \wedge \neg s)) \rightarrow \neg p$ 是永真式。
 
 
 \textcolor{red}{答案：CD}
@@ -2152,7 +2158,7 @@ B. $q \rightarrow p$
 
 C. $p \wedge q$
 
-D.  $p \vee q$
+D. $p \vee q$
 
 \textcolor{red}{答案：C}
 
@@ -2176,7 +2182,7 @@ p \wedge q
 $
 
 
-D.  $
+D. $
 p \vee q
 $
 
@@ -2357,7 +2363,7 @@ p \wedge q \wedge r
 $
 
 
-D.  $
+D. $
 p \rightarrow(q \rightarrow r)
 $
 
@@ -2418,7 +2424,7 @@ B.
 C. 
 “如果学生不理解面向对象编程思想，则他没学过C++语言”
 
-D.  
+D. 
 “只要学生学过C++语言，他就理解面向对象编程思想”
 
 \textcolor{red}{答案：A}
@@ -2447,7 +2453,7 @@ B. 学生学过C++语言，且能编程求解复杂问题。
 
 C. 学生没学过Java语言，但能理解面向对象编程思想。
 
-D.  学生学过Java语言，但不能理解面向对象编程思想。
+D. 学生学过Java语言，但不能理解面向对象编程思想。
 
 \textcolor{red}{答案：D}
 
@@ -2461,7 +2467,7 @@ B. 学生没学过 C++ 语言，且不能编程求解复杂问题。
 
 C. 学生学过Java语言，但能理解面向对象编程思想。
 
-D.  学生没学过Java语言，且不能理解面向对象编程思想。
+D. 学生没学过Java语言，且不能理解面向对象编程思想。
 
 \textcolor{red}{答案：A}
 
@@ -2491,7 +2497,7 @@ D. $ m_{28}$
 
 A. 关系符号 $=, \geq$
 
-B.变量符号 $x, y, z$
+B. 变量符号 $x, y, z$
 
 C. 运算符号,$+ *$
 
@@ -2558,7 +2564,7 @@ B. $ x \geq z$
 
 C. $\forall x(x \geq z)$
 
-D.  $(x+y) \wedge(x * z)$
+D. $(x+y) \wedge(x * z)$
 
 \textcolor{red}{答案：B}
 
@@ -2680,7 +2686,7 @@ B. 子公式 $x * y=z$ 中的 $y$ 是自由出现的。
 
 C. 子公式 $x+y=z$ 中的 $y$ 是自由出现的。
 
-D.  子公式 $x+y=z$ 中的 $z$ 是自由出现的。
+D. 子公式 $x+y=z$ 中的 $z$ 是自由出现的。
 
 \textcolor{red}{答案：C}
 
@@ -2694,7 +2700,7 @@ B. 子公式 $x * y=z$ 中的 $z$ 是约束出现的。
 
 C. 子公式 $x+y=z$ 中的 $y$ 是自由出现的。
 
-D.  子公式 $x+y=z$ 中的 $z$ 是自由出现的。
+D. 子公式 $x+y=z$ 中的 $z$ 是自由出现的。
 
 \textcolor{red}{答案：AC}
 
@@ -2708,7 +2714,7 @@ B. 个体变量 $y$ 是这个公式的约束变量。
 
 C. 个体变量 $z$ 是这个公式的自由变量。
 
-D.  个体变量$z$是这个这个公式的约束变量，又是这个公式的自由变量。
+D. 个体变量$z$是这个这个公式的约束变量，又是这个公式的自由变量。
 
 \textcolor{red}{答案：AC}
 
@@ -2718,7 +2724,7 @@ D.  个体变量$z$是这个这个公式的约束变量，又是这个公式的�
 
 A. 个体变量 $x$ 是这个公式的约束变量。
 
-B.个体变量 $y$ 是这个公式的约束变量。
+B. 个体变量 $y$ 是这个公式的约束变量。
 
 C. 个体变量 $z$ 是这个公式的自由变量。
 
@@ -2732,7 +2738,7 @@ D. 个体变量 $z$ 既是这个公式的约束变量, 又是这个公式的自�
 
 A. 子公式 $F(x, y)$ 中的 $x$ 是约束出现的。
 
-B.  子公式 $G(y, z)$ 中的 $y$ 是约束出现的。
+B. 子公式 $G(y, z)$ 中的 $y$ 是约束出现的。
 
 C. 子公式 $G(y, z)$ 中的 $z$ 是自由出现的。
 
@@ -2768,7 +2774,7 @@ B. 个体变量 $y$ 是这个公式的约束变量。
 
 C. 个体变量 $y$ 既是这个公式的约束变量，又是这个公式的自由变量。
 
-D.  个体变量 $z$ 是这个公式的自由变量。
+D. 个体变量 $z$ 是这个公式的自由变量。
 
 \textcolor{red}{答案：AD}
 
@@ -2785,7 +2791,7 @@ B.
 C. 
 子公式 $\exists z(x+z=x)$ 约束变量改名为 $\exists y(x+y=x)$ 。
 
-D.  
+D. 
 子公式 $\exists z(x+z=x)$ 约束变量改名为 $\exists x(y+x=y)$ 。
 
 \textcolor{red}{答案：C}
@@ -2808,15 +2814,15 @@ D. 子公式 $\forall z H(x, z)$ 约束变量改名为 $\forall x(H(x, x)$ 。
 
 对于公式 $\forall x(\exists y G(y, z) \rightarrow \exists z H(x, y, z))$, 下面哪些是约束变量改名规则的正确使用?
 
-A.子公式 $\exists y(y, z)$ 约束变量改名为 $\exists x G(x, z)$ 。
+A. 子公式 $\exists y(y, z)$ 约束变量改名为 $\exists x G(x, z)$ 。
 
-B.
+B. 
 子公式 $\exists z H(x, y, z)$ 约束变量改名为 $\exists y H(x, z, y)$ 。
 
-C.
+C. 
 子公式 $\exists z H(x, y, z)$ 约束变量改名为 $\exists u H(x, y, u)$ 。
 
-D.
+D. 
 子公式 $\forall x(\exists y G(y, z) \rightarrow \exists z H(x, y, z))$ 约束变量改名为 $\forall u(\exists y G(y, z) \rightarrow \exists z H(u, y, z))$ 。
 
 \textcolor{red}{答案：CD}
@@ -2827,9 +2833,9 @@ D.
 
 A. 一组一阶逻辑公式可以有多个不同的解释。
 
-B.  一阶逻辑公式解释的论域可以是任意集合。
+B. 一阶逻辑公式解释的论域可以是任意集合。
 
-C.   一阶逻辑公式的解释需要给出公式中个体常量、个体变量、函数符号、谓词符号的解释。
+C. 一阶逻辑公式的解释需要给出公式中个体常量、个体变量、函数符号、谓词符号的解释。
 
 D. 在一阶逻辑公式的解释中,个体常量解释为论域的元素。
 
@@ -2861,7 +2867,7 @@ B. 一阶公式的项 $x+1$ 在 $\sigma$ 下的解释 $\llbracket x+1 \rrbracket
 
 C. 一阶公式的项 $x * z$ 在 $\sigma[x \mapsto 1]$ 下的解释 $\llbracket x * z \rrbracket_{\sigma[x \mapsto 1]}$ 等于自然数 12
 
-D.  一阶公式的项 $x+(y+z)$ 在 $\sigma[x \mapsto 1]$ 下的解释 $\llbracket x+(y+z) \rrbracket_{\sigma[x \mapsto 1]}$ 等于自然数 12
+D. 一阶公式的项 $x+(y+z)$ 在 $\sigma[x \mapsto 1]$ 下的解释 $\llbracket x+(y+z) \rrbracket_{\sigma[x \mapsto 1]}$ 等于自然数 12
 
 \textcolor{red}{答案：AB}
 
@@ -2875,7 +2881,7 @@ B. 一阶公式 $(x+y)=z$ 在 $\sigma$ 下的真值 $\sigma((x+y)=z)$ 等于 $\m
 
 C. 一阶公式 $x * z \geq z$ 在 $\sigma[x \mapsto 1]$ 下的真值 $\sigma[x \mapsto 1](x * z \geq z)$ 等于 $\mathbf{0}$
 
-D.  一阶公式 $x+(y+z)=z$ 在 $\sigma[x \mapsto 0][y \mapsto 0]$ 下的真值 $\sigma[x \mapsto 0][y \mapsto 0](x+(y+z)=z)$ 等于 $\mathbf{1}$
+D. 一阶公式 $x+(y+z)=z$ 在 $\sigma[x \mapsto 0][y \mapsto 0]$ 下的真值 $\sigma[x \mapsto 0][y \mapsto 0](x+(y+z)=z)$ 等于 $\mathbf{1}$
 
 \textcolor{red}{答案：BD}
 
@@ -2887,7 +2893,7 @@ D.  一阶公式 $x+(y+z)=z$ 在 $\sigma[x \mapsto 0][y \mapsto 0]$ 下的真值
 
 A. 一阶公式 $\forall x(x \geq 0)$ 在 $\sigma$ 下的真值 $\sigma(\forall x(x \geq 0))$ 等于 $\mathbf{1}$
 
-B.一阶公式 $\forall x(x \geq y)$ 在 $\sigma$ 下的真值 $\sigma(\forall x(x \geq y))$ 等于 $\mathbf{1}$
+B. 一阶公式 $\forall x(x \geq y)$ 在 $\sigma$ 下的真值 $\sigma(\forall x(x \geq y))$ 等于 $\mathbf{1}$
 
 C. 一阶公式 $\forall x \exists z(x * z \geq z)$ 在 $\sigma$ 下的真值 $\sigma(\forall x \exists z(x * z \geq z))$ 等于 $\mathbf{1}$
 
@@ -2901,7 +2907,7 @@ D. 一阶公式 $\forall x \exists y \exists z(x+(y+z)=z)$ 在 $\sigma$ 下的�
 
 A. 一阶公式 $\forall x(x \geq 0)$ 在 $\sigma$ 下的真值与 $\sigma(x)$ 的值无关。
 
-B.  一阶公式 $\forall x(x \geq y)$ 在 $\sigma$ 下的真值与 $\sigma(x)$ 和 $\sigma(y)$ 的值都无关。
+B. 一阶公式 $\forall x(x \geq y)$ 在 $\sigma$ 下的真值与 $\sigma(x)$ 和 $\sigma(y)$ 的值都无关。
 
 C. 一阶公式 $\forall x \exists z(x * z \geq z)$ 在 $\sigma$ 下的真值与 $\sigma$ 对个体变量的赋值无关。
 
@@ -2919,7 +2925,7 @@ B. 一阶公式 $G(y, z)$ 在 $\sigma$ 下的真值 $\sigma(G(y, z))$ 等于 $\m
 
 C. 一阶公式 $F(x) \rightarrow G(y, z)$ 在 $\sigma$ 下的真值 $\sigma(F(x) \rightarrow G(y, z))$ 等于 $\mathbf{1}$ 。
 
-D.  一阶公式 $F(z) \rightarrow G(x, y)$ 在 $\sigma$ 下的真值 $F(z) \rightarrow G(x, y)$ 等于 $\mathbf{1}$ 。
+D. 一阶公式 $F(z) \rightarrow G(x, y)$ 在 $\sigma$ 下的真值 $F(z) \rightarrow G(x, y)$ 等于 $\mathbf{1}$ 。
 
 
 \textcolor{red}{答案：ABD}
@@ -2934,7 +2940,7 @@ D.  一阶公式 $F(z) \rightarrow G(x, y)$ 在 $\sigma$ 下的真值 $F(z) \rig
 
 A. 对一阶公式 $\forall x F(x), \sigma(\forall x F(x))=\sigma[x \mapsto a](F(x)) \wedge \sigma[x \mapsto b](F(x))=\mathbf{1}$ 。
 
-B.对一阶公式 $\forall z G(y, z), \sigma(\forall z G(y, z))=\sigma[z \mapsto a](G(y, z)) \wedge \sigma[z \mapsto b](G(y, z))=\mathbf{0}$ 。
+B. 对一阶公式 $\forall z G(y, z), \sigma(\forall z G(y, z))=\sigma[z \mapsto a](G(y, z)) \wedge \sigma[z \mapsto b](G(y, z))=\mathbf{0}$ 。
 
 C. 对一阶公式 $\exists x F(x), \sigma(\exists x F(x))=\sigma[x \mapsto a](F(x)) \vee \sigma[x \mapsto b](F(x))=\mathbf{1}$ 。
 
@@ -2946,16 +2952,16 @@ D. 对一阶公式 $\exists y G(y, z), \sigma(\exists y G(y, z))=\sigma[y \mapst
 
 给定一阶逻辑公式的解释 $\mathcal{M}$ ,论域是 $D=\{a, b\}$ ,一元谓词符号 $F$ 的解释 $\llbracket F \rrbracket$ 是 $D$ 的子集 $\{a\}$ ,二元谓词符号 $G$ 的解释 $\llbracket G \rrbracket$ 是 $D \times D$ 的子集 $\{\langle a, a\rangle,\langle a, b\rangle\}$ 。设个体变量集 $V=\{x, y, z\}$ ,解释 $\mathcal{M}$ 的一个个体变量指派函数 $\sigma: V \rightarrow D$ 定义为 $\sigma(x)=a, \sigma(y)=b, \sigma(z)=a$ 。下面哪些说法是正确的？
 
-A.
+A. 
 一阶公式 $\forall x F(x)$ 在 $\sigma$ 下的真值与 $\sigma$ 对个体变量的赋值无关。
 
-B.
+B. 
 一阶公式 $\forall z G(y, z)$ 在 $\sigma$ 下的真值与 $\sigma$ 对个体变量的赋值无关。
 
-C.
+C. 
 一阶公式 $\exists x F(x)$ 在 $\sigma$ 下的真值与 $\sigma$ 对个体变量的赋值无关。
 
-D.
+D. 
 一阶公式 $\exists y G(y, z)$ 在 $\sigma$ 下的真值与 $\sigma$ 对个体变量的赋值无关。
 
 \textcolor{red}{答案：ACD}
@@ -2973,7 +2979,7 @@ B. 一阶公式 $\forall x(F(x) \vee G(x))$ 展开为 $(F(a) \wedge G(a)) \vee(F
 
 C. 一阶公式 $\forall x F(x) \vee \forall x G(x)$ 展开为 $(F(a) \vee G(a)) \wedge(F(b) \vee G(b))$ 。
 
-D.  一阶公式 $\forall x F(x) \vee \forall x G(x)$ 展开为 $(F(a) \wedge G(a)) \vee(F(b) \wedge G(b))$ 。
+D. 一阶公式 $\forall x F(x) \vee \forall x G(x)$ 展开为 $(F(a) \wedge G(a)) \vee(F(b) \wedge G(b))$ 。
 
 \textcolor{red}{答案：A}
 
@@ -2983,7 +2989,7 @@ D.  一阶公式 $\forall x F(x) \vee \forall x G(x)$ 展开为 $(F(a) \wedge G(
 
 A. 一阶公式 $\exists x(F(x) \wedge G(x))$ 展开为 $(F(a) \vee G(a)) \wedge(F(b) \vee G(b))$ 。
 
-B.一阶公式 $\exists x(F(x) \wedge G(x))$ 展开为 $(F(a) \wedge G(a)) \vee(F(b) \wedge G(b))$ 。
+B. 一阶公式 $\exists x(F(x) \wedge G(x))$ 展开为 $(F(a) \wedge G(a)) \vee(F(b) \wedge G(b))$ 。
 
 C. 一阶公式 $\exists x F(x) \wedge \exists x G(x)$ 展开为 $(F(a) \vee G(a)) \wedge(F(b) \vee G(b))$ 。
 
@@ -2999,7 +3005,7 @@ D. 一阶公式 $\exists x F(x) \wedge \exists x G(x)$ 展开为 $(F(a) \wedge G
 
 A. 一阶公式 $\exists x(F(x) \wedge G(x))$ 展开为 $(F(a) \vee F(b)) \wedge(G(a) \vee G(b))$ 。
 
-B.  一阶公式 $\exists x F(x) \wedge \exists x G(x)$ 展开为 $(F(a) \vee F(b)) \wedge(G(a) \vee G(b))$ 。
+B. 一阶公式 $\exists x F(x) \wedge \exists x G(x)$ 展开为 $(F(a) \vee F(b)) \wedge(G(a) \vee G(b))$ 。
 
 C. 一阶公式 $\forall x(F(x) \vee G(x))$ 展开为 $(F(a) \wedge F(b)) \vee(G(a) \wedge G(b))$ 。
 
@@ -3054,7 +3060,7 @@ C. $
 $
 
 
-D.  $
+D. $
 ((F(a) \rightarrow G(a)) \wedge(F(a) \rightarrow G(b))) \vee((F(b) \rightarrow G(a)) \wedge(F(b) \rightarrow G(b)))
 $
 
@@ -3151,16 +3157,16 @@ $
 
 下面哪些说法是正确的？
 
-A.
+A. 
 在等值变换时，必须将公式 $A$ 的一个子公式 $B$ 的所有出现都置换为与 $B$ 等值的公式 $B^{\prime}$ 。
 
-B.
+B. 
 要证明两个一阶逻辑公式 $A$ 和 $B$ 逻辑等值，可使用等值演算或构造真值表的方法。
 
-C.
+C. 
 如果公式 $A$ 和 $B$ 逻辑等值，那么对任意个体变量 $x$ ，公式 $\forall x A$ 和 $\forall x B$ 也逻辑等值。
 
-D.
+D. 
 如果公式 $A$ 和 $B$ 逻辑等值，那么对任意个体变量 $x$ ，公式 $\exists x A$ 和 $\exists x B$ 也逻辑等值。
 
 
@@ -3219,7 +3225,7 @@ B. $\forall x(A(x) \wedge B(x)) \equiv \forall x A(x) \wedge \forall x B(x)$
 
 C. $\forall x(A(x) \rightarrow B) \equiv \forall x A(x) \rightarrow B, B$ 不出现 $x$
 
-D.  $\exists x(A(x) \rightarrow B) \equiv \forall x A(x) \rightarrow B, B$ 不出现 $x$
+D. $\exists x(A(x) \rightarrow B) \equiv \forall x A(x) \rightarrow B, B$ 不出现 $x$
 
 \textcolor{red}{答案：D}
 
@@ -3372,7 +3378,7 @@ D. $\forall x(F(x) \leftrightarrow G(x))$ 和 $\forall x F(x) \leftrightarrow \f
 
 A. $\exists x(F(x) \wedge G(x))$ 和 $\exists x F(x) \wedge \exists x G(x)$
 
-B.  $\exists x(F(x) \vee G(x))$ 和 $\exists x F(x) \vee \exists x G(x)$
+B. $\exists x(F(x) \vee G(x))$ 和 $\exists x F(x) \vee \exists x G(x)$
 
 C. $\exists x(F(x) \rightarrow G(x))$ 和 $\exists x F(x) \rightarrow \exists x G(x)$
 
@@ -3415,13 +3421,13 @@ D. $\exists x(F(x) \rightarrow G)$ 和 $\exists x F(x) \rightarrow G$, 公式 $G
 
 A. $\exists x(F \rightarrow G(x))$ 和 $F \rightarrow \exists x G(x)$ ,公式 $F$ 不出现 $x$
 
-B.
+B. 
 $\exists x(F \rightarrow G(x))$ 和 $F \rightarrow \forall x G(x)$ ,公式 $F$ 不出现 $x$
 
-C.
+C. 
 $\forall x(F \rightarrow G(x))$ 和 $F \rightarrow \exists x G(x)$ ,公式 $F$ 不出现 $x$
 
-D.
+D. 
 $\forall x(F \rightarrow G(x))$ 和 $F \rightarrow \forall x G(x)$ ,公式 $F$ 不出现 $x$
 
 \textcolor{red}{答案：AD}
@@ -3432,11 +3438,11 @@ $\forall x(F \rightarrow G(x))$ 和 $F \rightarrow \forall x G(x)$ ,公式 $F$ �
 
 A. $\forall x \forall y H(x, y)$ 和 $\forall y \forall x H(x, y)$
 
-B.  $\forall x \exists y H(x, y)$ 和 $\exists y \forall x H(x, y)$
+B. $\forall x \exists y H(x, y)$ 和 $\exists y \forall x H(x, y)$
 
-C.  $\exists x \forall y H(x, y)$ 和 $\forall y \exists x H(x, y)$
+C. $\exists x \forall y H(x, y)$ 和 $\forall y \exists x H(x, y)$
 
-D.   $\exists x \exists y H(x, y)$ 和 $\exists y \exists x H(x, y)$
+D. $\exists x \exists y H(x, y)$ 和 $\exists y \exists x H(x, y)$
 
 \textcolor{red}{答案：AD}
 
@@ -3446,11 +3452,11 @@ D.   $\exists x \exists y H(x, y)$ 和 $\exists y \exists x H(x, y)$
 
 A. $\forall x \exists y H(x, y)$ 和 $\forall y \exists x H(x, y)$
 
-B.  $\exists x \forall y H(x, y)$ 和 $\exists y \forall x H(x, y)$
+B. $\exists x \forall y H(x, y)$ 和 $\exists y \forall x H(x, y)$
 
-C.  $\forall x \exists y(F(x) \rightarrow G(y))$ 和 $\exists y \forall x(F(x) \rightarrow G(y))$
+C. $\forall x \exists y(F(x) \rightarrow G(y))$ 和 $\exists y \forall x(F(x) \rightarrow G(y))$
 
-D.   $\exists x \forall y(F(x) \rightarrow G(y))$ 和 $\forall y \exists x(F(x) \rightarrow G(y))$
+D. $\exists x \forall y(F(x) \rightarrow G(y))$ 和 $\forall y \exists x(F(x) \rightarrow G(y))$
 
 \textcolor{red}{答案：CD}
 
@@ -3561,9 +3567,9 @@ A. 由 $\forall x \forall y H(x, y)$ 消除 $\forall x$ 得到 $\forall y H(x, y
 
 B. 由 $\forall x \forall y H(x, y)$ 消除 $\forall x$ 得到 $\forall y H(y, y)$
 
-C.   由 $\forall x \forall y H(x, y)$ 消除 $\forall x$ 得到 $\forall y H(z, y)$, 然后再消除 $\forall y$ 得到 $H(z, z)$ 。
+C. 由 $\forall x \forall y H(x, y)$ 消除 $\forall x$ 得到 $\forall y H(z, y)$, 然后再消除 $\forall y$ 得到 $H(z, z)$ 。
 
-D.  由 $\forall x \forall y H(x, y)$ 消除 $\forall x$ 得到 $\forall y H(z, y)$, 然后再消除 $\forall y$ 得到 $H(y, y)$ 。
+D. 由 $\forall x \forall y H(x, y)$ 消除 $\forall x$ 得到 $\forall y H(z, y)$, 然后再消除 $\forall y$ 得到 $H(y, y)$ 。
 
 
 \textcolor{red}{答案：AC}
@@ -3587,7 +3593,7 @@ A.
 \end{tabular}
 
 
-B.
+B. 
 
 \begin{tabular}{ll}
   （1）$\forall x \forall y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3597,7 +3603,7 @@ B.
 \end{tabular}
 
 
-C.
+C. 
 
 \begin{tabular}{ll}
   （1）$\forall x H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3606,7 +3612,7 @@ C.
 \end{tabular}
 
 
-D.
+D. 
 
 \begin{tabular}{ll}
   （1）$F(x)$ & \textcolor{blue}{/ / 附加前提} \\
@@ -3625,7 +3631,7 @@ D.
 假定 $F(x), G(x)$ 和 $H(x, y)$ 都是原子公式，下面哪些是存在例化规则（存在量词消除规则）的正确使用？
 
 
-A.
+A. 
 
 \begin{tabular}{ll}
   （1）$\forall x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3635,7 +3641,7 @@ A.
   （5）$\exists y \forall x H(x, y)$ & \textcolor{blue}{/ / （4）存在泛化}
 \end{tabular}
 
-B.
+B. 
 
 \begin{tabular}{ll}
   （1）$\exists x \forall y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3645,7 +3651,7 @@ B.
   （5）$\forall y \exists x H(x, y)$ & \textcolor{blue}{/ / （4）全称泛化}
 \end{tabular}
 
-C.
+C. 
 
 \begin{tabular}{ll}
   （1）$\exists x F(x)$ & \textcolor{blue}{/ / 前提} \\
@@ -3654,7 +3660,7 @@ C.
   （4）$G(a)$ & \textcolor{blue}{/ / （3）存在例化}
 \end{tabular}
 
-D.
+D. 
 
 \begin{tabular}{ll}
   （1）$\exists x H(x, a)$ & \textcolor{blue}{/ / 前提} \\
@@ -3669,7 +3675,7 @@ D.
 假定 $a$ 和 $b$ 是个体常量符号，$F(x)$ 和 $G(x)$ 是原子公式，下面哪些是存在泛化规则（存在量词引入规则）的正确使用？
 
 
-A.
+A. 
 
 \begin{tabular}{ll}
   （1）$F(a) \rightarrow G(b)$ & \textcolor{blue}{/ / 前提} \\
@@ -3677,7 +3683,7 @@ A.
   （3）$\exists x F(x) \rightarrow \exists y G(y)$ & \textcolor{blue}{/ / （2）存在泛化}
 \end{tabular}
 
-B.
+B. 
 
 \begin{tabular}{ll}
   （1）$F(a) \rightarrow G(b)$ & \textcolor{blue}{/ / 前提} \\
@@ -3685,7 +3691,7 @@ B.
   （3）$\exists x \exists y(F(x) \rightarrow G(y))$ & \textcolor{blue}{/ / （2）存在泛化}
 \end{tabular}
 
-C.
+C. 
 
 \begin{tabular}{ll}
   （1）$F(a) \rightarrow G(b)$ & \textcolor{blue}{/ / 前提} \\
@@ -3694,7 +3700,7 @@ C.
 \end{tabular}
 
 
-D.
+D. 
 
 \begin{tabular}{ll}
   （1）$F(a)$ & \textcolor{blue}{/ / 附加前提} \\
@@ -3710,7 +3716,7 @@ D.
 
 假定$F(x),G(x)$都是原子公式,下面哪些公式序列是正确论证的一部分?
 
-A.
+A. 
 
 \begin{tabular}{ll}
   （1）$\exists x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
@@ -3718,7 +3724,7 @@ A.
   （3）$F(a)$ & \textcolor{blue}{/ / （2）存在例化}
 \end{tabular}
 
-B.
+B. 
 
 \begin{tabular}{ll}
   （1）$\forall x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
@@ -3727,14 +3733,14 @@ B.
 \end{tabular}
 
 
-C.
+C. 
 
 \begin{tabular}{ll}
   （1）$\neg \forall x F(x)$ & \textcolor{blue}{/ / 前提} \\
   （2）$\neg F(a)$ & \textcolor{blue}{/ / （1）全称例化}
 \end{tabular}
 
-D.
+D. 
 
 \begin{tabular}{ll}
   （1）$\neg F(a)$ & \textcolor{blue}{/ / 前提} \\
@@ -3750,7 +3756,7 @@ D.
 
 假定 $H(x, y)$ 都是原子公式, 下面哪些公式序列是 (正确的) 论证?
 
-A.
+A. 
 
 \begin{tabular}{ll}
   （1）$\forall x \forall y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3760,7 +3766,7 @@ A.
   （5）$\forall y \forall x H(x, y)$ & \textcolor{blue}{/ / （4）全称泛化}
 \end{tabular}
 
-B.
+B. 
 
 \begin{tabular}{ll}
   （1）$\forall x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3771,7 +3777,7 @@ B.
 \end{tabular}
 
 
-C.
+C. 
 
 \begin{tabular}{ll}
   （1）$\forall x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3781,7 +3787,7 @@ C.
   （5）$\exists y \forall x H(x, y)$ & \textcolor{blue}{/ / （4）存在泛化}
 \end{tabular}
 
-D.
+D. 
 
 \begin{tabular}{ll}
   （1）$\exists x \exists y H(x, y)$ & \textcolor{blue}{/ / 前提} \\
@@ -3799,7 +3805,7 @@ D.
 
 假定 $F(x),G(x)$ 都是原子公式, 下面哪些公式序列是正确论证的一部分？
 
-A.
+A. 
 
 \begin{tabular}{ll}
   （1）$\exists x F(x)$ & \textcolor{blue}{/ / 前提} \\
@@ -3807,7 +3813,7 @@ A.
 \end{tabular}
 
 
-B.
+B. 
 
 \begin{tabular}{ll}
   （1）$\forall x F(x)$ & \textcolor{blue}{/ / 附加前提} \\
@@ -3816,14 +3822,14 @@ B.
 \end{tabular}
 
 
-C.
+C. 
 
 \begin{tabular}{ll}
   （1）$\forall x(F(x) \rightarrow G(x))$ & \textcolor{blue}{/ / 前提} \\
   （2）$F(a) \rightarrow G(a)$ & \textcolor{blue}{/ / （1）全称例化}
 \end{tabular}
 
-D.
+D. 
 
 \begin{tabular}{ll}
   （1）$\forall x F(x) \rightarrow \forall x G(x)$ & \textcolor{blue}{/ / 前提} \\
@@ -3836,7 +3842,7 @@ D.
 
 假定 $F(x), G(x)$ 都是原子公式．下面哪些公式序列是（正确的）论证？
 
-A.
+A. 
 
 \begin{tabular}{ll}
   （1）$\exists x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
@@ -3848,7 +3854,7 @@ A.
   （7）$\exists x F(x) \wedge \exists x G(x)$ & \textcolor{blue}{/ / （4）,（6）合取规则}
 \end{tabular}
 
-B.
+B. 
 
 \begin{tabular}{ll}
   （1）$\forall x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / 前提} \\
@@ -3860,7 +3866,7 @@ B.
   （7）$\forall x F(x) \wedge \forall x G(x)$ & \textcolor{blue}{/ / （4),(6) 合取规则}
   \end{tabular}
 
-C.
+C. 
 
 \begin{tabular}{ll}
   （1）$\forall x F(x) \wedge \forall x G(x)$ & \textcolor{blue}{/ / 前提} \\
@@ -3872,7 +3878,7 @@ C.
   （7）$\forall x(F(x) \wedge G(x))$ & \textcolor{blue}{/ / （6）全称泛化}
 \end{tabular}
 
-D.
+D. 
 
 \begin{tabular}{ll}
   （1）$\exists x F(x)$ & \textcolor{blue}{/ / 附加前提} \\
@@ -3894,7 +3900,7 @@ D.
 
 A. 推理的结论 $\exists x \exists y(R(x) \wedge R(y))$ 可由公式 $R(a) \wedge R(a)$ 通过两次使用存在泛化规则得到。
 
-B.由前提 $\exists x P(x)$ 用存在例化规则可得 $P(a)$, 再由 $\exists x Q(x)$ 用存在例化规则又可得 $Q(a)$ 。
+B. 由前提 $\exists x P(x)$ 用存在例化规则可得 $P(a)$, 再由 $\exists x Q(x)$ 用存在例化规则又可得 $Q(a)$ 。
 
 C. 推理的结论 $\exists x \exists y(R(x) \wedge R(y))$ 需要由公式 $R(a) \wedge R(b)$ 通过两次使用存在泛化规则得到。
 
@@ -3908,16 +3914,16 @@ D. 由前提 $\exists x P(x)$ 用存在例化规则可得 $P(a)$, 再由 $\exist
 
 对于验证推理 $\forall x(F(x) \rightarrow G(x) \wedge H(x)), \exists x(F(x) \wedge Q(x)) \Longrightarrow \exists x((H(x) \wedge Q(x))$ 有效性的论证构造，下面哪些说法是正确的？
 
-A.
+A. 
 推理的结论 $\exists x((H(x) \wedge Q(x))$ 可由公式 $H(a) \wedge Q(a)$ 通过使用存在泛化规则得到。
 
-B.
+B. 
 推理的前提 $\exists x(F(x) \wedge Q(x))$ 应用存在例化规则得到 $F(a) \wedge Q(a)$ 。
 
-C.
+C. 
 推理的前提 $\forall x(F(x) \rightarrow G(x) \wedge H(x))$ 应使用全称例化规则得到 $F(x) \rightarrow G(x) \wedge H(x)$ 。
 
-D.
+D. 
 推理的前提 $\forall x(F(x) \rightarrow G(x) \wedge H(x))$ 应使用全称例化规则得到 $F(a) \rightarrow G(a) \wedge H(a)$ 。
 
 \textcolor{red}{答案：ABD}
@@ -4051,11 +4057,11 @@ D.
 
 A. 这个命题是一个量化命题。
 
-B，＂C++语言＂是一个具体的个体，可符号化为个体常量。
+B. ＂C++语言＂是一个具体的个体，可符号化为个体常量。
 
 C. ＂．．．．．．学过C++语言＂可符号化为一个一元谓词。
 
-D.  ＂．．．．．．学过．．．．．．＂可符号化为一个二元谓词。
+D. ＂．．．．．．学过．．．．．．＂可符号化为一个二元谓词。
 
 \textcolor{red}{答案：BCD}
 
@@ -4072,7 +4078,7 @@ B.
 C. 
 使用全总域符号化这个命题时，＂．．．．．．是程序员＂是特征谓词。
 
-D.  
+D. 
 ＂．．．．．．学过C++语言＂可符号化为一个一元谓词。
 
 \textcolor{red}{答案：ACD}
@@ -4081,13 +4087,13 @@ D.
 
 对于命题“并非所有程序员都学过所有面向对象编程语言”，下面哪些说法是正确的？
 
-A.可使用所有程序员构成的集合作为符号化这个命题的论域。
+A. 可使用所有程序员构成的集合作为符号化这个命题的论域。
 
-B.符号化这个命题时，可提取“...学过面向对象编程语言”作为一元谓词。
+B. 符号化这个命题时，可提取“...学过面向对象编程语言”作为一元谓词。
 
-C.这是对个体类之间关系进行判断的命题，“程序员”和“面向对象编程语言”都是个体类。
+C. 这是对个体类之间关系进行判断的命题，“程序员”和“面向对象编程语言”都是个体类。
 
-D.符号化这个命题时，“所有程序员”和“所有面向对象编程语言”都要用到全称量词。
+D. 符号化这个命题时，“所有程序员”和“所有面向对象编程语言”都要用到全称量词。
 
 \textcolor{red}{答案：CD}
 
@@ -4099,9 +4105,9 @@ D.符号化这个命题时，“所有程序员”和“所有面向对象编程
 
 A. 可使用所有程序员构成的集合作为符号化这个命题的论域。
 
-B.  符号化这个命题时,可提取 “......学过面向对象编程语言” 作为一元谓词。
+B. 符号化这个命题时,可提取 “......学过面向对象编程语言” 作为一元谓词。
 
-C.   可符号化为 $\forall x S(x)$, 论域是程序员的集合, $S(x)$ 是谓词 “ $x$ 学过面向对象编程语言”。
+C. 可符号化为 $\forall x S(x)$, 论域是程序员的集合, $S(x)$ 是谓词 “ $x$ 学过面向对象编程语言”。
 
 D. 符号化这个命题时,需要提取 “......是面向对象编程语言” 这个一元谓词。
 
@@ -4113,7 +4119,7 @@ D. 符号化这个命题时,需要提取 “......是面向对象编程语言”
 
 A. 可使用所有学过面向对象编程语言的程序员作为符号化这个命题的论域。
 
-B.符号化这个命题时, 必须提取“..... 学过面向对象编程语言”作为一元谓词。
+B. 符号化这个命题时, 必须提取“..... 学过面向对象编程语言”作为一元谓词。
 
 C. 符号化这个命题时,必须提取“......是面向对象编程思想”作为一元谓词。
 
@@ -4154,7 +4160,7 @@ B. 可将论域定为所有程序员，符号化为 $\exists x(S(x) \wedge \neg 
 
 C. 可将论域定为全总域，符号化为 $\exists x(T(x) \wedge \neg U(x))$ 。
 
-D.  可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\exists x(\neg U(x))$ 。
+D. 可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\exists x(\neg U(x))$ 。
 
 
 \textcolor{red}{答案：BCD}
@@ -4172,7 +4178,7 @@ B.
 C. 
 可将论域定为全总域，符号化为 $\forall x(\neg T(x) \rightarrow \neg U(x))$ 。
 
-D.  
+D. 
 可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\forall x(\neg U(x))$ 。
 
 \textcolor{red}{答案：AB}
@@ -4187,7 +4193,7 @@ B. 可将论域定为所有程序员，符号化为 $\exists x(\neg S(x)) \wedge
 
 C. 可将论域定为全总域，符号化为 $\exists x(\neg T(x) \wedge U(x))$ 。
 
-D.  可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\exists x U(x)$ 。
+D. 可将论域定为所有学过面向对象编程语言的程序员，符号化为 $\exists x U(x)$ 。
 
 
 \textcolor{red}{答案：A}
@@ -4198,7 +4204,7 @@ D.  可将论域定为所有学过面向对象编程语言的程序员，符号�
 
 A. 可将论域定为全总域, 符号化为 $\neg \forall x(P(x) \wedge(S(x) \vee U(x))$ 。
 
-B.可将论域定为所有程序员, 符号化为 $\neg \forall x(S(x) \vee U(x))$ 。
+B. 可将论域定为所有程序员, 符号化为 $\neg \forall x(S(x) \vee U(x))$ 。
 
 C. 可将论域定为全总域, 符号化为 $\neg \forall(T(x) \rightarrow U(x))$ 。
 
@@ -4214,9 +4220,9 @@ D. 可将论域定为所有程序员, 符号化为 $\exists x(\neg S(x) \vee \ne
 
 A. 符号化这个命题时, 可提取 $P(x)$ 表示 " $x$ 是不同的程序员"。
 
-B.  符号化这个命题时, 可提取 $O(x)$ 表示 " $x$ 是不同的面向对象编程语言"。
+B. 符号化这个命题时, 可提取 $O(x)$ 表示 " $x$ 是不同的面向对象编程语言"。
 
-C.   符号化这个命题时,可使用所有程序员构成的集合作为论域。
+C. 符号化这个命题时,可使用所有程序员构成的集合作为论域。
 
 D. 
 可符号化为下面的公式
@@ -4235,7 +4241,7 @@ $$
 
 A. 符号化这个命题时, 可提取 $P(x)$ 表示 " $x$ 是两个程序员"。
 
-B.符号化这个命题时, 可提取 $O(x)$ 表示 " $x$ 是同一门面向对象编程语言"。
+B. 符号化这个命题时, 可提取 $O(x)$ 表示 " $x$ 是同一门面向对象编程语言"。
 
 C. 符号化这个命题时, 可使用所有程序员构成的集合作为论域。
 
@@ -4313,7 +4319,7 @@ B. 前提＂并非所有程序员只要学过面向对象编程语言就能理�
 
 C. 结论＂并非所有程序员都能理解面向对象编程思想＂符号化为 $\neg \forall x U(x)$
 
-D.  这个推理不是有效的推理。
+D. 这个推理不是有效的推理。
 
 \textcolor{red}{答案：ABC}
 
@@ -4341,7 +4347,7 @@ D. 这个推理不是有效的推理。
 
 A. 前提 "所有程序员都学过面向对象编程语言" 符号化为 $\forall x S(x)$
 
-B.  前提 "所有程序员只要学过面向对象编程语言就都能理解面向对象编程思想" 符号
+B. 前提 "所有程序员只要学过面向对象编程语言就都能理解面向对象编程思想" 符号
 化为 $\forall x(S(x) \rightarrow U(x))$
 
 C. 结论 "所有程序员都能理解面向对象编程思想" 符号化为 $\forall x U(x)$
@@ -4356,7 +4362,7 @@ D. 这个推理是有效的推理。
 
 A. 前提 "有的程序员学过面向对象编程语言" 符号化为 $\exists x S(x)$
 
-B.
+B. 
 前提 "有的程序员只要没有学过面向对象编程语言就不能理解面向对象编程思想"符号化为 $\exists x(\neg S(x) \wedge \neg U(x))$
 
 C. 结论 "有的程序员不能理解面向对象编程思想" 符号化为 $\exists x \neg U(x)$
@@ -4412,7 +4418,7 @@ B. 命题＂任意连续三个自然数相乘的乘积必然被 6 整除＂可�
 
 C. 命题＂对任意自然数 $n$ 有 $6 \mid\left(n^3-n\right)$＂是形如 $\forall x(P(x) \rightarrow Q(x))$ 这样的命题。
 
-D.  命题＂对任意正奇数 $n$ 有 $8 \mid\left(n^2-1\right)$＂是形如 $\forall x(P(x) \rightarrow Q(x))$ 这样的命题。
+D. 命题＂对任意正奇数 $n$ 有 $8 \mid\left(n^2-1\right)$＂是形如 $\forall x(P(x) \rightarrow Q(x))$ 这样的命题。
 
 \textcolor{red}{答案：CD}
 
@@ -4420,13 +4426,13 @@ D.  命题＂对任意正奇数 $n$ 有 $8 \mid\left(n^2-1\right)$＂是形如 $
 
 证明命题＂设 $n$ 是自然数，若 $2 \mid n$ ，则 $2 \mid n^2$＂最合适的方法是：
 
-A.直接证明法
+A. 直接证明法
 
 B. 反证法
 
-C.通过逆否命题证明
+C. 通过逆否命题证明
 
-D.分情况证明
+D. 分情况证明
 
 \textcolor{red}{答案：A}
 
@@ -4435,13 +4441,13 @@ D.分情况证明
 
 证明命题＂设 $n$ 是自然数，若 $2 \mid n^3$ ，则 $2 \mid n$＂最合适的方法是：
 
-A.直接证明法
+A. 直接证明法
 
-B.反证法
+B. 反证法
 
-C.通过反例证明
+C. 通过反例证明
 
-D.分情况证明
+D. 分情况证明
 
 \textcolor{red}{答案：B}
 
@@ -4449,13 +4455,13 @@ D.分情况证明
 
 证明命题＂对任意实数 $x, y$ 有 $|x y|=|x||y|$＂最合适的方法是：
 
-A.直接证明法
+A. 直接证明法
 
-B.反证法
+B. 反证法
 
-C.通过反例证明
+C. 通过反例证明
 
-D.分情况证明
+D. 分情况证明
 
 \textcolor{red}{答案：D}
 
@@ -4469,7 +4475,7 @@ B. 反证法
 
 C. 通过反例证明
 
-D.  分情况证明
+D. 分情况证明
 
 \textcolor{red}{答案：D}
 
@@ -4479,7 +4485,7 @@ D.  分情况证明
 
 A. 反证法
 
-B.  通过反例证明
+B. 通过反例证明
 
 C. 构造性存在证明
 
@@ -4500,7 +4506,7 @@ B.
 C. 
 构造性存在证明
 
-D.  
+D. 
 非构造性存在证明
 
 \textcolor{red}{答案：D}
@@ -4515,7 +4521,7 @@ B. 通过反例证明
 
 C. 构造性存在证明
 
-D.  非构造性存在证明
+D. 非构造性存在证明
 
 \textcolor{red}{答案：C}
 
@@ -4529,7 +4535,7 @@ B. 使用反证法，从假定 $2 \nmid m$ 且 $2 \nmid n$ 开始证明，推出
 
 C. 利用 $p \vee q$ 逻辑等值于 $\neg p \rightarrow q$ ，将 $2 \nmid m$ 作为附加前提，与前提 $2 \mid m n$ 一起推出 $2 \mid n$ 。
 
-D.  使用分情况证明法，分 $2 \mid m$ 和 $2 \mid n$ 两种情况进行证明。
+D. 使用分情况证明法，分 $2 \mid m$ 和 $2 \mid n$ 两种情况进行证明。
 
 \textcolor{red}{答案：BC}
 
@@ -4561,7 +4567,7 @@ B.
 C. 
 这个证明思路是反向推理，从考虑形如 $3 n-1$ 的质数为什么有无穷多个开始考虑。
 
-D.  
+D. 
 这个证明的关键之一是两个 $3 n+1$ 型整数相乘只能得到 $3 n+1$ 型整数。
 
 \textcolor{red}{答案：BD}
@@ -4591,7 +4597,7 @@ B. 这个证明思路是一个反向推理，从考 $n$ 为什么是 4 的倍数
 
 C. 这个证明思路综合运用了分情况证明和反证法，考虑两种情况分别导致什么矛盾。
 
-D.  这个命题是错误的，不可能存在 $n$ 个整数的积等于 $n$ 且和等于 0 。
+D. 这个命题是错误的，不可能存在 $n$ 个整数的积等于 $n$ 且和等于 0 。
 
 \textcolor{red}{答案：BC}
 
@@ -4607,7 +4613,7 @@ B. 这个证明思路是反向推理，从乘积 $\left(a_1-1\right) \cdots\left
 C. 
 这个证明思路要用到＂只有偶数个奇数的和才是偶数＂这个引理。
 
-D.  
+D. 
 这个证明思路用到了反证法，考虑 $a_i-i$ 这 $n$ 个数全是奇数会导致什么矛盾。
 
 \textcolor{red}{答案：BCD}
@@ -4623,7 +4629,7 @@ B. ＂对任意 $n, 6 \mid\left(n^3-n\right)$＂符号化为 $\forall n\left(6 \
 C. ＂对任意正整数 $n$ ，若 $x$ 和 $y$ 是正整数且 $\max (x, y)=n$ 则 $x=y$＂符号化为 $\forall n>0$
 $\forall x>0 \forall y>0(\max (x, y)=n \rightarrow x=y)$ 。
 
-D.  ＂任意大于 12 分邮资可由 3 分和 7 分邮票支付＂符号化为 $\forall n>12 \forall s \forall t(3 s+7 t=n)$ 。
+D. ＂任意大于 12 分邮资可由 3 分和 7 分邮票支付＂符号化为 $\forall n>12 \forall s \forall t(3 s+7 t=n)$ 。
 
 \textcolor{red}{答案：BC}
 
@@ -4638,7 +4644,7 @@ B. 有些命题只能使用第二数学归纳法证明，无法使用第一数�
 
 C. 能用良序原理证明第二数学归纳法的有效性。
 
-D.  凡是能用第二数学归纳法证明的命题都能使用第一数学归纳法证明。
+D. 凡是能用第二数学归纳法证明的命题都能使用第一数学归纳法证明。
 
 \textcolor{red}{答案：ACD}
 
@@ -4655,7 +4661,7 @@ B.
 C. 
 任意一些自然数构成的集合都存在最小的自然数。
 
-D.  
+D. 
 任意一些实数构成的集合都存在最小的实数。
 
 \textcolor{red}{答案：BC}
@@ -4697,7 +4703,7 @@ B.
 C. 
 归纳步应针对$k$分邮资由3分和7分邮票支付时，对是否至少有两张3分邮票分情况讨论。
 
-D.  
+D. 
 设论域是自然数集，要证明的命题可符号化为 $\forall n \geq 12 \exists s \exists t(3 s+7 t=n)$ 。
 
 
@@ -4735,7 +4741,7 @@ B. 这个证明没有用到条件 $k \geq 20$ ，因此不是正确的证明，�
 
 C. 归纳步应针对$k$分邮资由5分和6分邮票支付时，对是否至少有一张5分邮票分情况讨论。
 
-D.  设论域是自然数集，要证明的命题可符号化为 $\forall n \exists s \exists t(5 s+6 t=n)$ 。
+D. 设论域是自然数集，要证明的命题可符号化为 $\forall n \exists s \exists t(5 s+6 t=n)$ 。
 
 \textcolor{red}{答案：C}
 
@@ -4761,7 +4767,7 @@ B.
 C. 
 只要将归纳步中对 $k$ 的条件改为 $k \geq 14$ ，从而保证 $k-2 \geq 12$ 能利用归纳假设就得到了一个正确的证明。
 
-D.  
+D. 
 这个证明只有在归纳基中验证对于12分，13分，14分邮资都可由 3分和7分邮票支付后才会是正确的证明。
 
 
@@ -4792,7 +4798,7 @@ B. 归纳步的主要目标是证明 $P(k+1)$ 成立，应该从任意的凸 $k+
 C. 
 即使是任意的凸$k$边形任选一条边，按照上述方法增加两条边得到的凸$k+1$边形也不能认为是任意的凸 $k+1$ 边形，因此上述归纳步的证明不是合平逻辑的证明。
 
-D.  
+D. 
 归纳步应针对任意的凸$k＋1$边形，选两条相邻边的不是共同端点的那两个端点连线，将凸$k+1$边形分成一个三角形和一个凸$k$边形，再利用归纳假设进行证明。
 
 \textcolor{red}{答案：BCD}
@@ -4809,13 +4815,13 @@ D.
 
 A. 这个证明虽然没有给出命题的符号化形式，不够规范，但是一个正确的证明。
 
-B，
+B. 
 归纳步的主要目标是证明 $P(k+1)$ 成立，应该从任意有 $k+1$ 个顶点的连通图出发，而非从任意有 $k$ 个顶点的连通图出发开始证明，所以上述归纳步的证明不正确。
 
-C，
+C. 
 即使是任意有 $k$ 个顶点的连通图增加一个顶点，并让这个顶点与原来$k$ 个顶点的某个顶点有边相连，这样得到的有 $k+1$个顶点的连通图也不能认为是任意的有 $k+1$ 个顶点的连通图，因此上述归纳步的证明不是合乎逻辑的证明。
 
-D，
+D. 
 归纳步应针对任意的有 $k+1$ 个顶点的连通图，考虑去掉一个顶点及其相连的边，从而得到一个或多个少于等于 $k$ 个顶点的连通图，再利用归纳假设进行证明。
 
 
@@ -4825,13 +4831,13 @@ D，
 
 对于命题＂对任意自然数 $a$ 和正整数 $b$ ，存在自然数 $q$ 和 $r$ 使得 $a=b q+r$ 且 $0 \leq r<b$＂，下面哪些证明思路是可行的？
 
-A，针对自然数 $a$ 做第一数学归纳法或强归纳法证明。
+A. 针对自然数 $a$ 做第一数学归纳法或强归纳法证明。
 
-B，针对自然数 $q$ 做第一数学归纳法或强归纳法证明。
+B. 针对自然数 $q$ 做第一数学归纳法或强归纳法证明。
 
-C，令集合 $S=\{b q+r \mid q \in \mathbb{N}, r \in \mathbb{N}\}$ ，对 $S$ 使用良序原理进行证明。
+C. 令集合 $S=\{b q+r \mid q \in \mathbb{N}, r \in \mathbb{N}\}$ ，对 $S$ 使用良序原理进行证明。
 
-D，令集合 $S=\{a-b q \mid q \in \mathbb{N}\}$ ，对 $S$ 使用良序原理进行证明。
+D. 令集合 $S=\{a-b q \mid q \in \mathbb{N}\}$ ，对 $S$ 使用良序原理进行证明。
 
 
 \textcolor{red}{答案：A}
@@ -4842,9 +4848,9 @@ D，令集合 $S=\{a-b q \mid q \in \mathbb{N}\}$ ，对 $S$ 使用良序原理�
 
 A. 令集合 $S=\{n \in \mathbb{N} \mid \forall k(P(n, k)$ 不为真 $)\}$ ，针对 $S$ 使用良序原理。
 
-B，令集合 $S=\{k \in \mathbb{N} \mid \exists n(P(n, k)$ 不为真）$\}$ ，针对 $S$ 使用良序原理。
+B. 令集合 $S=\{k \in \mathbb{N} \mid \exists n(P(n, k)$ 不为真）$\}$ ，针对 $S$ 使用良序原理。
 
-C，令集合 $S=\{\langle n, k\rangle \in \mathbb{N} \mid P(n, k)$ 不为真 $\}$ ，针对 $S$ 使用良序原理。
+C. 令集合 $S=\{\langle n, k\rangle \in \mathbb{N} \mid P(n, k)$ 不为真 $\}$ ，针对 $S$ 使用良序原理。
 
 D. 令集合 $S=\{s \in \mathbb{N} \mid$ 存在正整数 $n$ 和 $k$ 使得 $n+k=s$ 且 $P(n, k)$ 不为真 $\}$ ，针对 $S$ 使用良序原理。
 
@@ -4856,11 +4862,11 @@ D. 令集合 $S=\{s \in \mathbb{N} \mid$ 存在正整数 $n$ 和 $k$ 使得 $n+k
 
 A. 令集合 $S=\{n \in \mathbb{N} \mid \exists k(P(n, k)$ 不为真 $)\}$ ，针对 $S$ 使用良序原理。
 
-B，令集合 $S=\{k \in \mathbb{N} \mid \forall n(P(n, k)$ 不为真）$\}$ ，针对 $S$ 使用良序原理。
+B. 令集合 $S=\{k \in \mathbb{N} \mid \forall n(P(n, k)$ 不为真）$\}$ ，针对 $S$ 使用良序原理。
 
 C. 令集合 $S=\{\langle n, k\rangle \in \mathbb{N} \mid P(n, k)$ 不为真 $\}$ ，针对 $S$ 使用良序原理。
 
-D.  
+D. 
 令集合 $S=\{s \in \mathbb{N} \mid$ 存在正整数 $n$ 和 $k$ 使得 $n+k=s$ 且 $P(n, k)$ 不为真 $\}$ ，针对 $S$ 使用良序原理。
 
 \textcolor{red}{答案：A}
@@ -4869,13 +4875,13 @@ D.
 
 下面哪些说法是正确的？
 
-A，归纳定义集合时归纳基只能给出一个基本元素。
+A. 归纳定义集合时归纳基只能给出一个基本元素。
 
-B，归纳定义集合时归纳步只能给出一个构造规则。
+B. 归纳定义集合时归纳步只能给出一个构造规则。
 
-C，归纳定义的集合的元素都是零次或有限次使用构造规则从基本元素构造得到。
+C. 归纳定义的集合的元素都是零次或有限次使用构造规则从基本元素构造得到。
 
-D，实际使用归纳定义时常省略最小化声明，但最小化声明是每个归纳定义的一部分。
+D. 实际使用归纳定义时常省略最小化声明，但最小化声明是每个归纳定义的一部分。
 
 \textcolor{red}{答案：CD}
 
@@ -4883,13 +4889,13 @@ D，实际使用归纳定义时常省略最小化声明，但最小化声明是�
 
 下面哪些说法是正确的？
 
-A，归纳定义集合可以说是给出一个算法用于构造该集合的元素。
+A. 归纳定义集合可以说是给出一个算法用于构造该集合的元素。
 
-B，归纳定义集合的每个元素的构造总是可用唯一的一棵构造树描述。
+B. 归纳定义集合的每个元素的构造总是可用唯一的一棵构造树描述。
 
-C，总是可容易地判断一个元素是否属于一个归纳定义的集合。
+C. 总是可容易地判断一个元素是否属于一个归纳定义的集合。
 
-D，当归纳定义集合的每个元素的构造可用唯一的一棵构造树描述时，很容易设计算法判断一个元素是否属于该集合。
+D. 当归纳定义集合的每个元素的构造可用唯一的一棵构造树描述时，很容易设计算法判断一个元素是否属于该集合。
 
 \textcolor{red}{答案：AD}
 
@@ -4906,7 +4912,7 @@ B.
 C. 
 结构归纳法的归纳步假设用于构造的元素满足待证性质（这就是归纳步的归纳假设），然后证明构造得到的元素也满足待证性质。
 
-D.  
+D. 
 结构归纳法实际上是根据归纳定义集合的元素的结构，或者说元素的构造方式分情况证明。
 
 \textcolor{red}{答案：ABCD}
@@ -4924,7 +4930,7 @@ B.
 C. 
 证明集合$A$等于集合$B$后意味着集合$A$的每个元素的构造都对应唯一的一棵构造树。
 
-D.  
+D. 
 证明集合 $B$ 等于集合 $A$ 后意味着可设计算法构造集合 $B$ 的元素。
 
 \textcolor{red}{答案：AD}
@@ -4939,13 +4945,13 @@ D.
 
 下面哪些说法是正确的？
 
-A，集合 $S$ 的每个元素都有唯一的一个构造过程，对应唯一的一棵构造树。
+A. 集合 $S$ 的每个元素都有唯一的一个构造过程，对应唯一的一棵构造树。
 
-B，集合 $S$ 的每个自然数要么是 4 要么是 6 ，要么是由 $S$ 中的两个自然数相加而得到。
+B. 集合 $S$ 的每个自然数要么是 4 要么是 6 ，要么是由 $S$ 中的两个自然数相加而得到。
 
 C. 自然数 $20,26,30,36,40,46$ 都属于 $S$ 。
 
-D，所有大于等于 4 的自然数都属于 $S$ 。
+D. 所有大于等于 4 的自然数都属于 $S$ 。
 
 \textcolor{red}{答案：BC}
 
@@ -4970,13 +4976,13 @@ D. 可使用强归纳法证明 $A \subseteq S$ ：\textcolor{blue}{\textbf{归�
 
 归纳定义自然数的集合 $S$ ：\textcolor{blue}{\textbf{归纳基}}： $6 \in S$ 且 $9 \in S$ ；\textcolor{blue}{\textbf{归纳步}}：若 $x, y \in S$ ，则 $x+y \in S$ 。下面哪些说法是正确的？
 
-A，集合S的每个元素都有唯一的一个构造过程，对应唯一的一棵构造树。
+A. 集合S的每个元素都有唯一的一个构造过程，对应唯一的一棵构造树。
 
-B，集合S的每个自然数要么是6要么是9，要么是由S中的两个自然数相加而得到。
+B. 集合S的每个自然数要么是6要么是9，要么是由S中的两个自然数相加而得到。
 
-C，自然数 $21,33,39,51,60$ 都属于 $S$ 。
+C. 自然数 $21,33,39,51,60$ 都属于 $S$ 。
 
-D，所有大于等于 6 的自然数都属于 $S$ 。
+D. 所有大于等于 6 的自然数都属于 $S$ 。
 
 \textcolor{red}{答案：BC}
 
@@ -4992,7 +4998,7 @@ B. 可使用强归纳法证明 $S \subseteq A$ ：\textcolor{blue}{\textbf{归�
 
 C. 可使用结构归纳法证明 $B \subseteq S$ ：\textcolor{blue}{\textbf{归纳基}}，当 $k=1$ ，显然 $6 \in S$ ；\textcolor{blue}{\textbf{归纳步}}，假定 $6 k \in S$ ，由于 $6 \in S$ ，根据 $S$ 的归纳步定义，显然有 $6 k+6=6(k+1) \in S$ 。
 
-D.  可使用强归纳法证明 $A \subseteq S$ ：\textcolor{blue}{\textbf{归纳基}}，显然 $6,9 \in S$ ；\textcolor{blue}{\textbf{归纳步}}，对任意 $k \geq 3$ ，假
+D. 可使用强归纳法证明 $A \subseteq S$ ：\textcolor{blue}{\textbf{归纳基}}，显然 $6,9 \in S$ ；\textcolor{blue}{\textbf{归纳步}}，对任意 $k \geq 3$ ，假
 定 $6,9, \cdots, 3 k \in S$ ，由于 $k \geq 3$ ，因此 $k-1 \geq 2$ ，因此由归纳假设有 $3(k-1) \in S$ ，由 $6 \in S$ ，根据 $S$ 的归纳步构造规则就有 $3(k+1)=3(k-1)+6 \in S$ 。
 
 
@@ -5009,7 +5015,7 @@ B. 自然数对 $\langle 6,6\rangle$ 可通过至多使用 4 次 $S$ 的归纳�
 
 C. 自然数对 $\langle 1,6\rangle$ 无法由 $S$ 的基本元素使用 $S$ 的归纳步构造规则得到，因此 $\langle 1,6\rangle \notin S$ 。
 
-D.  集合 $S$ 中的所有元素都具有 $\langle x, x\rangle$ 的形式，这里 $x$ 是大于等于 1 的自然数。
+D. 集合 $S$ 中的所有元素都具有 $\langle x, x\rangle$ 的形式，这里 $x$ 是大于等于 1 的自然数。
 
 \textcolor{red}{答案：BC}
 
@@ -5027,7 +5033,7 @@ B.
 C. 
 可针对 $A$ 的元素的结构使用结构归纳法证明 $A \subseteq S$ 。
 
-D.  
+D. 
 可针对 $A$ 的元素 $\langle a, b\rangle$ 对 $a+b$ 使用强归纳法证明 $A \subseteq S$ 。
 
 \textcolor{red}{答案：ABD}
@@ -5047,7 +5053,7 @@ B. 根据上述字符串集 $\Sigma^*$ 的定义，将字符 $x$ 放在字符串
 
 C. 根据上述字符串集 $\Sigma^*$ 的定义，将字符 $x$ 放在字符串 $u$ 前面得到 $x u$ 是构造字符串的归纳步规则，与字符串连接 $u \circ v$ 不同，且有 $x \circ u=x u$ 。
 
-D.  给定 $x, y \in \Sigma$ ，则有 $x, y, x y \in \Sigma^*$ ，且 $x \circ y=x y$ 。
+D. 给定 $x, y \in \Sigma$ ，则有 $x, y, x y \in \Sigma^*$ ，且 $x \circ y=x y$ 。
 
 \textcolor{red}{答案：ABD}
 
@@ -5055,9 +5061,9 @@ D.  给定 $x, y \in \Sigma$ ，则有 $x, y, x y \in \Sigma^*$ ，且 $x \circ 
 
 归纳定义字母表 $\Sigma$ 上的字符串集 $\Sigma^*$ ：归纳基，不含任何字符的空串 $\lambda \in \Sigma^*$ ；归纳步，若 $u \in$ $\Sigma^*, x \in \Sigma$ ，则 $u x \in \Sigma^*$ 。归纳定义两个字符串 $w$ 和 $u$ 的连接 $w \circ u$ ：归纳基，若 $u=\lambda$ ，则 $w \circ u=w$ ；归纳步，若 $u=v x$ ，则 $w \circ u=w \circ v x=(w \circ v) x$ 。下面哪些说法是正确的？
 
-A，根据字符串连接定义的归纳基，对任意字符串 $u$ 直接就有 $u \circ \lambda=u$ 。
+A. 根据字符串连接定义的归纳基，对任意字符串 $u$ 直接就有 $u \circ \lambda=u$ 。
 
-B，根据字符串连接定义的归纳基，对任意字符串 $u$ 直接就有 $\lambda \circ u=u$ 。
+B. 根据字符串连接定义的归纳基，对任意字符串 $u$ 直接就有 $\lambda \circ u=u$ 。
 
 C. 根据字符串连接定义的归纳基，直接就有 $\lambda \circ \lambda=\lambda$ 。
 
@@ -5071,13 +5077,13 @@ D. 对字符串 $w$ 的结构进行归纳证明 $\lambda \circ w=w$ 时的归纳
 
 归纳定义字母表 $\Sigma$ 上的字符串集 $\Sigma^*$ ：\textcolor{blue}{\textbf{归纳基}}，不含任何字符的空串 $\lambda \in \Sigma^*$ ；\textcolor{blue}{\textbf{归纳步}}，若 $u \in$ $\Sigma^*, x \in \Sigma$ ，则 $u x \in \Sigma^*$ 。归纳定义两个字符串 $w$ 和 $u$ 的连接 $w \circ u$ ：归纳基，若 $u=\lambda$ ，则 $w \circ u=w$ ；归纳步，若 $u=v x$ ，则 $w \circ u=w \circ v x=(w \circ v) x$ 。下面哪些说法是正确的？
 
-A，对任意字符串 $w, u, v \in \Sigma^*$ ，应对 $w$ 的结构用结构归纳法证明 $w \circ(u \circ v)=(w \circ u) \circ v$ 。
+A. 对任意字符串 $w, u, v \in \Sigma^*$ ，应对 $w$ 的结构用结构归纳法证明 $w \circ(u \circ v)=(w \circ u) \circ v$ 。
 
-B，对任意字符串 $w, u, v \in \Sigma^*$ ，应对 $u$ 的结构用结构归纳法证明 $w \circ(u \circ v)=(w \circ u) \circ v$ 。
+B. 对任意字符串 $w, u, v \in \Sigma^*$ ，应对 $u$ 的结构用结构归纳法证明 $w \circ(u \circ v)=(w \circ u) \circ v$ 。
 
-C，对任意字符串 $w, u, v \in \Sigma^*$ ，应对 $v$ 的结构用结构归纳法证明 $w \circ(u \circ v)=(w \circ u) \circ v$ 。
+C. 对任意字符串 $w, u, v \in \Sigma^*$ ，应对 $v$ 的结构用结构归纳法证明 $w \circ(u \circ v)=(w \circ u) \circ v$ 。
 
-D，
+D. 
 对任意字符串 $w, u, v \in \Sigma^*$ ，对 $v$ 的结构用结构归纳法证明 $w \circ(u \circ v)=(w \circ u) \circ v$ 时，考虑存在字符串 $s$ 和字符 $x$ 使得 $v=s x$ ，这时归纳假设是 $w \circ(u \circ s)=(w \circ u) \circ s$ 。
 
 
@@ -5113,7 +5119,7 @@ B. 归纳假设
 
 C. 空串是连接的单位元
 
-D.  连接的定义
+D. 连接的定义
 
 E．连接满足结合律
 
@@ -5162,7 +5168,7 @@ B. 归纳假设
 
 C. 逆的定义
 
-D.  连接的定义
+D. 连接的定义
 
 E．连接满足结合律
 
@@ -5183,13 +5189,13 @@ E．连接满足结合律
 
 综上由强归纳法有 $\forall n \in \mathbb{N} P(n)$ 成立。对于这个证明，下面哪些说法是正确的？
 
-A，这个证明给出了待证命题的符号化形式，按照强归纳法的规范书写，是一个正确的证明。
+A. 这个证明给出了待证命题的符号化形式，按照强归纳法的规范书写，是一个正确的证明。
 
-B，这个证明是错误的，因为归纳基只验证了 $P(0)$ ，强归纳法的归纳基不可能只验证一种情况。
+B. 这个证明是错误的，因为归纳基只验证了 $P(0)$ ，强归纳法的归纳基不可能只验证一种情况。
 
-C，这个证明是错误的，归纳步不能假定 $P(1)$ 成立，因为 $P(1)$ 是 $2 \mid F_1$ ，明显不成立。
+C. 这个证明是错误的，归纳步不能假定 $P(1)$ 成立，因为 $P(1)$ 是 $2 \mid F_1$ ，明显不成立。
 
-D，
+D. 
 这个证明是错误的，归纳步用了归纳假设 $P(k-1)$ 成立，但这时 $k$ 仅仅是大于等于 0 ，因此 $k-1$ 可能小于 0 ，从而 $P(k-1)$ 不在归纳假设的范围内。
 
 \textcolor{red}{答案：D}
@@ -5304,7 +5310,7 @@ B. 若 $A \in B$ 且 $B \subseteq C$ 则必有 $A \in C$
 
 C. 若 $A \subseteq B$ 且 $B \in C$ 则必有 $A \subseteq C$
 
-D.  若 $A \subseteq B$ 且 $B \subseteq C$ 则必有 $A \in C$
+D. 若 $A \subseteq B$ 且 $B \subseteq C$ 则必有 $A \in C$
 
 \textcolor{red}{答案：B}
 
@@ -5348,7 +5354,7 @@ B. $\forall x(x \leq 4 \rightarrow x \in A)$
 C. 
 $\forall x(0 \leq x \leq 3 \rightarrow(x+1) \in A)$
 
-D.  $\forall x(x \in A \rightarrow \exists y(x+y=1))$
+D. $\forall x(x \in A \rightarrow \exists y(x+y=1))$
 
 \textcolor{red}{答案：AD}
 
@@ -5839,7 +5845,7 @@ B. 证明 $A \subseteq B$ 且 $B \subseteq A$
 
 C. 分别画出表示集合 $A$ 和集合 $B$ 的文文氏图，看它们是否相同
 
-D.  列出 $A$ 和 $B$ 的成员关系表，看它们是否相同
+D. 列出 $A$ 和 $B$ 的成员关系表，看它们是否相同
 
 \textcolor{red}{答案：ABD}
 
@@ -5984,7 +5990,7 @@ $(\bar{B} \cap A) \cup(\bar{A} \cap \bar{C})$ & \textcolor{blue}{/ / 同一律} 
 
 \subsubsection{测验题5.45}
 
-设A，B是任意集合，下面哪一组的两个集合表达式给出的集合是相等的？
+设A. B是任意集合，下面哪一组的两个集合表达式给出的集合是相等的？
 
 A. 集合 $(A-B) \cap A$ 和集合 $A$
 
@@ -5992,7 +5998,7 @@ B. 集合 $(A-B) \cup A$ 和集合 $A$
 
 C. 集合 $\overline{A-B} \cap A$ 和集合 $A$
 
-D.  集合 $\overline{A-B} \cup A$ 和集合 $A$
+D. 集合 $\overline{A-B} \cup A$ 和集合 $A$
 
 \textcolor{red}{答案：B}
 
@@ -6045,7 +6051,7 @@ D.
 
 \subsubsection{测验题5.49}
 
-设A，B，C是任意集合，下面哪一组的两个集合表达式给出的集合是相等的？
+设A. B. C是任意集合，下面哪一组的两个集合表达式给出的集合是相等的？
 
 A. 集合 $(A-B) \cup(A-C)$ 和集合 $A-(B \cup C)$
 
@@ -6053,7 +6059,7 @@ B. 集合 $(A-B) \cap(A-C)$ 和集合 $A-(B \cup C)$
 
 C. 集合 $(A-C) \cap(B-C)$ 和集合 $(A \cup B)-C$
 
-D.  集合 $(A-C) \cup(B-C)$ 和集合 $(A \cap B)-C$
+D. 集合 $(A-C) \cup(B-C)$ 和集合 $(A \cap B)-C$
 
 \textcolor{red}{答案：B}
 
@@ -6067,7 +6073,7 @@ B. $A \cap B \cap C=\varnothing$
 
 C. $A \cap(B \cup C)=\varnothing$
 
-D.  $B \cup C \subseteq \bar{A}$
+D. $B \cup C \subseteq \bar{A}$
 
 \textcolor{red}{答案：B}
 
@@ -6274,7 +6280,7 @@ $
 
 \textcolor{red}{答案：D}
 
-\textcolor{red}{解析：正确选项应为BD，czg说这道题因答案设置错误不应该再出现在学习通中。}
+\textcolor{red}{解析：正确选项应为BD.  czg说这道题因答案设置错误不应该再出现在学习通中。}
 
 \subsubsection{测验题6.3}
 
@@ -6627,7 +6633,7 @@ B. 非空集A上的空关系既是自反关系也是反自反关系。
 
 C. 非空集A上的一个关系如果不是自反关系，那么就是反自反关系。
 
-D.  非空集A上的一个关系如果是自反关系，那么就不是反自反关系。
+D. 非空集A上的一个关系如果是自反关系，那么就不是反自反关系。
 
 \textcolor{red}{答案：AD}
 
@@ -6706,7 +6712,7 @@ B. 关系 $R_2=\{\langle 4,3\rangle,\langle 1,1\rangle,\langle 2,4\rangle,\langl
 
 C. 关系 $R_3=\{\langle 3,4\rangle,\langle 2,3\rangle,\langle 1,3\rangle,\langle 2,4\rangle,\langle 1,2\rangle,\langle 4,1\rangle,\langle 2,1\rangle,\langle 1,4\rangle\}$
 
-D.  关系 $R_4=\{\langle 4,4\rangle,\langle 3,1\rangle,\langle 2,3\rangle,\langle 4,3\rangle,\langle 2,2\rangle,\langle 3,3\rangle,\langle 1,1\rangle\}$
+D. 关系 $R_4=\{\langle 4,4\rangle,\langle 3,1\rangle,\langle 2,3\rangle,\langle 4,3\rangle,\langle 2,2\rangle,\langle 3,3\rangle,\langle 1,1\rangle\}$
 
 
 \textcolor{red}{答案：AC}
@@ -6751,7 +6757,7 @@ B.
 C. 
 关系 $R_3=\{\langle 3,4\rangle,\langle 2,3\rangle,\langle 1,3\rangle,\langle 2,2\rangle,\langle 3,1\rangle,\langle 4,3\rangle,\langle 3,2\rangle,\langle 4,4\rangle\}$
 
-D.  
+D. 
 关系 $R_4=\{\langle 4,4\rangle,\langle 3,1\rangle,\langle 2,3\rangle,\langle 4,3\rangle,\langle 2,2\rangle,\langle 3,3\rangle,\langle 1,1\rangle\}$
 
 
@@ -6812,7 +6818,7 @@ B. 关系 $R_2=\{\langle 4,4\rangle,\langle 1,1\rangle,\langle 2,2\rangle,\langl
 
 C. 关系 $R_3=\{\langle 3,4\rangle\}$
 
-D.  关系 $R_4=\{\langle 4,4\rangle,\langle 3,1\rangle,\langle 2,3\rangle\}$
+D. 关系 $R_4=\{\langle 4,4\rangle,\langle 3,1\rangle,\langle 2,3\rangle\}$
 
 
 \textcolor{red}{答案：ABC}
@@ -6883,7 +6889,7 @@ B. 反自反性
 
 C. 对称性
 
-D.  反对称性
+D. 反对称性
 
 E．传递性
 
@@ -6957,7 +6963,7 @@ B. 反自反性
 
 C. 对称性
 
-D.  反对称性
+D. 反对称性
 
 E．传递性
 
@@ -6986,7 +6992,7 @@ B. 如果 $R \subseteq \Delta_A$ ，则 $R$ 是反对称的。
 
 C. 如果 $R \subseteq \Delta_A$ ，则 $R$ 是自反的。
 
-D.  如果 $R \subseteq \Delta_A$ ，则 $R$ 是传递的。
+D. 如果 $R \subseteq \Delta_A$ ，则 $R$ 是传递的。
 
 \textcolor{red}{答案：C}
 
@@ -7000,7 +7006,7 @@ B. 全关系 $A \times A$ 是对称的。
 
 C. 全关系 $A \times A$ 是反对称的。
 
-D.  全关系 $A \times A$ 是传递的。
+D. 全关系 $A \times A$ 是传递的。
 
 \textcolor{red}{答案：C}
 
@@ -7086,7 +7092,7 @@ B.
 C. 
 如果 $R$ 和 $S$ 都是反对称的，则 $R \circ S$ 是反对称的。
 
-D.  
+D. 
 如果 $R$ 和 $S$ 都是传递的，则 $R \circ S$ 是传递的。
 
 \textcolor{red}{答案：A}
@@ -7272,7 +7278,7 @@ B. 对任意自然数 $n,(R \circ S)^n=R^n \circ S^n$
 
 C. 对任意自然数 $n,(R \cup S)^n=R^n \cup S^n$
 
-D.  对任意自然数 $n,\left(R^{-1}\right)^n=\left(R^n\right)^{-1}$
+D. 对任意自然数 $n,\left(R^{-1}\right)^n=\left(R^n\right)^{-1}$
 
 \textcolor{red}{答案：D}
 
@@ -7533,7 +7539,7 @@ B. 如果 $R$ 是 $A$ 上的等价关系，则 $R \cup R^{-1}=R$
 
 C. 如果 $R$ 是 $A$ 上的对称，传递关系，则 $R \cup \Delta_A$ 是 $A$ 上的等价关系
 
-D.  如果 $R$ 是 $A$ 上的自反，传递关系，则 $R \cup R^{-1}$ 是 $A$ 上的等价关系
+D. 如果 $R$ 是 $A$ 上的自反，传递关系，则 $R \cup R^{-1}$ 是 $A$ 上的等价关系
 
 \textcolor{red}{答案：ABC}
 
@@ -7748,7 +7754,7 @@ B. 如果 $R$ 是反对称关系，则 $R \cup \Delta_A$ 也是反对称关系
 
 C. 如果 $R$ 是传递关系，则 $R-R^{-1}$ 也是传递关系
 
-D.  无论 $R$ 是怎样的关系，总有 $R-R^{-1}$ 是反对称关系
+D. 无论 $R$ 是怎样的关系，总有 $R-R^{-1}$ 是反对称关系
 
 \textcolor{red}{答案：BCD}
 
@@ -7762,7 +7768,7 @@ B. 如果 $R$ 是 $A$ 上的偏序关系，则 $R \cap R^{-1}=\Delta_A$
 
 C. 如果 $R$ 是 $A$ 上的反对称，传递关系，则 $R \cup \Delta_A$ 是 $A$ 上的偏序关系
 
-D.  如果 $R$ 是 $A$ 上的自反，传递关系，则 $r\left(R-R^{-1}\right)$ 是 $A$ 上的偏序关系
+D. 如果 $R$ 是 $A$ 上的自反，传递关系，则 $r\left(R-R^{-1}\right)$ 是 $A$ 上的偏序关系
 
 
 \textcolor{red}{答案：ABCD}
@@ -7810,7 +7816,7 @@ B. 正整数集 $\mathbb{Z}^{+}$上的关系 $R_2=\{\langle a, b\rangle \mid \ex
 
 C. 非空集 $U$ 的幂集 $\wp(U)$ 上的关系 $R_3=\{\langle a, b\rangle \mid \exists z(a=b \cup z)\}$
 
-D.  正整数对集 $\mathbb{Z}^{+} \times \mathbb{Z}^{+}$上的关系 $R_4=\{\langle\langle a, b\rangle,\langle c, d\rangle\rangle \mid(a<c \vee(a=c \wedge b \leq d))\}$
+D. 正整数对集 $\mathbb{Z}^{+} \times \mathbb{Z}^{+}$上的关系 $R_4=\{\langle\langle a, b\rangle,\langle c, d\rangle\rangle \mid(a<c \vee(a=c \wedge b \leq d))\}$
 
 
 \textcolor{red}{答案：BCD}
@@ -7825,7 +7831,7 @@ B. $R$的哈斯图必定是一个连通图
 
 C. 如果关系 $R$ 的哈斯图中对应 $A$ 的元素 $a$ 和 $b$ 的两个顶点之间有边，则必有 $\langle a, b\rangle \in$ $R$ 或 $\langle b, a\rangle \in R$
 
-D.  如果在关系 $R$ 中A的元素 $a$ 覆盖 $b$ ，则在 $R$ 的哈斯图中对应 $a$ 和 $b$ 的顶点之间有边
+D. 如果在关系 $R$ 中A的元素 $a$ 覆盖 $b$ ，则在 $R$ 的哈斯图中对应 $a$ 和 $b$ 的顶点之间有边
 
 \textcolor{red}{答案：CD}
 
@@ -7873,7 +7879,7 @@ B. 偏序集A的最大元是10
 
 C. 6，7，8，9，10都是偏序集A的极大元
 
-D.  1，2，3，4，5都是偏序集A的极小元
+D. 1，2，3，4，5都是偏序集A的极小元
 
 \textcolor{red}{答案：AC}
 
@@ -7885,7 +7891,7 @@ A. 偏序集A的最小元是1
 
 B. 偏序集A的最大元是 60
 
-C.  $60,30,20,10$ 都是偏序集$A$的极大元
+C. $60,30,20,10$ 都是偏序集$A$的极大元
 
 D. $1,2,3,4,5$ 都是偏序集 $A$ 的极小元
 
@@ -7899,9 +7905,9 @@ A. 子集$S$不存在上确界
 
 B. 子集$S$不存在下确界
 
-C.  6 和12都是子集$S$的上界
+C. 6 和12都是子集$S$的上界
 
-D.   1 是子集 $S$ 的下界
+D. 1 是子集 $S$ 的下界
 
 \textcolor{red}{答案：CD}
 
@@ -7913,7 +7919,7 @@ A. 子集 $S$ 的上确界是 60
 
 B. 子集$S$的下确界是 1
 
-C.  $12,24,48,60$ 都是子集 $S$ 的上界
+C. $12,24,48,60$ 都是子集 $S$ 的上界
 
 D. 1和2都是子集 $S$ 的下界
 
@@ -7995,7 +8001,7 @@ f(\{-1,0,1\})=\{0,1\}
 $
 
 
-D.  $
+D. $
 f^{-1}(\{-1,0,1\})=\{-2,-1,0\}
 $
 
@@ -8003,7 +8009,7 @@ $
 
 \subsubsection{测验题7.5}
 
-设A，B是任意集合，S和T是A的子集，W，U是B的子集，对于函数$f:A\rightarrow B$，下面哪些等式是
+设A. B是任意集合，S和T是A的子集，W，U是B的子集，对于函数$f:A\rightarrow B$，下面哪些等式是
 不正确的？
 
 A. $f(S \cap T)=f(S) \cap f(T)$
@@ -8041,7 +8047,7 @@ B. 集合 $A=\{1,2,3,4,5\}, B=\{a, b, c, d\}$ ，函数 $f_2=\{\langle 1, d\rang
 
 C. 集合 $A=\{1,2,3,4\}, B=\{a, b, c, d\}$ ，函数 $f_3=\{\langle 1, a\rangle,\langle 2, d\rangle,\langle 3, c\rangle,\langle 4, b\rangle\}$
 
-D.  集合 $A=\{1,2,3\}, B=\{a, b, c, d, e\}$ ，函数 $f_4=\{\langle 1, e\rangle,\langle 2, d\rangle,\langle 3, b\rangle\}$
+D. 集合 $A=\{1,2,3\}, B=\{a, b, c, d, e\}$ ，函数 $f_4=\{\langle 1, e\rangle,\langle 2, d\rangle,\langle 3, b\rangle\}$
 
 
 \textcolor{red}{答案：BC}
@@ -8057,7 +8063,7 @@ B. 集合 $A=\{1,2,3,4,5\}, B=\{a, b, c, d\}$ ，
 
 C. 集合 $A=\{1,2,3,4\}, B=\{a, b, c, d\}$ ，函数 $f_3=\{\langle 1, a\rangle,\langle 2, d\rangle,\langle 3, c\rangle,\langle 4, b\rangle\}$ 
 
-D.  集合 $A=\{1,2,3\}, B=\{a, b, c, d, e\}$ ，函数 $f_4=\{\langle 1, e\rangle,\langle 2, d\rangle,\langle 3, b\rangle\}$
+D. 集合 $A=\{1,2,3\}, B=\{a, b, c, d, e\}$ ，函数 $f_4=\{\langle 1, e\rangle,\langle 2, d\rangle,\langle 3, b\rangle\}$
 
 
 \textcolor{red}{答案：C}
@@ -8072,7 +8078,7 @@ B. 函数 $f_2(n)=\lfloor(n+1) / 2\rfloor$
 
 C. 函数 $f_3(n)=\lceil(2 n+1) / 2\rceil$
 
-D.  函数 $f_4(n)=|n-5|$
+D. 函数 $f_4(n)=|n-5|$
 
 \textcolor{red}{答案：AC}
 
@@ -8086,7 +8092,7 @@ B. 函数 $f_2(n)=\lfloor(n+1) / 2\rfloor$
 
 C. 函数 $f_3(n)=\lceil(2 n+1) / 2\rceil$
 
-D.  函数 $f_4(n)=|n-5|$
+D. 函数 $f_4(n)=|n-5|$
 
 \textcolor{red}{答案：BD}
 
@@ -8142,7 +8148,7 @@ B. 函数 $g \circ f$ 是满函数，则函数 $f$ 和 $g$ 也都是满函数
 
 C. 函数 $g \circ f$ 是双函数当且仅当 $f$ 和 $g$ 都是双函数
 
-D.  函数 $g \circ f$ 是单函数，则函数 $f$ 也是单函数
+D. 函数 $g \circ f$ 是单函数，则函数 $f$ 也是单函数
 
 \textcolor{red}{答案：AD}
 
@@ -8171,7 +8177,7 @@ B. 函数 $g_2=\{\langle a, 1\rangle,\langle b, 4\rangle,\langle c, 3\rangle,\la
 C. 
 函数 $g_3=\{\langle 1, a\rangle,\langle 2, b\rangle,\langle 3, c\rangle,\langle 2, d\rangle,\langle 3, e\rangle\}$
 
-D.  
+D. 
 函数 $g_4=\{\langle a, 1\rangle,\langle b, 4\rangle,\langle c, 1\rangle,\langle d, 2\rangle,\langle e, 3\rangle\}$
 
 
@@ -8187,7 +8193,7 @@ B. 函数 $g_2=\{\langle 3, a\rangle,\langle 4, b\rangle,\langle 5, c\rangle,\la
 
 C. 函数 $g_3=\{\langle a, 3\rangle,\langle b, 4\rangle,\langle c, 5\rangle,\langle d, 2\rangle\}$
 
-D.  函数 $g_3=\{\langle a, 3\rangle,\langle b, 6\rangle,\langle c, 5\rangle,\langle d, 1\rangle\}$
+D. 函数 $g_3=\{\langle a, 3\rangle,\langle b, 6\rangle,\langle c, 5\rangle,\langle d, 1\rangle\}$
 
 
 \textcolor{red}{答案：CD}
@@ -8198,11 +8204,11 @@ D.  函数 $g_3=\{\langle a, 3\rangle,\langle b, 6\rangle,\langle c, 5\rangle,\l
 
 A. 函数 $g_1: \mathbb{N} \rightarrow \mathbb{N}$ ，定义为 $\forall n, g_1(n)=n$
 
-B，函数 $g_2: \mathbb{N} \rightarrow \mathbb{Z}$ ，定义为 $\forall n, g_2(n)=n / 2$
+B. 函数 $g_2: \mathbb{N} \rightarrow \mathbb{Z}$ ，定义为 $\forall n, g_2(n)=n / 2$
 
 C. 函数 $g_3: \mathbb{N} \rightarrow \mathbb{N}$ ，定义为 $\forall n, g_3(n)=\lfloor n / 2\rfloor$
 
-D.  函数 $g_4: \mathbb{N} \rightarrow \mathbb{N}$ ，定义为 $\forall n, g_4(n)=\lfloor(n+1) / 2\rfloor$
+D. 函数 $g_4: \mathbb{N} \rightarrow \mathbb{N}$ ，定义为 $\forall n, g_4(n)=\lfloor(n+1) / 2\rfloor$
 
 
 \textcolor{red}{答案：CD}
@@ -8217,7 +8223,7 @@ B. 函数 $g_2(n)=(n, n+1)$
 
 C. 函数 $g_3(m, n)=|m+n|$
 
-D.  函数 $g_4(n)=(1, n+1)$
+D. 函数 $g_4(n)=(1, n+1)$
 
 
 \textcolor{red}{答案：D}
@@ -8232,7 +8238,7 @@ B. 函数 $f: A \rightarrow B$ 是双函数当且仅当存在函数 $g: B \right
 
 C. 对任意的函数 $f, g: A \rightarrow A$ ，有 $(g \circ f)^{-1}=f^{-1} \circ g^{-1}$
 
-D.  对函数 $f: A \rightarrow B$ ，若存在函数 $g: B \rightarrow A$ 使得 $g \circ f=\mathbf{i d}_A$ 且 $f \circ g=\mathbf{i d}_B$ ，则 $f$ 是双函数
+D. 对函数 $f: A \rightarrow B$ ，若存在函数 $g: B \rightarrow A$ 使得 $g \circ f=\mathbf{i d}_A$ 且 $f \circ g=\mathbf{i d}_B$ ，则 $f$ 是双函数
 
 
 \textcolor{red}{答案：D}
@@ -8241,13 +8247,13 @@ D.  对函数 $f: A \rightarrow B$ ，若存在函数 $g: B \rightarrow A$ 使�
 
 下面哪些说法是正确的？
 
-A.集合A与B等势当且仅当A和B之间存在双函数
+A. 集合A与B等势当且仅当A和B之间存在双函数
 
-B.集合A与B等势当且仅当存在A到B的单函数且存在B到A的单函数
+B. 集合A与B等势当且仅当存在A到B的单函数且存在B到A的单函数
 
-C.集合A与B等势且集合B与C等势，则集合A与C等势
+C. 集合A与B等势且集合B与C等势，则集合A与C等势
 
-D.集合A与B等势当且仅当集合B与A等势
+D. 集合A与B等势当且仅当集合B与A等势
 
 \textcolor{red}{答案：ABCD}
 
@@ -8278,7 +8284,7 @@ B.
 C. 
 对任意自然数 $m, n$ ，若 $m \in n$ ，则 $m \subset n$
 
-D.  
+D. 
 对任意自然数 $m$ ，必有 $m \in m^{+}$且 $m \subseteq m^{+}$
 
 \textcolor{red}{答案：ACD}
@@ -8330,13 +8336,13 @@ D. 无穷集一定是不可数集
 
 下面关于可数集和不可数集的哪些说法是正确的？
 
-A.不可数集的子集一定还是不可数集
+A. 不可数集的子集一定还是不可数集
 
 B. 可数集的子集一定还是可数集
 
-C.两个可数集的并集还是可数集
+C. 两个可数集的并集还是可数集
 
-D.两个可数集的笛卡尔积还是可数集
+D. 两个可数集的笛卡尔积还是可数集
 
 \textcolor{red}{答案：BCD}
 
@@ -8395,7 +8401,7 @@ B.
 C. 
 如果存在 $C>0$ 和 $k$ 使得，对任意 $x$ ，当 $x>k$ 时 $|f(x)| \leq C|g(x)|$ ，那么 $f \in O(g)$
 
-D.  
+D. 
 如果 $f \notin O(g)$ ，则存在 $x$ 使得，对任意 $C>0$ 和 $k$ 当 $x>k$ 时 $|f(x)|>C|g(x)|$
 
 \textcolor{red}{答案：BC}
@@ -8412,7 +8418,7 @@ B. 如果 $f \in O(h)$ 且 $g \in O(h)$ ，则 $f+g \in O(h)$
 
 C. 如果 $f \in O(h)$ 且 $g \in O(h)$ ，则 $f \cdot g \in O(h)$
 
-D.  如果 $f \notin O(g)$ 且 $g \notin O(h)$ ，则 $f \notin O(h)$
+D. 如果 $f \notin O(g)$ 且 $g \notin O(h)$ ，则 $f \notin O(h)$
 
 \textcolor{red}{答案：AB}
 
@@ -8426,7 +8432,7 @@ B. 如果 $f \in \Theta(g)$ ，则 $f \in O(g)$
 
 C. 如果 $f \in O(g)$ ，则 $g \in \Omega(f)$
 
-D.  如果 $f \in O(g)$ 且 $g \in O(f)$ ，则 $f \in \Theta(g)$
+D. 如果 $f \in O(g)$ 且 $g \in O(f)$ ，则 $f \in \Theta(g)$
 
 \textcolor{red}{答案：BCD}
 
@@ -8458,7 +8464,7 @@ B. $f_2(x)=100 x^2+123$
 
 C. $f_3(x)=x \log \left(x^2+2 x\right)$
 
-D.  $f_4(x)=2^x+x^3+1$
+D. $f_4(x)=2^x+x^3+1$
 
 \textcolor{red}{答案：BC}
 
@@ -8517,7 +8523,7 @@ B. $f \in O\left(n^2 \log n\right)$
 
 C. $f \in O\left(n^3 \log n\right)$
 
-D.  $f \in O\left(n^2\right)$
+D. $f \in O\left(n^2\right)$
 
 
 \textcolor{red}{答案：C}
@@ -8561,7 +8567,7 @@ B. 函数 $f \in O\left(x^{-1}\right)$
 
 C. 函数 $f \in O\left(x^{-2}\right)$
 
-D.  函数 $f \in O(x)$
+D. 函数 $f \in O(x)$
 
 
 
@@ -8577,7 +8583,7 @@ B. $f \in O\left(x^3\right)$ 且 $f \notin O\left(x^2\right)$
 
 C. $f \in O\left(x^4\right)$ 且 $f \notin O\left(x^3\right)$
 
-D.  $f \in O\left(x^5\right)$ 且 $f \notin O\left(x^4\right)$
+D. $f \in O\left(x^5\right)$ 且 $f \notin O\left(x^4\right)$
 
 \textcolor{red}{答案：B}
 
@@ -8623,7 +8629,7 @@ B. 整数之间的等于，小于判断，计算整数的绝对值，以及整�
 
 C. 算法第（3）行的循环是算法的基本操作
 
-D.  算法的时间复杂度是 $O(\log |b|)$
+D. 算法的时间复杂度是 $O(\log |b|)$
 
 \textcolor{red}{答案：AB}
 
@@ -8655,7 +8661,7 @@ B.
 C. 
 算法第（3）行的循环是算法的基本操作
 
-D.  
+D. 
 算法的时间复杂度是 $O(\min \{a, b\})$
 
 \textcolor{red}{答案：ABD}
@@ -8664,14 +8670,14 @@ D.
 
 下面哪些说法是正确的？
 
-A.无需过于关注算法时间复杂度，随着硬件发展
+A. 无需过于关注算法时间复杂度，随着硬件发展
 指数级算法也会在短时间内执行完毕
 
-B.易解问题就是目前存在多项式时间复杂度算法的问题，也称为P类问题
+B. 易解问题就是目前存在多项式时间复杂度算法的问题，也称为P类问题
 
-C.非易解问题就是目前尚不存在多项式时间复杂度算法的问题，也称为NP类问题
+C. 非易解问题就是目前尚不存在多项式时间复杂度算法的问题，也称为NP类问题
 
-D.不可解问题就是目前计算机不能求解的问题
+D. 不可解问题就是目前计算机不能求解的问题
 
 \textcolor{red}{答案：BD}
 
@@ -10141,13 +10147,13 @@ D. 310
 
 对于图的基本概念，下面哪些说法是正确的？
 
-A，一个非空图的顶点集可以是空集，边集也可以是空集。
+A. 一个非空图的顶点集可以是空集，边集也可以是空集。
 
-B，有向图的基图必然是无向图。
+B. 有向图的基图必然是无向图。
 
-C， $n$ 阶图是指图的边有 $n$ 条。
+C. $n$ 阶图是指图的边有 $n$ 条。
 
-D，$n$阶零图有 $n$ 个顶点，且边集为空集。
+D. $n$阶零图有 $n$ 个顶点，且边集为空集。
 
 \textcolor{red}{答案：BD}
 
@@ -10157,11 +10163,11 @@ D，$n$阶零图有 $n$ 个顶点，且边集为空集。
 
 A. 若无向图中有边 $e_1=(u, v)$ 和 $e_2=(v, w)$ ，则 $e_1$ 和 $e_2$ 是相邻边。
 
-B，若无向图中有边 $e=(u, v)$ ，则 $e$ 邻接到 $u$ 和 $v$ 。
+B. 若无向图中有边 $e=(u, v)$ ，则 $e$ 邻接到 $u$ 和 $v$ 。
 
 C. 若有向图中有边 $e_1=\langle u, v\rangle$ 和 $e_2=\langle v, u\rangle$ ，则 $e_1$ 和 $e_2$ 是重边。
 
-D，简单有向图是没有环和重边的有向图。
+D. 简单有向图是没有环和重边的有向图。
 
 \textcolor{red}{答案：AD}
 
@@ -10175,7 +10181,7 @@ B. 存在一个 6 阶无向图，它的每个顶点的度数分别是$1,3,5,7,9,
 
 C. 一个无向图的所有顶点度数之和必然是偶数。
 
-D.  若无向图 $G$ 的最小度 $\delta(G)=3$ ，则 $G$ 存在唯一的一个度数为 3 的顶点。
+D. 若无向图 $G$ 的最小度 $\delta(G)=3$ ，则 $G$ 存在唯一的一个度数为 3 的顶点。
 
 \textcolor{red}{答案：BC}
 
@@ -10242,11 +10248,11 @@ D. 完全二部图 $K_{n, n}$ 是 $2 n$ 阶 $n$ 正则图，总共有 $n^2$ 条�
 
 A. 完全图$K_6$
 
-B，圈图$C_6$
+B. 圈图$C_6$
 
-C，轮图$W_6$
+C. 轮图$W_6$
 
-D.  立方体图$Q_3$
+D. 立方体图$Q_3$
 
 \textcolor{red}{答案：BD}
 
@@ -10254,13 +10260,13 @@ D.  立方体图$Q_3$
 
 给定无向图 $G=(V, E)$ ，其中 $V=\left\{v_1, v_2, v_3, v_4, v_5, v_6\right\}, E=\left\{e_1=\left(v_1, v_2\right), e_2=\left(v_1, v_3\right), e_3=\right.$ $\left(v_1, v_3\right), e_4=\left(v_2, v_3\right), e_5=\left(v_3, v_4\right), e_6=\left(v_2, v_4\right), e_7=\left(v_2, v_5\right), e_8=\left(v_4, v_5\right), e_9=\left(v_5, v_6\right), e_{10}=$ $\left.\left(v_4, v_6\right), e_{11}=\left(v_2, v_2\right), e_{12}=\left(v_4, v_4\right)\right\}$ ，对于图 $G$ 中的通路或回路，下面哪些说法是正确的？
 
-A，$\Gamma_1=v_1 e_1 v_2 e_{11} v_4 e_{12} v_4 e_5 v_3 e_2 v_1$ 是长度为 5 的回路。
+A. $\Gamma_1=v_1 e_1 v_2 e_{11} v_4 e_{12} v_4 e_5 v_3 e_2 v_1$ 是长度为 5 的回路。
 
-B，$\Gamma_2=v_1 e_1 v_2 e_{11} v_2 e_7 v_5 e_9 v_6 e_{10} v_4 e_5 v_3$ 是长度为 6 的初级通路。
+B. $\Gamma_2=v_1 e_1 v_2 e_{11} v_2 e_7 v_5 e_9 v_6 e_{10} v_4 e_5 v_3$ 是长度为 6 的初级通路。
 
-C，$\Gamma_3=v_1 e_2 v_3 e_3 v_1 e_1 v_2 e_6 v_4 e_5 v_3 e_4 v_2 e_{11} v_2$ 是长度为 7 的简单通路。
+C. $\Gamma_3=v_1 e_2 v_3 e_3 v_1 e_1 v_2 e_6 v_4 e_5 v_3 e_4 v_2 e_{11} v_2$ 是长度为 7 的简单通路。
 
-D，$\Gamma_4=v_1 e_2 v_3 e_5 v_4 e_{12} v_4 e_{10} v_6 e_9 v_5 e_7 v_2 e_1 v_1$ 是长度为 7 的初级回路。
+D. $\Gamma_4=v_1 e_2 v_3 e_5 v_4 e_{12} v_4 e_{10} v_6 e_9 v_5 e_7 v_2 e_1 v_1$ 是长度为 7 的初级回路。
 
 \textcolor{red}{答案：C}
 
@@ -10284,11 +10290,11 @@ D. $\Gamma_4=v_2 e_{10} v_5 e_2 v_6 e_9 v_0 e_4 v_0 e_3 v_4 e_7 v_3 e_{11} v_2$ 
 
 A. 设图$G$有 $n$ 个顶点，若存在顶点 $u$ 到顶点 $v$ 的通路，则存在 $u$ 到 $v$ 的长度小于等于 $n-1$ 的通路。
 
-B，设图$G$有 $n$ 个顶点，若存在顶点u到自身的回路，则存在 $u$ 到自身的长度小于等于 $n-1$ 的回路。
+B. 设图$G$有 $n$ 个顶点，若存在顶点u到自身的回路，则存在 $u$ 到自身的长度小于等于 $n-1$ 的回路。
 
-C，如果图$G$是二部图，则$G$不存在长度为奇数的回路。
+C. 如果图$G$是二部图，则$G$不存在长度为奇数的回路。
 
-D.  如果图 $G$ 的每条回路的长度都是偶数，则 $G$ 是二部图。
+D. 如果图 $G$ 的每条回路的长度都是偶数，则 $G$ 是二部图。
 
 \textcolor{red}{答案：ACD}
 
@@ -10302,7 +10308,7 @@ B. 如果图 $G$ 是连通图，则 $m \geq n$ 。
 
 C. 如果 $m>(n-1)(n-2) / 2$ ，则图 $G$ 是连通图。
 
-D.  如果 $m \leq n(n-1) / 2$ ，则图 $G$ 是简单图。
+D. 如果 $m \leq n(n-1) / 2$ ，则图 $G$ 是简单图。
 
 \textcolor{red}{答案：AC}
 
@@ -10322,7 +10328,7 @@ B. 顶点集 $V_2=\left\{v_3, v_5\right\}$ 是上图的一个点割集。
 
 C. 顶点集 $V_3=\left\{v_3, v_4, v_5\right\}$ 是上图的一个点割集。
 
-D.  上图的点连通度是 2 。
+D. 上图的点连通度是 2 。
 
 \textcolor{red}{答案：D}
 
@@ -10342,7 +10348,7 @@ B. 顶点集 $V_2=\left\{v_2, v_5\right\}$ 是上图的一个点割集。
 
 C. 顶点集 $V_3=\left\{v_3, v_5\right\}$ 是上图的一个点割集。
 
-D.  上图的点连通度是 2 。
+D. 上图的点连通度是 2 。
 
 \textcolor{red}{答案：AC}
 
@@ -10358,11 +10364,11 @@ D.  上图的点连通度是 2 。
 
 A. 顶点集 $E_1=\left\{e_1, e_2, e_3\right\}$ 是上图的一个边割集。
 
-B，顶点集 $E_2=\left\{e_1, e_5, e_7, e_6, e_{10}\right\}$ 是上图的一个边割集。
+B. 顶点集 $E_2=\left\{e_1, e_5, e_7, e_6, e_{10}\right\}$ 是上图的一个边割集。
 
 C. 顶点集 $E_3=\left\{e_4, e_6, e_8, e_{10}\right\}$ 是上图的一个边割集。
 
-D，上图的边连通度是 3 。
+D. 上图的边连通度是 3 。
 
 
 \textcolor{red}{答案：AB}
@@ -10487,7 +10493,7 @@ B. 长度为 2 的有向通路（含有向回路）总共有 5条。
 
 C. 长度为 3 的有向通路（含有向回路）总共有 14条。
 
-D.  顶点 $v_3$ 到 $v_2$ 长度为 2 的有向通路有 2 条，顶点 $v_4$ 到 $v_2$ 长度为 2 的有向通路有 1 条。
+D. 顶点 $v_3$ 到 $v_2$ 长度为 2 的有向通路有 2 条，顶点 $v_4$ 到 $v_2$ 长度为 2 的有向通路有 1 条。
 
 \textcolor{red}{答案：AC}
 
@@ -10502,13 +10508,13 @@ D.  顶点 $v_3$ 到 $v_2$ 长度为 2 的有向通路有 2 条，顶点 $v_4$ �
 \end{figure}
 
 
-A，长度为 3 的有向回路总共有 4 条，分别是 $v_4 e_6 v_4 e_6 v_4 e_6 v_4, ~ v_4 e_6 v_4 e_8 v_5 e_7 v_4, ~ v_4 e_8 v_5 e_7 v_4 e_6 v_4$ 和 $v_5 e_7 v_4 e_6 v_4 e_8 v_5$ 。
+A. 长度为 3 的有向回路总共有 4 条，分别是 $v_4 e_6 v_4 e_6 v_4 e_6 v_4, ~ v_4 e_6 v_4 e_8 v_5 e_7 v_4, ~ v_4 e_8 v_5 e_7 v_4 e_6 v_4$ 和 $v_5 e_7 v_4 e_6 v_4 e_8 v_5$ 。
 
-B，长度为2的有向通路（含有向回路）总共有 11 条。
+B. 长度为2的有向通路（含有向回路）总共有 11 条。
 
-C，长度为3的有向通路（含有向回路）总共有 15 条。
+C. 长度为3的有向通路（含有向回路）总共有 15 条。
 
-D，顶点 $v_3$ 到 $v_2$ 的长度为 3 的有向通路有 2 条，顶点 $v_2$ 到 $v_3$ 的长度为 3 的有向通路也有 2 条。
+D. 顶点 $v_3$ 到 $v_2$ 的长度为 3 的有向通路有 2 条，顶点 $v_2$ 到 $v_3$ 的长度为 3 的有向通路也有 2 条。
 
 \textcolor{red}{答案：ABD}
 
@@ -10528,7 +10534,7 @@ B. 顶点序列 $v_1 v_3 v_2 v_4 v_6 v_5$ 是一个可能的先深遍历结果�
 
 C. 顶点序列 $v_1 v_2 v_5 v_4 v_3 v_6$ 是一个可能的先深遍历结果。
 
-D.  顶点序列 $v_1 v_3 v_4 v_2 v_5 v_6$ 是一个可能的先深遍历结果。
+D. 顶点序列 $v_1 v_3 v_4 v_2 v_5 v_6$ 是一个可能的先深遍历结果。
 
 \textcolor{red}{答案：ABCD}
 
@@ -10549,7 +10555,7 @@ B. 顶点序列 $v_0 v_3 v_5 v_7 v_1 v_6 v_2 v_4$ 是一个可能的先深遍历
 
 C. 顶点序列 $v_0 v_5 v_3 v_2 v_4 v_6 v_7 v_1$ 是一个可能的先深遍历结果。
 
-D.  顶点序列 $v_0 v_7 v_5 v_2 v_4 v_6 v_3 v_1$ 是一个可能的先深遍历结果。
+D. 顶点序列 $v_0 v_7 v_5 v_2 v_4 v_6 v_3 v_1$ 是一个可能的先深遍历结果。
 
 \subsubsection{测验题9.23}
 
@@ -10588,7 +10594,7 @@ B. 顶点序列 $v_0 v_3 v_5 v_7 v_1 v_2 v_6 v_4$ 是一个可能的先广遍历
 
 C. 顶点序列 $v_0 v_5 v_3 v_2 v_4 v_6 v_7 v_1$ 是一个可能的先广遍历结果。
 
-D.  顶点序列 $v_0 v_7 v_5 v_1 v_3 v_2 v_4 v_6$ 是一个可能的先广遍历结果。
+D. 顶点序列 $v_0 v_7 v_5 v_1 v_3 v_2 v_4 v_6$ 是一个可能的先广遍历结果。
 
 \textcolor{red}{答案：B}
 
@@ -10604,7 +10610,7 @@ D.  顶点序列 $v_0 v_7 v_5 v_1 v_3 v_2 v_4 v_6$ 是一个可能的先广遍�
 
 A. 当依次遍历 $v_0, v_1, v_7$ 后，这时在栈中的顶点从栈底到栈顶依次是 $v_0, v_1, v_7$ 。
 
-B，当依次遍历 $v_0, v_1, v_7, v_5, v_2, v_3, v_4$ 后，这时在栈中的顶点从栈底到栈顶依次是 $v_0, v_1, v_7, v_5, v_2, v_3, v_4$.
+B. 当依次遍历 $v_0, v_1, v_7, v_5, v_2, v_3, v_4$ 后，这时在栈中的顶点从栈底到栈顶依次是 $v_0, v_1, v_7, v_5, v_2, v_3, v_4$.
 
 C. 当依次遍历 $v_0, v_1, v_7, v_5, v_2, v_3, v_4, v_6$ 后，这时在栈中的顶点从栈底到栈顶依次是 $v_0, v_1, v_7, v_5, v_2, v_6$.
 
@@ -10616,13 +10622,13 @@ D. 当依次遍历 $v_0, v_1, v_7, v_5, v_2, v_3, v_4, v_6$ 后且在栈中的�
 
 关于无向树的基本性质，下面哪些说法是正确的？
 
-A，无向树都是简单图。
+A. 无向树都是简单图。
 
-B，无向树连通且没有回路。
+B. 无向树连通且没有回路。
 
-C，无向树删除任意一个顶点之后就不再是连通图。
+C. 无向树删除任意一个顶点之后就不再是连通图。
 
-D，无向树删除任意一条边之后就不再是连通图。
+D. 无向树删除任意一条边之后就不再是连通图。
 
 
 \textcolor{red}{答案：ABD}
@@ -10633,11 +10639,11 @@ D，无向树删除任意一条边之后就不再是连通图。
 
 A. 无向树删除一条边之后总是得到两个连通分支。
 
-B，无向树在任意两个不相邻顶点增加一条新边总得到唯一一个回路。
+B. 无向树在任意两个不相邻顶点增加一条新边总得到唯一一个回路。
 
 C. 如果一个无向图的边数等于顶点数减1，则这个图是一棵无向树。
 
-D，如果一个无向图的每条边都是桥，则这个图是一棵无向树。
+D. 如果一个无向图的每条边都是桥，则这个图是一棵无向树。
 
 \textcolor{red}{答案：AB}
 
@@ -10651,7 +10657,7 @@ B. 根树除根之外的所有顶点的入度都等于1。
 
 C. 根树任意两个顶点之间都有唯一的有向通路。
 
-D.  若根树至少有 3 个顶点，则它至少有两个叶子顶点。
+D. 若根树至少有 3 个顶点，则它至少有两个叶子顶点。
 
 \textcolor{red}{答案：B}
 
@@ -10665,7 +10671,7 @@ B. 满$m$元树的每个内部顶点的出度都是$m$。
 
 C. 所有完全$m$元树都是满$m$元树。
 
-D.  所有平衡$m$元树都是满$m$元树。
+D. 所有平衡$m$元树都是满$m$元树。
 
 
 \textcolor{red}{答案：BC}
@@ -10903,11 +10909,11 @@ $$D=\left[\begin{array}{cccccccc}\infty & 10 & 6 & \infty & 6 & \infty & \infty 
 
 A. 算法在确定顶点$e$的最短距离之后，只修改了顶点 $d$ 的当前距离和当前路径。
 
-B，算法在确定顶点 $d$ 的最短距离之后，只修改了顶点的当前距离和当前路径。
+B. 算法在确定顶点 $d$ 的最短距离之后，只修改了顶点的当前距离和当前路径。
 
-C，算法在确定顶点 $g$ 的最短距离之后，只修改了顶点 $h$ 的当前距离和当前路径。
+C. 算法在确定顶点 $g$ 的最短距离之后，只修改了顶点 $h$ 的当前距离和当前路径。
 
-D.  算法最终确定的顶点 $a$ 到顶点 $h$ 的最短路径是 $a \rightarrow e \rightarrow d \rightarrow g \rightarrow h$ 。
+D. 算法最终确定的顶点 $a$ 到顶点 $h$ 的最短路径是 $a \rightarrow e \rightarrow d \rightarrow g \rightarrow h$ 。
 
 
 \textcolor{red}{答案：AC}
@@ -11102,7 +11108,7 @@ D．最后得到上述无向图的最小生成树所有树枝权重之和是 37 
 
 A．在选择所有权为 1 和 3 的边之后，下一步可选择边 $\left(v_3, v_1\right)$ 作为最后生成树的树枝。
 
-B，在考虑所有权为 1,3 和 4 的边之后，下一步可选择边 $\left(v_0, v_1\right)$ 作为最后生成树的树枝。
+B. 在考虑所有权为 1,3 和 4 的边之后，下一步可选择边 $\left(v_0, v_1\right)$ 作为最后生成树的树枝。
 
 C. 在考虑所有权为 1,3 和 4 的边，再选择边 $\left(v_2, v_3\right)$ 之后，下一步可选边 $\left(v_1, v_4\right)$ 作为最后生成树的树枝。
 
@@ -11145,7 +11151,7 @@ B. Kruskal算法每一次选择的边都与已选的边构成了一个棵树。
 
 C. 对一个无向图，Prim算法和Kruskal算法得到的最小生成树总是相同。
 
-D.
+D. 
 对一个无向图，Prim算法和Kruskal算法得到的最小生成树的边权之和总是相同。
 
 \textcolor{red}{答案：AD}
@@ -11176,11 +11182,11 @@ D. 序列：$e[25], f[30], t_2[45]$
 
 A．序列：$c[8],d[12],e[12],t_0[13],f[15],g[20],h[20]$
 
-B，序列：$c[8],t_O[13],f[15],g[20],h[20],t_1[24]$
+B. 序列：$c[8],t_O[13],f[15],g[20],h[20],t_1[24]$
 
-C，序列：$f[15],t_1[20],g[20],h[20],t_2[25]$
+C. 序列：$f[15],t_1[20],g[20],h[20],t_2[25]$
 
-D，序列：$t_3[35],t_4[40]$
+D. 序列：$t_3[35],t_4[40]$
 
 \textcolor{red}{答案：AC}
 
@@ -11672,13 +11678,13 @@ D．
 
 关于集合上的运算，下面哪些说法是正确的？
 
-A，加法，减法，乘法和除法都是自然数集上的运算。
+A. 加法，减法，乘法和除法都是自然数集上的运算。
 
-B，加法，减法，乘法和除法都是有理数集上的运算。
+B. 加法，减法，乘法和除法都是有理数集上的运算。
 
-C，对于集合 $A$ 和 $B$ 的关系，关系复合是集合 $\wp(A \times B)$ 上的运算。
+C. 对于集合 $A$ 和 $B$ 的关系，关系复合是集合 $\wp(A \times B)$ 上的运算。
 
-D，对于集合 $A$ 上的函数，函数复合是集合 $A^A$ 上的运算。
+D. 对于集合 $A$ 上的函数，函数复合是集合 $A^A$ 上的运算。
 
 \textcolor{red}{答案：BD}
 
@@ -11701,7 +11707,7 @@ D. 给定非空集 $A$ ，设集合 $Q=\{R \subseteq A \times A \mid R$ 是传�
 
 对于运算的交换律，下面哪些说法是正确的？
 
-A，实数集上的乘法运算满足交换律。
+A. 实数集上的乘法运算满足交换律。
 
 B. 整数集上的减法运算满足交换律。
 
@@ -11745,7 +11751,7 @@ D. 所有 $A$ 上的函数集合 $A^A$ 上的函数复合运算满足幂等律�
 
 A．正整数集上计算两数最大公约数运算对计算两数最小公倍数运算满足分配律。
 
-B，整数集上的加法对乘法满足分配律。
+B. 整数集上的加法对乘法满足分配律。
 
 C．给定非空集 $A$ ，集合 $\wp(A \times A)$ 上的关系复合运算对集合并运算满足分配律。
 
@@ -11763,7 +11769,7 @@ B. 整数 1 是正整数集上计算两数最小公倍数运算的单位元。
 
 C．布尔值 $\mathbf{0}$ 是布尔集 $\mathbf{2}=\{\mathbf{0}, \mathbf{1}\}$ 上的逻辑与运算的单位元。
 
-D，给定非空集 $A$ ，恒等关系是集合 $\wp(A \times A)$ 上关系复合运算的单位元。
+D. 给定非空集 $A$ ，恒等关系是集合 $\wp(A \times A)$ 上关系复合运算的单位元。
 
 \textcolor{red}{答案：BD}
 
@@ -11771,13 +11777,13 @@ D，给定非空集 $A$ ，恒等关系是集合 $\wp(A \times A)$ 上关系复�
 
 对于运算的零元，下面哪些说法是正确的？
 
-A，整数 1 是正整数集上计算两数最大公约数运算的零元。
+A. 整数 1 是正整数集上计算两数最大公约数运算的零元。
 
-B，整数 0 是正整数集上计算两数最小公倍数运算的零元。
+B. 整数 0 是正整数集上计算两数最小公倍数运算的零元。
 
-C，布尔值 $\mathbf{0}$ 是布尔集 $\mathbf{2}=\{\mathbf{0}, \mathbf{1}\}$ 上的逻辑与运算的零元。
+C. 布尔值 $\mathbf{0}$ 是布尔集 $\mathbf{2}=\{\mathbf{0}, \mathbf{1}\}$ 上的逻辑与运算的零元。
 
-D，给定非空集 $A$ ，空关系是集合 $\wp(A \times A)$ 上关系复合运算的零元。
+D. 给定非空集 $A$ ，空关系是集合 $\wp(A \times A)$ 上关系复合运算的零元。
 
 \textcolor{red}{答案：ACD}
 
@@ -11786,13 +11792,13 @@ D，给定非空集 $A$ ，空关系是集合 $\wp(A \times A)$ 上关系复合�
 
 对于集合元素关于某个运算的逆元，下面哪些说法是正确的？
 
-A，整数1是它自己关于整数乘法运算的逆元。
+A. 整数1是它自己关于整数乘法运算的逆元。
 
-B，每个实数关于实数乘法都存在逆元。
+B. 每个实数关于实数乘法都存在逆元。
 
-C，给定非空集 $A, A$ 的子集 $S$ 的补集 $\bar{S}$ 是 $S$ 关于集合并运算的逆元。
+C. 给定非空集 $A, A$ 的子集 $S$ 的补集 $\bar{S}$ 是 $S$ 关于集合并运算的逆元。
 
-D，给定非空集 $A, A$ 上关系 $R$ 的逆关系 $R^{-1}$ 是 $R$ 关于关系复合运算的逆元。
+D. 给定非空集 $A, A$ 上关系 $R$ 的逆关系 $R^{-1}$ 是 $R$ 关于关系复合运算的逆元。
 
 \textcolor{red}{答案：A}
 
@@ -11802,7 +11808,7 @@ D，给定非空集 $A, A$ 上关系 $R$ 的逆关系 $R^{-1}$ 是 $R$ 关于关
 
 A. 集合$S$上的运算只可能有一个左单位元。
 
-B.
+B. 
 若集合$S$上的运算既有零元又有单位元（且它们不相同），则它的零元不可能存在逆元。
 
 C. 若集合$S$上的运算有零元，则它有唯一的左零元。
@@ -11816,13 +11822,13 @@ D. 若集合$S$的元素$x$关于集合$S$的运算既有左逆元又有右逆�
 
 在实数集 $\mathbb{R}$上定义二元运算 $*:$ 对任意实数 $x, y, x * y=x+y-x y$ ，下面哪些说法是正确的？
 
-A，运算＊满足交换律。
+A. 运算＊满足交换律。
 
-B，运算＊满足结合律。
+B. 运算＊满足结合律。
 
-C，运算＊有单位元，且单位元是1。
+C. 运算＊有单位元，且单位元是1。
 
-D，运算＊有零元，且零元是 0 。
+D. 运算＊有零元，且零元是 0 。
 
 
 \textcolor{red}{答案：AB}
@@ -11831,11 +11837,11 @@ D，运算＊有零元，且零元是 0 。
 
 在实数集 $\mathbb{R}$ 上定义二元运算 $*$ ：对任意实数 $x, y, x * y=x y-x-y$ ，下面哪些说法是正确的？
 
-A，运算＊满足交换律。
+A. 运算＊满足交换律。
 
-B，运算＊满足结合律。
+B. 运算＊满足结合律。
 
-C，运算＊有单位元，且单位元是1。
+C. 运算＊有单位元，且单位元是1。
 
 D．运算＊有零元，且零元是 0 。
 
@@ -11845,13 +11851,13 @@ D．运算＊有零元，且零元是 0 。
 
 在自然数集 $\mathbb{N} $ 上定义二元运算 $*$ ：对任意实数 $x, y, x * y=|x-y|$ ，下面哪些说法是正确的？
 
-A，运算＊满足交换律。
+A. 运算＊满足交换律。
 
-B，运算＊满足结合律。
+B. 运算＊满足结合律。
 
-C，运算＊有单位元，且单位元是 0 。
+C. 运算＊有单位元，且单位元是 0 。
 
-D，每个自然数关于运算$*$都有逆元。
+D. 每个自然数关于运算$*$都有逆元。
 
 \textcolor{red}{答案：ACD}
 
@@ -11867,7 +11873,7 @@ B. 运算 $*$ 和 $\circ$ 都有零元。
 
 C. 运算 $*$ 和 $\circ$ 满足吸收律。
 
-D，运算＊对$\circ$满足分配律。
+D. 运算＊对$\circ$满足分配律。
 
 \textcolor{red}{答案：CD}
 
@@ -11887,13 +11893,13 @@ D，运算＊对$\circ$满足分配律。
 \end{tabular}
 \end{table}
 
-A，运算$*$满足交换律。
+A. 运算$*$满足交换律。
 
-B，运算$*$满足结合律。
+B. 运算$*$满足结合律。
 
-C，运算$*$满足幂等律。
+C. 运算$*$满足幂等律。
 
-D，集合$A$的每个元素关于运算$*$都有逆元。
+D. 集合$A$的每个元素关于运算$*$都有逆元。
 
 \textcolor{red}{答案：AB}
 
@@ -11915,11 +11921,11 @@ D，集合$A$的每个元素关于运算$*$都有逆元。
 
 A．运算$*$满足结合律。
 
-B，运算$*$满足幂等律。
+B. 运算$*$满足幂等律。
 
-C，运算$*$既有单位元又有零元。
+C. 运算$*$既有单位元又有零元。
 
-D，集合$A$的每个元素关于运算$*$都有逆元。
+D. 集合$A$的每个元素关于运算$*$都有逆元。
 
 \textcolor{red}{答案：ABC}
 
@@ -11960,7 +11966,7 @@ B．运算 $\circ$ 和运算 $*$ 满足吸收律。
 
 C. 运算 $\circ$ 对运算 $*$满足分配律。
 
-D，运算 $*$ 对运算 $\circ$ 满足分配律。
+D. 运算 $*$ 对运算 $\circ$ 满足分配律。
 
 \textcolor{red}{答案：AD}
 
@@ -11970,11 +11976,11 @@ D，运算 $*$ 对运算 $\circ$ 满足分配律。
 
 A．代数 $(\mathbb{Z},+,-)$ 和 $(\mathbb{N},+, *)$ 是同类型代数，这里 $-$ 是一元运算。
 
-B，代数 $(\wp(A), \cap)$ 和 $(\wp(A), \cup, \overline{-})$ 是同类型代数，这里$\overline{-}$是集合补运算。
+B. 代数 $(\wp(A), \cap)$ 和 $(\wp(A), \cup, \overline{-})$ 是同类型代数，这里$\overline{-}$是集合补运算。
 
 C．代数 $(\wp(A), \cap)$ 和 $(\mathbf{2}=\{\mathbf{0}, \mathbf{1}\}, \wedge)$ 是同类型代数。
 
-D，代数 $(\wp(A), \cup, \varnothing)$ 和 $(\mathbb{Z}, *, 0)$ 是同类型代数。
+D. 代数 $(\wp(A), \cup, \varnothing)$ 和 $(\mathbb{Z}, *, 0)$ 是同类型代数。
 
 \textcolor{red}{答案：CD}
 
@@ -11984,7 +11990,7 @@ D，代数 $(\wp(A), \cup, \varnothing)$ 和 $(\mathbb{Z}, *, 0)$ 是同类型�
 
 A．说 $B$ 对二元运算$\circ$封闭是指对 $A$ 的任意元素 $x, y$ 有 $x \circ y \in B$ 。
 
-B，说 $B$ 对零元运算 $e$ 封闭是指 $e \in B$ 。
+B. 说 $B$ 对零元运算 $e$ 封闭是指 $e \in B$ 。
 
 C．说 $B$ 构成 $(A, \circ, e)$ 的子代数，则必有 $e \in B$ 。
 
@@ -11998,7 +12004,7 @@ D．若 $B$ 构成 $(A, \circ, e)$ 的子代数，则该子代数是与 $(A, \ci
 
 A．设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k+1)\}$ ，则 $(A,+)$ 是代数 $(\mathbb{Z},+)$ 的子代数。
 
-B，设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k+1)\}$ ，则 $(A, *)$ 是代数 $(\mathbb{Z}, *)$ 的子代数。
+B. 设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k+1)\}$ ，则 $(A, *)$ 是代数 $(\mathbb{Z}, *)$ 的子代数。
 
 C．设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k)\}$ ，则 $(A,+, *)$ 是代数 $(\mathbb{Z},+, *)$ 的子代数。
 
@@ -12010,13 +12016,13 @@ D．设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k)\}$ ，则 $(A, *)$ 是代数
 
 对于代数 $(\mathbb{Z},+)$ ，下面哪些关系是这个代数上的同余关系？
 
-A，关系 $R_1=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x \leq 0 \wedge y \leq 0) \vee(x \geq 0 \wedge y \geq 0)\}$ 。
+A. 关系 $R_1=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x \leq 0 \wedge y \leq 0) \vee(x \geq 0 \wedge y \geq 0)\}$ 。
 
-B，关系 $R_2=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee x y>0\}$ 。
+B. 关系 $R_2=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee x y>0\}$ 。
 
-C，关系 $R_3=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee(x \neq 0 \wedge y \neq 0)\}$ 。
+C. 关系 $R_3=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee(x \neq 0 \wedge y \neq 0)\}$ 。
 
-D，关系 $R_4=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid \exists k(|x-y|=5 k)\}$ 。
+D. 关系 $R_4=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid \exists k(|x-y|=5 k)\}$ 。
 
 
 \textcolor{red}{答案：D}
@@ -12027,7 +12033,7 @@ D，关系 $R_4=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid \exi
 
 A．关系 $R_1=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y \vee x=-y)\}$ 。
 
-B，关系 $R_2=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee x y>0\}$ 。
+B. 关系 $R_2=\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid(x=y=0) \vee x y>0\}$ 。
 
 C．关系 $R_3=\left\{\langle x, y\rangle \in \mathbb{Z} \times \mathbb{Z} \mid\left(x^2+y^2 \geq 0\right)\right\}$ 。
 
@@ -12040,13 +12046,13 @@ D．关系 $R_4=\Delta_{\mathbb{R}} \cup\{\langle 0,1\rangle,\langle 1,0\rangle\
 
 设 $\mathbf{A}=(A, \circ, \overline{(-)})$ 是一个代数，其中 $\circ$ 是二元运算，$\overline{(-)}$ 是一元运算，$R \subseteq A \times A$ 是 $A$ 上的一个关系，下面哪些说法是正确的？
 
-A，若$\circ$和 $\overline{(-)}$ 都保持关系 $R$ ，则 $R$ 是同余关系。
+A. 若$\circ$和 $\overline{(-)}$ 都保持关系 $R$ ，则 $R$ 是同余关系。
 
-B，若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c \in A$ ，若 $\langle b, c\rangle \in R$ ，则 $\langle a \circ b, a \circ c\rangle \in R$ 。
+B. 若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c \in A$ ，若 $\langle b, c\rangle \in R$ ，则 $\langle a \circ b, a \circ c\rangle \in R$ 。
 
-C，若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c, d \in A$ ，若 $\langle a, b\rangle,\langle c, d\rangle \in R$ ，则 $\langle a \circ b, c \circ d\rangle \in R$ 。
+C. 若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c, d \in A$ ，若 $\langle a, b\rangle,\langle c, d\rangle \in R$ ，则 $\langle a \circ b, c \circ d\rangle \in R$ 。
 
-D，若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c, d \in A$ ，若 $\langle a, b\rangle,\langle c, d\rangle \in R$ ，则 $\langle\bar{a} \circ \bar{c}, \bar{b} \circ \bar{d}\rangle \in R$ 。
+D. 若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c, d \in A$ ，若 $\langle a, b\rangle,\langle c, d\rangle \in R$ ，则 $\langle\bar{a} \circ \bar{c}, \bar{b} \circ \bar{d}\rangle \in R$ 。
 
 
 \textcolor{red}{答案：BD}
@@ -12057,7 +12063,7 @@ D，若 $R$ 是 $\mathbf{A}$ 上的同余关系，则 $\forall a, b, c, d \in A$
 
 A．关系 $A \times A$ 是代数 $(A, *)$ 上的同余关系。
 
-B，关系 $R_1=\Delta_A \cup\{\langle 0,1\rangle,\langle 1,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+B. 关系 $R_1=\Delta_A \cup\{\langle 0,1\rangle,\langle 1,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
 
 C．关系 $R_2=\Delta_A \cup\{\langle 0,2\rangle,\langle 2,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
 
@@ -12071,9 +12077,9 @@ D．关系 $R_3=\Delta_A \cup\{\langle 1,2\rangle,\langle 2,1\rangle\}$ 是代�
 
 A．关系 $\Delta_A$ 是代数 $(A, *)$ 上的同余关系。
 
-B，关系 $R_1=\Delta_A \cup\{\langle 0,1\rangle,\langle 1,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+B. 关系 $R_1=\Delta_A \cup\{\langle 0,1\rangle,\langle 1,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
 
-C，关系 $R_2=\Delta_A \cup\{\langle 0,2\rangle,\langle 2,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
+C. 关系 $R_2=\Delta_A \cup\{\langle 0,2\rangle,\langle 2,0\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
 
 D．关系 $R_3=\Delta_A \cup\{\langle 1,2\rangle,\langle 2,1\rangle\}$ 是代数 $(A, *)$ 上的同余关系。
 
@@ -12085,7 +12091,7 @@ D．关系 $R_3=\Delta_A \cup\{\langle 1,2\rangle,\langle 2,1\rangle\}$ 是代�
 
 A．代数 $(\mathbb{Z},+)$ 关于同余关系 $R$ 的商代数的基集是 $\mathbb{Z}_3=\left\{[0]_R,[1]_R,[2]_R\right\}$ 。
 
-B，根据商代数运算 $\oplus_3$ 的定义有：$[0]_R \oplus[1]_R=1$ 。
+B. 根据商代数运算 $\oplus_3$ 的定义有：$[0]_R \oplus[1]_R=1$ 。
 
 C．根据商代数运算 $\oplus_3$ 的定义有：$[2]_R \oplus[6]_R=[2]_R$ 。
 
@@ -12099,7 +12105,7 @@ D．根据商代数运算 $\oplus_3$ 的定义有：$[2]_R \oplus[8]_R=[2]_R$ �
 
 A．代数 $(\mathbb{R}, *)$ 关于同余关系 $R$ 的商代数的基集是 $\{\{x,-x\} \mid x \in \mathbb{R}\}$ 。
 
-B，根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[1]_R=\{0\}$ 。
+B. 根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[1]_R=\{0\}$ 。
 
 C．根据商代数运算 $\otimes$ 的定义有：$[2]_R \otimes[-3]_R=[6]_R$ 。
 
@@ -12124,7 +12130,7 @@ D．根据商代数运算 $\otimes$ 的定义有：$[3]_R \otimes[3]_R=\{3,-3\}$
 
 A．代数 $(A, \circ)$ 关于同余关系 $R$ 的商代数的基集是 $\{\{0,2\},\{1\}\}$ 。
 
-B，根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[1]_R=\{0\}$ 。
+B. 根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[1]_R=\{0\}$ 。
 
 C．根据商代数运算 $\otimes$ 的定义有：$[0]_R \otimes[2]_R=\{0,2\}$ 。
 
@@ -12177,7 +12183,7 @@ D．$f_4(x)=-x$
 
 A．函数 $f_1: A \rightarrow A$ 定义为 $f_1(0)=0, f_1(1)=1, f_1(2)=1$ 。
 
-B，函数 $f_2: A \rightarrow A$ 定义为 $f_2(0)=1, f_2(1)=0, f_2(2)=1$ 。
+B. 函数 $f_2: A \rightarrow A$ 定义为 $f_2(0)=1, f_2(1)=0, f_2(2)=1$ 。
 
 C．函数 $f_3: A \rightarrow A$ 定义为 $f_3(0)=0, f_3(1)=1, f_3(2)=0$ 。
 
@@ -12189,13 +12195,13 @@ D．函数 $f_4: A \rightarrow A$ 定义为 $f_4(0)=0, f_4(1)=0, f_4(2)=1$ 。
 
 设 $f:(A, \circ) \rightarrow(B, *)$ 是同态，这里$\circ$和$*$都是二元运算，下面哪些说法是正确的？
 
-A，如果$\circ$满足交换律，则$*$也必定满足交换律。
+A. 如果$\circ$满足交换律，则$*$也必定满足交换律。
 
-B，如果 $f$ 是单同态，则 $e$ 是运算 $\circ$ 的单位元蕴涵 $f(e)$ 是 $*$ 的单位元。
+B. 如果 $f$ 是单同态，则 $e$ 是运算 $\circ$ 的单位元蕴涵 $f(e)$ 是 $*$ 的单位元。
 
-C，如果 $f$ 是满同态，则 $\theta$ 是运算 $\circ$ 的零元蕴涵 $f(\theta)$ 是 $*$ 的零元。
+C. 如果 $f$ 是满同态，则 $\theta$ 是运算 $\circ$ 的零元蕴涵 $f(\theta)$ 是 $*$ 的零元。
 
-D，如果 $f$ 是同构，则 $\circ$ 满足消去律蕴涵$*$也满足消去律。
+D. 如果 $f$ 是同构，则 $\circ$ 满足消去律蕴涵$*$也满足消去律。
 
 \textcolor{red}{答案：CD}
 
@@ -12203,13 +12209,13 @@ D，如果 $f$ 是同构，则 $\circ$ 满足消去律蕴涵$*$也满足消去�
 
 下面哪些集合及其二元运算构成群？
 
-A，整数集及普通加法运算。
+A. 整数集及普通加法运算。
 
-B，实数集及普通乘法运算。
+B. 实数集及普通乘法运算。
 
-C，非空集A的幂集及集合交运算。
+C. 非空集A的幂集及集合交运算。
 
-D，非空集A上的所有双函数构成的集合及函数复合运算。
+D. 非空集A上的所有双函数构成的集合及函数复合运算。
 
 \textcolor{red}{答案：AD}
 
@@ -12219,11 +12225,11 @@ D，非空集A上的所有双函数构成的集合及函数复合运算。
 
 A．元素2的逆元是4。
 
-B，元素 3 的逆元是 3 。
+B. 元素 3 的逆元是 3 。
 
-C，元素4的逆元是 5 。
+C. 元素4的逆元是 5 。
 
-D，元素6的逆元是6。
+D. 元素6的逆元是6。
 
 \textcolor{red}{答案：AD}
 
@@ -12231,13 +12237,13 @@ D，元素6的逆元是6。
 
 对于 $U(7)=\{1,2,3,4,5,6\}$ 与模 7 乘构成的 $U(7)$ 群，下面对于元素阶的说法哪些是正确的？
 
-A，元素2的阶是3。
+A. 元素2的阶是3。
 
-B，元素3的阶是 3 。
+B. 元素3的阶是 3 。
 
-C，元素4的阶是 3 。
+C. 元素4的阶是 3 。
 
-D，元素6的阶是3。
+D. 元素6的阶是3。
 
 \textcolor{red}{答案：AC}
 
@@ -12247,7 +12253,7 @@ D，元素6的阶是3。
 
 A．如果 $|a|=n$ 且 $|b|=m$ ，则 $|a b|=n m$ 。
 
-B，如果 $|a b|=n$ ，则 $|b a|=n$ 。
+B. 如果 $|a b|=n$ ，则 $|b a|=n$ 。
 
 C．如果 $|a|=n$ ，则 $\left|b a b^{-1}\right|=n$ 。
 
@@ -12290,11 +12296,11 @@ $f$ & $f$ & $d$ & $c$ & $b$ & $a$ & $e$ \\
 
 A．$\{e, a\}$
 
-B，$\{e, b\}$
+B. $\{e, b\}$
 
-C，$\{e, b, d\}$
+C. $\{e, b, d\}$
 
-D，$\{e, f\}$
+D. $\{e, f\}$
 
 \textcolor{red}{答案：CD}
 
@@ -12332,7 +12338,7 @@ D．$\{e, d, f\}$
 
 A．子集 ${H}=\{0,2,4,6\}$ 是子群，且陪集 $3 {H}=\{0,6\}$ 。
 
-B，子集 ${H}=\{0,3,6,9\}$ 是子群，且陪集 $2 {H}=\{0,6\}$ 。
+B. 子集 ${H}=\{0,3,6,9\}$ 是子群，且陪集 $2 {H}=\{0,6\}$ 。
 
 C．子集 $H=\{0,6\}$ 是子群，且陪集 $4 {H}=\{4,10\}$ 。
 
@@ -12346,7 +12352,7 @@ D．子集 ${H}=\{0,3,6,9\}$ 是子群，且陪集 $4 {H}=\{4,7,10,1\}$ 。
 
 A．子集 ${H}=\{1,3,5\}$ 是子群，且陪集 $9 {H}=\{3,9,13\}$ 。
 
-B，子集 $H=\{1,9,11\}$ 是子群，且陪集 $3 H=\{3,5,13\}$ 。
+B. 子集 $H=\{1,9,11\}$ 是子群，且陪集 $3 H=\{3,5,13\}$ 。
 
 C．子集 ${H}=\{1,13\}$ 是子群，且陪集 $9 {H}=\{5,9\}$ 。
 
@@ -12374,11 +12380,11 @@ $f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
 
 A．子集 $H=\{e, a\}$ 是子群，且陪集 $c H=\{c, f\}$ 。
 
-B，子集 $H=\{e, d, f\}$ 是子群，且陪集 $c H=\{c, a, b\}$ 。
+B. 子集 $H=\{e, d, f\}$ 是子群，且陪集 $c H=\{c, a, b\}$ 。
 
-C，子集 $H=\{e, a\}$ 是子群，且陪集 $H c=\{c, f\}$ 。
+C. 子集 $H=\{e, a\}$ 是子群，且陪集 $H c=\{c, f\}$ 。
 
-D，子集 $H=\{e, d, f\}$ 是子群，且陪集 $H c=\{c, a, b\}$ 。
+D. 子集 $H=\{e, d, f\}$ 是子群，且陪集 $H c=\{c, a, b\}$ 。
 
 \textcolor{red}{答案：ABD}
 
@@ -12388,11 +12394,11 @@ D，子集 $H=\{e, d, f\}$ 是子群，且陪集 $H c=\{c, a, b\}$ 。
 
 A．子集 $H=\{1,2,4\}$ 是 $U(9)$ 的正规子群。
 
-B，子集 $H=\{1,8\}$ 是 $U(9)$ 的正规子群。
+B. 子集 $H=\{1,8\}$ 是 $U(9)$ 的正规子群。
 
 C．子集 ${H}=\{1,4,7\}$ 是 ${U}(9)$ 的正规子群。
 
-D，子集 $H=\{1,5\}$ 是 $U(9)$ 的正规子群。
+D. 子集 $H=\{1,5\}$ 是 $U(9)$ 的正规子群。
 
 \textcolor{red}{答案：BC}
 
@@ -12417,11 +12423,11 @@ $f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
 
 A．子集 $H=\{e, a\}$ 是群 $G$ 的正规子群。
 
-B，子集 $H=\{e, d, f\}$ 是群 $G$ 的正规子群。
+B. 子集 $H=\{e, d, f\}$ 是群 $G$ 的正规子群。
 
-C，子集 $H=\{e, b\}$ 是群 $G$ 的正规子群。
+C. 子集 $H=\{e, b\}$ 是群 $G$ 的正规子群。
 
-D，子集 $H=\{e, c\}$ 是群 $G$ 的正规子群。
+D. 子集 $H=\{e, c\}$ 是群 $G$ 的正规子群。
 
 \textcolor{red}{答案：B}
 
@@ -12431,11 +12437,11 @@ D，子集 $H=\{e, c\}$ 是群 $G$ 的正规子群。
 
 A．若对任意 $a \in G$ 有 $a H=H a$ ，则 $H$ 是群 $G$ 的正规子群。
 
-B，若 $H$ 是 $G$ 的子群，且对任意 $a \in G$ ，有 $a H a^{-1}=H$ ，则 $H$ 是群 $G$ 的正规子群。
+B. 若 $H$ 是 $G$ 的子群，且对任意 $a \in G$ ，有 $a H a^{-1}=H$ ，则 $H$ 是群 $G$ 的正规子群。
 
-C，若 H 是 G 的子群，且 H 的陪集恰好有 3 个，则 H 是群 G 的正规子群。
+C. 若 H 是 G 的子群，且 H 的陪集恰好有 3 个，则 H 是群 G 的正规子群。
 
-D，若 H 是 G 的子群，且H的陪集恰好有 2 个，则 H 是群 G 的正规子群。
+D. 若 H 是 G 的子群，且H的陪集恰好有 2 个，则 H 是群 G 的正规子群。
 
 \textcolor{red}{答案：BD}
 
@@ -12446,11 +12452,11 @@ D，若 H 是 G 的子群，且H的陪集恰好有 2 个，则 H 是群 G 的正
 
 A．G关于N的商群的基集是 $\{1,13\},\{3,11\},\{5,9\}\}$ 。
 
-B，G关于 $N$ 的商群 $G / N$ 的单位元 $\{1,13\}$ 。
+B. G关于 $N$ 的商群 $G / N$ 的单位元 $\{1,13\}$ 。
 
-C，在G关于 $N$ 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集N3的逆元是陪集N11。
+C. 在G关于 $N$ 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集N3的逆元是陪集N11。
 
-D，在G关于 $N$ 的商群 $G / N$ 中，陪集N3与陪集N11的运算结果是陪集N13。
+D. 在G关于 $N$ 的商群 $G / N$ 中，陪集N3与陪集N11的运算结果是陪集N13。
 
 \textcolor{red}{答案：AB}
 
@@ -12473,13 +12479,13 @@ $f$ & $f$ & $c$ & $a$ & $b$ & $e$ & $d$ \\
 \end{tabular}
 \end{table}
 
-A，G关于N的商群的基集是 $\{\{\mathrm{e}, \mathrm{d}, \mathrm{f}\},\{\mathrm{c}, \mathrm{a}, \mathrm{b}\}\}$ 。
+A. G关于N的商群的基集是 $\{\{\mathrm{e}, \mathrm{d}, \mathrm{f}\},\{\mathrm{c}, \mathrm{a}, \mathrm{b}\}\}$ 。
 
-B，G关于 N 的商群 $G / N$ 的单位元e。
+B. G关于 N 的商群 $G / N$ 的单位元e。
 
-C，在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 的逆元是陪集 Nc 。
+C. 在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 的逆元是陪集 Nc 。
 
-D，在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 与陪集 Nd 的运算结果是陪集 Nc 。
+D. 在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 与陪集 Nd 的运算结果是陪集 Nc 。
 
 \textcolor{red}{答案：ACD}
 
@@ -12490,11 +12496,11 @@ D，在G关于 N 的商群 $\mathrm{G} / \mathrm{N}$ 中，陪集 Na 与陪集 N
 
 A．如果对任意 $a \in G$ 有 $[f(a)]^{-1}=f\left(a^{-1}\right)$ ，则 $f$ 是群同态。
 
-B，如果 $f$ 是群同态，则对任意 $a \in G$ 有 $[f(a)]^{-1}=f\left(a^{-1}\right)$ 。
+B. 如果 $f$ 是群同态，则对任意 $a \in G$ 有 $[f(a)]^{-1}=f\left(a^{-1}\right)$ 。
 
 C．如果对任意 $a, b \in G$ 有 $f(a * b)=f(a) \circ f(b)$ ，则 $f$ 是群同态。
 
-D，如果 $f$ 是群同态，则 $f^{-1}\left(\left\{e^{\prime}\right\}\right)$ 是 $G$ 的子群，这里 $e^{\prime}$ 是群 $H$ 的单位元。
+D. 如果 $f$ 是群同态，则 $f^{-1}\left(\left\{e^{\prime}\right\}\right)$ 是 $G$ 的子群，这里 $e^{\prime}$ 是群 $H$ 的单位元。
 
 \textcolor{red}{答案：BCD}
 
@@ -12502,13 +12508,13 @@ D，如果 $f$ 是群同态，则 $f^{-1}\left(\left\{e^{\prime}\right\}\right)$
 
 下面哪些集合及其上的二元关系构成格？
 
-A，给定非空集 $A$ 的幂集 $\wp(A)$ 及其上的子集关系 $\subseteq$ 。
+A. 给定非空集 $A$ 的幂集 $\wp(A)$ 及其上的子集关系 $\subseteq$ 。
 
-B，给定非空集 $A$ ，集合 $\mathcal{T}=\{R \mid R \subseteq A \times A$ 且是传递的 $\}$ 及其上的子集关系 $\subseteq$ 。
+B. 给定非空集 $A$ ，集合 $\mathcal{T}=\{R \mid R \subseteq A \times A$ 且是传递的 $\}$ 及其上的子集关系 $\subseteq$ 。
 
-C，整数集 $\mathbb{Z}$ 及其上的小于关系 $<$ 。
+C. 整数集 $\mathbb{Z}$ 及其上的小于关系 $<$ 。
 
-D，正整数集 $\mathbb{Z}^{+}$及其上的整除关系$\mid$。
+D. 正整数集 $\mathbb{Z}^{+}$及其上的整除关系$\mid$。
 
 \textcolor{red}{答案：AD}
 
@@ -12518,7 +12524,7 @@ D，正整数集 $\mathbb{Z}^{+}$及其上的整除关系$\mid$。
 
 A．对任意 $a, b, c \in L,  b \wedge c \preceq a$ 当且仅当 $b \preceq a$ 且 $c \preceq a$ 。
 
-B，对任意 $a, b, c \in L, ~ a \preceq b \wedge c$ 当且仅当 $a \preceq b$ 且 $a \preceq c$ 。
+B. 对任意 $a, b, c \in L, ~ a \preceq b \wedge c$ 当且仅当 $a \preceq b$ 且 $a \preceq c$ 。
 
 C．对任意 $a, b, c \in L, a \preceq b \vee c$ 当且仅当 $a \preceq b$ 或 $a \preceq c$ 。
 
@@ -12532,9 +12538,9 @@ D．对任意 $a, b, c \in L,  b \vee c \preceq a$ 当且仅当 $b \preceq a$ �
 
 A．运算 $\vee$ 和 $\wedge$ 都满足交换律。
 
-B，运算 $\vee$ 和 $\wedge$ 都满足结合律。
+B. 运算 $\vee$ 和 $\wedge$ 都满足结合律。
 
-C，运算 $\vee$ 和 $\wedge$ 满足吸收律。
+C. 运算 $\vee$ 和 $\wedge$ 满足吸收律。
 
 D．运算 $\vee$ 对 $\wedge$ 满足分配律。
 
@@ -12562,7 +12568,7 @@ $S,\langle a, b\rangle \in R$ 当且仅当 $a \circ b=a$ ，则 $R$ 是偏序，
 
 A．对任意 $a, b \in L, a \preceq b$ 当且仅当 $a \vee b=b$ ，当且仅当 $a \wedge b=a$ 。
 
-B，对任意 $a, b, c \in L, a \vee(b \wedge c) \preceq(a \vee b) \wedge(a \vee c)$ 。
+B. 对任意 $a, b, c \in L, a \vee(b \wedge c) \preceq(a \vee b) \wedge(a \vee c)$ 。
 
 C．对任意 $a, b, c \in L, a \wedge(b \vee c) \preceq(a \wedge b) \vee(a \wedge c)$ 。
 
@@ -12618,7 +12624,7 @@ D．对任意 $a, b \in L, a \vee b=a \wedge b$ 当且仅当 $a=b$ 。
 
 A．偏序集 $(\mathbb{R}, \leq)$ ，这里 $\leq$ 是普通的小于等于关系。
 
-B，给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
+B. 给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
 
 C．给定非空集 $A, \mathcal{F}=\{R \subseteq A \times A \mid R$ 是自反的 $\}$ ，偏序集 $(\mathcal{F}, \subseteq)$ 。
 
@@ -12632,11 +12638,11 @@ D．集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{3
 
 A．偏序集 $(\mathbb{R}, \leq)$ ，这里 $\leq$ 是普通的小于等于关系。
 
-B，给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
+B. 给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
 
 C．给定非空集 $A, \mathcal{F}=\{R \subseteq A \times A \mid R$ 是自反的 $\}$ ，偏序集 $(\mathcal{F}, \subseteq)$ 。
 
-D，集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{36}, \mid\right)$ ，这里｜是整除关系。
+D. 集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{36}, \mid\right)$ ，这里｜是整除关系。
 
 \textcolor{red}{答案：BCD}
 
@@ -12652,11 +12658,11 @@ D，集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{3
 
 A．元素$e$和$b$都没有补元。
 
-B，元素 $d$ 的补元有 $1$ 和 $c$ 。
+B. 元素 $d$ 的补元有 $1$ 和 $c$ 。
 
 C．元素$a$的补元是$f$。
 
-D，元素 $c$ 的补元是 $d$ 。
+D. 元素 $c$ 的补元是 $d$ 。
 
 \textcolor{red}{答案：CD}
 
@@ -12666,11 +12672,11 @@ D，元素 $c$ 的补元是 $d$ 。
 
 A．偏序集 $(\mathbb{R}, \leq)$ ，这里 $\leq$ 是普通的小于等于关系。
 
-B，给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
+B. 给定非空集 $A$ ，偏序集 $(\wp(A), \subseteq)$ 。
 
-C，给定非空集 $A, \mathcal{F}=\{R \subseteq A \times A \mid R$ 是自反的 $\}$ ，偏序集 $(\mathcal{F}, \subseteq)$ 。
+C. 给定非空集 $A, \mathcal{F}=\{R \subseteq A \times A \mid R$ 是自反的 $\}$ ，偏序集 $(\mathcal{F}, \subseteq)$ 。
 
-D，集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{36}, \mid\right)$ ，这里$\mid$是整除关系。
+D. 集合 $F_{36}=\{a \mid a$ 是 36 的正因子 $\}$ ，偏序集 $\left(F_{36}, \mid\right)$ ，这里$\mid$是整除关系。
 
 \textcolor{red}{答案：BC}
 
@@ -12694,7 +12700,7 @@ D．$ F_{110}$
 
 A．对任意 $a, b, c \in L$ ，若 $a \vee b=a \vee c$ 且 $a \wedge b=a \wedge c$ ，则 $b=c$ 。
 
-B，对任意 $a, b, c \in L$ ，若 $a \vee b=a \vee c$ 且 $\neg a \vee b=\neg a \vee c$ ，则 $b=c$ 。
+B. 对任意 $a, b, c \in L$ ，若 $a \vee b=a \vee c$ 且 $\neg a \vee b=\neg a \vee c$ ，则 $b=c$ 。
 
 C．对任意 $a, b, c \in L$ ，若 $a \wedge b=a \wedge c$ 且 $\neg a \wedge b=\neg a \wedge c$ ，则 $b=c$ 。
 
@@ -12709,11 +12715,11 @@ D．对任意 $a, b \in L$ ，若 $a \wedge \neg b=\mathbf{0}$ 且 $\neg a \wedg
 
 A．运算$*$和$\circ$满足吸收律。
 
-B，运算 $*$ 的单位元 $\mathbf{0}$ 是$\circ$的零元，而$\circ$的单位元 $\mathbf{1}$ 是 $*$ 的零元。
+B. 运算 $*$ 的单位元 $\mathbf{0}$ 是$\circ$的零元，而$\circ$的单位元 $\mathbf{1}$ 是 $*$ 的零元。
 
-C，运算 $*$ 和 $\circ$ 都满足结合律。
+C. 运算 $*$ 和 $\circ$ 都满足结合律。
 
-D，代数系统 $(B, *, \circ)$ 是布尔代数，且$\circ$和 $*$ 分别是上确界和下确界运算。
+D. 代数系统 $(B, *, \circ)$ 是布尔代数，且$\circ$和 $*$ 分别是上确界和下确界运算。
 
 \textcolor{red}{答案：ABC}
 
