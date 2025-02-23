@@ -1,5 +1,5 @@
 # SYSU-Discrete-Mathematics-Exam-Answers
-适用于中山大学计算机学院课程《离散数学基础》(Elementary Discrete Mathematics)测验题答案。答案pdf既可以从Releases下载（可能不是最新的），也可以从Assets文件夹中找到。
+适用于中山大学计算机学院课程《离散数学基础》(Elementary Discrete Mathematics)测验题答案。答案pdf既可以从Releases下载（可能不是最新的），也可以从Assets文件夹中找到（一定是最新的）。
 
 《离散数学基础》清华大学出版社 作者：周晓聪，乔海燕 ISBN：9787302576679 电子书pdf也一并上传
 
