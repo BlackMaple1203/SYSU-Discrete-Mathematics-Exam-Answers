@@ -4917,6 +4917,20 @@ D.
 
 \textcolor{red}{答案：ABCD}
 
+\subsection{测验题4.32}
+
+假定集合 $S$ 是归纳定义的集合，论域是全总域，$G(n, x)$ 是二元谓词，表示＂$x$ 是根据 $S$ 的归纳定义使用不超过 $n$ 次归纳步构造规则构造得到的 $S$ 的元素＂，$P(x)$ 是一个一元谓词，$Q(n)$ 是一元调词，定义为 $\forall x \in S(G(n, x) \rightarrow P(x))$ 。下面哪些说法是正确的？
+
+A. 证明 $S$ 的所有元素 $x$ 都满足性质 $P(x)$ ，就是要证明一阶公式 $\forall x \in S P(x)$ 为真。
+
+B. 便用结构归纳法证明 $\forall x \in S P(x)$ 时，归纳基对 $S$ 的每个基本元素 $a$ ，验证 $P(a)$ 成立，这实际上是验证 $Q(0)$ 。注意 $Q(0)$ 的含义是＂若 $a$ 是使用不超过 0 次归纳构造的 $S$ 的元素，也即 $a$ 是基本元素，就蕴涵 $P(a)$ 成立＂。
+
+C. 使用结构归纳法证明 $\forall x \in S P(x)$ 时，归纳步假定用于构造的每个元素 $x_i$ 使得 $P\left(x_i\right)$ 成立，则也有由 $x_i$ 构造得到的 $x$ 使得 $P(x)$ 成立，这实际上是对任意的 $k \geq 0$ ，假定 $Q(0), Q(1), \cdots, Q(k)$ 成立时，证明 $Q(k+1)$。
+
+D. 结构归纳法证明实际上是针对构造 $S$ 的元素时归纳步构造规则的使用次数做强归纳法证明。
+
+\textcolor{red}{答案：ABCD}
+
 \subsection{测验题4.33}
 
 假定集合$A$是归纳定义的集合，集合$B$是用性质概括法定义的集合，下面哪些说法是正确的？
@@ -12017,6 +12031,20 @@ D. 设 $A=\{z \mid \exists k \in \mathbb{Z}(z=2 k)\}$ ，则 $(A, *)$ 是代数 
 
 \textcolor{red}{答案：BC}
 
+\subsection{测验题10.22*}
+
+对于代数 $\left(\mathbb{Z}_{12}, \oplus_{12}, \otimes_{12}\right)$ ，这里 $\mathbb{Z}_{12}=\{z \mid 0 \leq z<12\}$ ，$\oplus_{12}$ 是模 12 加，而 $\otimes_{12}$ 是模 12 乘，下面 $\mathbb{Z}_{12}$ 的哪些子集构成该代数的子代数？
+
+A. 子集$B_1 = \{0,2,4,6,8,10\}$ 。
+
+B. 子集$B_2 = \{0,1,4,8\}$ 。
+
+C. 子集$B_3 = \{0,3,6,9\}$。
+
+D. 子集$B_3 =\{0,5,10\}$ 。
+
+\textcolor{red}{答案：AC}
+
 \subsection{测验题10.23*}
 
 对于代数 $(\mathbb{Z},+)$ ，下面哪些关系是这个代数上的同余关系？
@@ -12238,6 +12266,108 @@ D. 元素6的逆元是6。
 
 \textcolor{red}{答案：AD}
 
+\subsection{测验题10.37* ( 新 )}
+
+集合 $A=\{e, a, b, c\}$  与下面使用运算表定义的哪些二元运算构成群?
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \begin{tabular}{c|cccc}
+      \hline
+      + & e & a & b & c \\
+      \hline
+      e & e & a & b & c \\
+      a & a & e & c & b \\
+      b & b & a & c & e \\
+      c & c & a & e & c \\
+      \hline
+    \end{tabular}
+    \vspace{0.5cm}
+    \caption{测验题10.37 A选项}
+  \end{minipage}
+  \hspace{0.05\textwidth}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \begin{tabular}{c|cccc}
+      \hline
+      $*$ & $e$ & $a$ & $b$ & $c$ \\
+      \hline
+      $e$ & $e$ & $a$ & $b$ & $c$ \\
+      $a$ & $a$ & $c$ & $b$ & $e$ \\
+      $b$ & $b$ & $e$ & $c$ & $a$ \\
+      $c$ & $c$ & $b$ & $e$ & $a$ \\
+      \hline
+    \end{tabular}
+    \vspace{0.5cm}
+    \caption{测验题10.37 B选项}
+  \end{minipage}
+\end{table}
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.3}
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \begin{tabular}{c|cccc}
+      \hline$\circ$ & $e$ & $a$ & $b$ & $c$ \\
+      \hline$e$ & $e$ & $a$ & $b$ & $c$ \\
+      $a$ & $a$ & $c$ & $e$ & $b$ \\
+      $b$ & $b$ & $e$ & $c$ & $a$ \\
+      $c$ & $c$ & $b$ & $a$ & $e$ \\
+      \hline
+    \end{tabular}    
+    \vspace{0.5cm}
+    \caption{测验题10.37 C选项}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \begin{tabular}{c|cccc}
+      \hline$\otimes$ & $e$ & $a$ & $b$ & $c$ \\
+      \hline$e$ & $e$ & $a$ & $b$ & $c$ \\
+      $a$ & $a$ & $e$ & $c$ & $b$ \\
+      $b$ & $b$ & $c$ & $e$ & $a$ \\
+      $c$ & $c$ & $b$ & $a$ & $e$ \\
+      \hline
+    \end{tabular}
+    \vspace{0.5cm}
+    \caption{测验题10.37 D选项}
+  \end{minipage}
+\end{table}
+
+\textcolor{red}{答案：CD}
+
+\subsection{测验题10.38*}
+
+对于 $U(7)=\{1,2,3,4,5,6\}$ 与模 7 乘构成的 $U(7)$ 群，下面对于元素逆的说法哪些是正确的？
+
+A. 元素2的逆元是4。
+
+B. 元素3的逆元是3。
+
+C. 元素4的逆元是5。
+
+D. 元素6的逆元是6。
+
+\textcolor{red}{答案：AD}
+
+\subsection{测验题10.39*}
+
+对于 $\mathbb{Z}_7=\{0,1,2,3,4,5,6\}$ 与模 7 加构成的模 7 加群，下面对于元素阶的说法哪些是正确的？
+
+A. 元素 2 的阶是 4 。
+
+B. 元素 3 的阶是 5 。
+
+C. 元素4的阶是6。
+
+D. 元素6的阶是7。
+
+\textcolor{red}{答案：D}
+
+
 \subsection{测验题10.40*}
 
 对于 $U(7)=\{1,2,3,4,5,6\}$ 与模 7 乘构成的 $U(7)$ 群，下面对于元素阶的说法哪些是正确的？
@@ -12364,6 +12494,35 @@ C. 子集 ${H}=\{1,13\}$ 是子群，且陪集 $9 {H}=\{5,9\}$ 。
 D. 子集 ${H}=\{1,9,11\}$ 是子群，且陪集 $5 {H}=\{1,3,5\}$ 。
 
 \textcolor{red}{答案：BC}
+
+\subsection{测验题10.49*}
+
+群 $G=\{e, a, b, c, d, f\}$ 的运算○如下表定义，下面对于子群及其陪集的哪些说法是正确的？
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+\begin{tabular}{c|cccccc}
+\hline$\circ$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+\hline$e$ & $e$ & $a$ & $b$ & $c$ & $d$ & $f$ \\
+$a$ & $a$ & $b$ & $f$ & $e$ & $c$ & $d$ \\
+$b$ & $b$ & $f$ & $d$ & $a$ & $e$ & $c$ \\
+$c$ & $c$ & $e$ & $a$ & $d$ & $f$ & $b$ \\
+$d$ & $d$ & $c$ & $e$ & $f$ & $b$ & $a$ \\
+$f$ & $f$ & $d$ & $c$ & $b$ & $a$ & $e$ \\
+\hline
+\end{tabular}
+\end{table}
+
+A. 子集 $H=\{e, a\}$ 是子群，且陪集 $c H=\{e, c\}$ 。
+
+B. 子集 $H=\{e, b, d\}$ 是子群，且陪集 $c H=\{c, a, f\}$ 。
+
+C. 子集 $H=\{e, b\}$ 是子群，且陪集 $H f=\{c, f\}$ 。
+
+D. 子集 $H=\{e, b, d\}$ 是子群，且陪集 $H c=\{c, a, f\}$ 。
+
+\textcolor{red}{答案：BD}
 
 \subsection{测验题10.50*}
 
@@ -12522,6 +12681,49 @@ C. 整数集 $\mathbb{Z}$ 及其上的小于关系 $<$ 。
 D. 正整数集 $\mathbb{Z}^{+}$及其上的整除关系$\mid$。
 
 \textcolor{red}{答案：AD}
+
+\subsection{测验题10.59*}
+
+下面使用哈斯图表示的偏序集哪些构成格？
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.59_1.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.59 A选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.23\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.59_2.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.59 B选项}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.59_3.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.59 C选项}
+  \end{minipage}
+  % \hfill
+  \hspace{0.22\textwidth} % 调整这里的值来改变两张图片之间的间距
+  \begin{minipage}[t]{0.2\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{10.59_4.jpg} % 插入图片
+      \vspace{-0.3cm}
+      \caption{测验题10.59 D选项}
+\end{minipage}
+\end{figure}
+
+\textcolor{red}{答案：CD}
+
 
 \subsection{测验题10.60*}
 
@@ -12699,6 +12901,20 @@ D. $ F_{110}$
 
 \textcolor{red}{答案：BD}
 
+\subsection{测验题10.71*}
+
+设 $(L, \preceq)$ 是布尔代数， $\vee$ 和$\wedge$分别是上确界和下确界运算， $\mathbf{0}$ 和 $\mathbf{1}$ 分别是最小元和最大元，下面哪些说法是正确的？
+
+A. 运算 $\vee$ 和 $\wedge$ 都满足交换律，结合律和幂等律。
+
+B. 运算 $\vee$ 和$\wedge$满足吸收律。
+
+C. 运算 $\vee$ 对 $\wedge$ 满足分配律，且 $\wedge$ 对 $\vee$ 也满足分配律。
+
+D. 对任意 $a \in L$ ，都存在 $b \in L$ ，使得 $a \vee b=\mathbf{0}$ 且 $a \wedge b=\mathbf{1}$ 。
+
+\textcolor{red}{答案：ABC}
+
 \subsection{测验题10.72*}
 
 设 $(L, \preceq)$ 是布尔代数，$\vee$ 和 $\wedge$ 分别是上确界和下确界运算， 0 和 1 分别是最小元和最大元，$\neg$ 是补元运算，下面哪些说法是正确的？
@@ -12713,6 +12929,8 @@ D. 对任意 $a, b \in L$ ，若 $a \wedge \neg b=\mathbf{0}$ 且 $\neg a \wedge
 
 
 \textcolor{red}{答案：ABCD}
+
+
 
 \subsection{测验题10.73*}
 
